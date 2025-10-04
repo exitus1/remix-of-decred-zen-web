@@ -51,6 +51,17 @@ All colors MUST be HSL.
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
+  
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
 }
 
 @layer base {
@@ -87,5 +98,9 @@ All colors MUST be HSL.
   .hover-glow:hover {
     box-shadow: var(--shadow-glow);
     transform: translateY(-2px);
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
   }
 }
