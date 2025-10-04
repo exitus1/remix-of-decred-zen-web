@@ -6,6 +6,7 @@ import Governance from "@/components/Governance";
 import Treasury from "@/components/Treasury";
 import NeonCodeBackground from "@/components/NeonCodeBackground";
 import DecredEvolution from "@/components/DecredEvolution";
+import CoinMixing from "@/components/CoinMixing";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Stats />
       <DecredEvolution />
       <Features />
+      <CoinMixing />
       <Treasury />
       <Governance />
     </div>
