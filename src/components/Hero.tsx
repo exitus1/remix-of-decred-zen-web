@@ -1,14 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
-import HeroParticles from "@/components/HeroParticles";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Particle gradient background */}
+      {/* Soft blue and green neon lighting */}
       <div className="absolute inset-0 bg-background">
-        <HeroParticles />
+        {/* Blue neon glow - top left */}
+        <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-blue-500/30 rounded-full blur-[150px] animate-glow-pulse" />
+        
+        {/* Green neon glow - bottom right */}
+        <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-green-500/25 rounded-full blur-[140px] animate-glow-pulse" style={{ animationDelay: '1s' }} />
+        
+        {/* Additional blue accent - center right */}
+        <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-blue-400/20 rounded-full blur-[120px] animate-glow-pulse" style={{ animationDelay: '2s' }} />
+        
+        {/* Additional green accent - center left */}
+        <div className="absolute top-1/3 left-0 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-[130px] animate-glow-pulse" style={{ animationDelay: '1.5s' }} />
+        
+        {/* Gradient overlay for blending */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-background to-green-500/10" />
       </div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
