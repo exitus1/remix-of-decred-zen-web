@@ -15,8 +15,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-            Secure. Adaptable.{" "}
-            <span className="gradient-text">Sustainable.</span>
+            <span className="gradient-text">Engineered for Sovereignty</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">

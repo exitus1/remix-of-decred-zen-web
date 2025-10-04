@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import decredIcon from "@/assets/decred-icon.jpg";
 
 const Navigation = () => {
   return (
@@ -6,9 +7,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">D</span>
-            </div>
+            <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-lg" />
             <span className="text-xl font-bold">Decred</span>
           </div>
           
