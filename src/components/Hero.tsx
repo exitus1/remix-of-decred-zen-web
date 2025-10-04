@@ -1,17 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
+import decredIcon from "@/assets/decred-icon.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary to-background" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-glow-pulse" />
+      {/* Abstract minimalist background */}
+      <div className="absolute inset-0 bg-background" />
+      
+      {/* Abstract shapes */}
+      <div className="absolute top-20 right-[10%] w-[500px] h-[500px] border border-primary/10 rounded-full" />
+      <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] border border-primary/10 rounded-full" />
+      <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px]" />
+      <div className="absolute top-1/3 right-1/3 w-[250px] h-[250px] bg-primary/5 rounded-full blur-[80px]" />
+      
+      {/* Animated glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-glow-pulse" />
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in">
-          <div className="inline-block mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-            <span className="text-primary text-sm font-medium">Decentralized Credit</span>
+          {/* Decred Logo */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src={decredIcon} 
+              alt="Decred" 
+              className="w-24 h-24 md:w-32 md:h-32 rounded-2xl shadow-glow"
+            />
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
