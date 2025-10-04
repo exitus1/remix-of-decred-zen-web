@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
-            A community-directed digital currency designed to be a superior store of value for generations to come.
+            A hybrid PoW/PoS cryptocurrency with on-chain governance, self-funding treasury, and privacy features. Built for long-term value and true stakeholder control.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

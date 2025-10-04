@@ -8,36 +8,36 @@ const Governance = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Governance by the Community
+              True Stakeholder Governance
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Decred's governance system puts control in the hands of stakeholders. 
-              Vote on protocol changes, treasury spending, and project direction through Politeia.
+              Decred pioneered on-chain governance where stakeholders have binding votes on consensus changes, 
+              treasury spending, and project policies through Politeia—your vote isn't advisory, it's final.
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="p-6 rounded-xl bg-secondary border border-border">
               <div className="text-3xl font-bold text-primary mb-2">1</div>
-              <h3 className="text-lg font-semibold mb-2">Propose</h3>
+              <h3 className="text-lg font-semibold mb-2">Stake DCR</h3>
               <p className="text-sm text-muted-foreground">
-                Submit proposals for network upgrades or treasury funding
+                Lock DCR to purchase tickets. Each ticket grants voting rights on consensus rules and treasury proposals.
               </p>
             </div>
             
             <div className="p-6 rounded-xl bg-secondary border border-border">
               <div className="text-3xl font-bold text-primary mb-2">2</div>
-              <h3 className="text-lg font-semibold mb-2">Vote</h3>
+              <h3 className="text-lg font-semibold mb-2">Vote On-Chain</h3>
               <p className="text-sm text-muted-foreground">
-                Stakeholders cast votes weighted by their staked DCR
+                Cast binding votes on protocol upgrades, policy changes, and contractor payments from the treasury.
               </p>
             </div>
             
             <div className="p-6 rounded-xl bg-secondary border border-border">
               <div className="text-3xl font-bold text-primary mb-2">3</div>
-              <h3 className="text-lg font-semibold mb-2">Execute</h3>
+              <h3 className="text-lg font-semibold mb-2">Earn Rewards</h3>
               <p className="text-sm text-muted-foreground">
-                Approved changes are implemented by the development team
+                Receive ~10% annual rewards for participating in governance and securing the network.
               </p>
             </div>
           </div>

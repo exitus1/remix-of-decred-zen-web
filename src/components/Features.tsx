@@ -1,26 +1,26 @@
-import { Shield, Users, Zap, Lock } from "lucide-react";
+import { Shield, Vote, Coins, Lock } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
   {
     icon: Shield,
-    title: "Hybrid PoW/PoS",
-    description: "Combines the security of Proof-of-Work with the governance of Proof-of-Stake for unparalleled protection."
-  },
-  {
-    icon: Users,
-    title: "Community Governed",
-    description: "Stakeholders vote on consensus rule changes and project treasury spending through Politeia."
-  },
-  {
-    icon: Zap,
-    title: "Lightning Network",
-    description: "Instant, low-fee transactions with the Lightning Network integration for seamless payments."
+    title: "Hybrid PoW/PoS Consensus",
+    description: "Unique dual-layer security combining Proof-of-Work miners with Proof-of-Stake voters. Miners propose blocks, but stakeholders must approve them—creating checks and balances that prevent centralization."
   },
   {
     icon: Lock,
-    title: "Self-Custodial",
-    description: "True ownership with non-custodial wallets. Your keys, your coins, your control."
+    title: "StakeShuffle Privacy",
+    description: "CoinShuffle++ implementation that provides trustless, decentralized mixing. Keep your transactions private without relying on third parties—sovereignty over your financial privacy."
+  },
+  {
+    icon: Coins,
+    title: "Self-Funded Treasury",
+    description: "10% of block rewards fund a decentralized treasury controlled by stakeholders. No reliance on external funding—the project sustains itself and votes determine how funds are spent."
+  },
+  {
+    icon: Vote,
+    title: "Stakeholder Governance",
+    description: "Ticket holders collectively govern Decred through on-chain voting. Vote on consensus changes, treasury proposals, and project direction—real power, not just suggestions."
   }
 ];
 
@@ -30,10 +30,10 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Built for the Future
+            Why Decred?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Decred combines innovation with security to deliver a cryptocurrency designed to last.
+            Superior security architecture, real stakeholder power, and sustainable funding—built to preserve sovereignty for generations.
           </p>
         </div>
         
