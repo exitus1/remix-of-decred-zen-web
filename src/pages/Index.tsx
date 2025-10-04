@@ -7,6 +7,7 @@ import Treasury from "@/components/Treasury";
 import NeonCodeBackground from "@/components/NeonCodeBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
+import HybridConsensus from "@/components/HybridConsensus";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Hero />
       <Stats />
       <DecredEvolution />
+      <HybridConsensus />
       <Features />
       <CoinMixing />
       <Treasury />
