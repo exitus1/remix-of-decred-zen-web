@@ -5,22 +5,22 @@ const features = [
   {
     icon: Shield,
     title: "Hybrid PoW/PoS Consensus",
-    description: "Unique dual-layer security combining Proof-of-Work miners with Proof-of-Stake voters. Miners propose blocks, but stakeholders must approve them—creating checks and balances that prevent centralization."
+    description: "Dual-layer security: miners propose blocks, stakeholders approve them. Checks and balances prevent centralization."
   },
   {
     icon: Lock,
     title: "StakeShuffle Privacy",
-    description: "CoinShuffle++ implementation that provides trustless, decentralized mixing. Keep your transactions private without relying on third parties—sovereignty over your financial privacy."
+    description: "Trustless, decentralized mixing via CoinShuffle++. Financial privacy without third-party reliance."
   },
   {
     icon: Coins,
     title: "Self-Funded Treasury",
-    description: "10% of block rewards fund a decentralized treasury controlled by stakeholders. No reliance on external funding—the project sustains itself and votes determine how funds are spent."
+    description: "10% of block rewards fund development. Stakeholders vote on spending—sustainable, independent growth."
   },
   {
     icon: Vote,
     title: "Stakeholder Governance",
-    description: "Ticket holders collectively govern Decred through on-chain voting. Vote on consensus changes, treasury proposals, and project direction—real power, not just suggestions."
+    description: "On-chain voting on consensus changes, treasury proposals, and project direction. Real power, not suggestions."
   }
 ];
 

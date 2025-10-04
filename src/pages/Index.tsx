@@ -5,6 +5,7 @@ import Stats from "@/components/Stats";
 import Governance from "@/components/Governance";
 import Treasury from "@/components/Treasury";
 import BackgroundShapes from "@/components/BackgroundShapes";
+import DecredEvolution from "@/components/DecredEvolution";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Stats />
+      <DecredEvolution />
       <Features />
       <Treasury />
       <Governance />
