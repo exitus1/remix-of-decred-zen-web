@@ -36,6 +36,7 @@ const Wallets = () => {
       name: "Cake Wallet",
       description: "Privacy-focused multi-currency mobile wallet with Decred support for iOS and Android",
       platforms: ["iOS", "Android"],
+      labels: ["Recommended"],
       logo: cakewalletLogo,
       link: "https://cakewallet.com/",
     },
@@ -160,6 +161,19 @@ const Wallets = () => {
                         )}
                         <div>
                           <CardTitle className="text-xl mb-2">{wallet.name}</CardTitle>
+                          {wallet.labels && (
+                            <div className="flex flex-wrap gap-2">
+                              {wallet.labels.map((label) => (
+                                <Badge 
+                                  key={label}
+                                  variant="outline" 
+                                  className="border-green-500 text-green-500"
+                                >
+                                  {label}
+                                </Badge>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
