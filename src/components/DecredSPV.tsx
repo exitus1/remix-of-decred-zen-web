@@ -110,15 +110,15 @@ const DecredSPV = () => {
                 </div>
                 <div className="flex items-center justify-center gap-4">
                   <div className="text-center">
-                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
+                    <img src={decredIcon} alt="Decred Peer" className="w-8 h-8 rounded mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                   <div className="text-center">
-                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
+                    <img src={decredIcon} alt="Decred Peer" className="w-8 h-8 rounded mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                   <div className="text-center">
-                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
+                    <img src={decredIcon} alt="Decred Peer" className="w-8 h-8 rounded mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                 </div>
