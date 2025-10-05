@@ -7,6 +7,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo-square.jpg";
 import mexcLogo from "@/assets/mexc-logo-square.jpg";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo-square.jpg";
+import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
@@ -42,7 +43,8 @@ const Exchanges = () => {
       features: ["No KYC", "Non-Custodial", "Atomic Swaps", "Zero Trading Fees"],
       url: "https://dex.decred.org/",
       badge: "Recommended",
-      icon: <Shield className="w-5 h-5" />
+      icon: <Shield className="w-5 h-5" />,
+      tradingPairs: true
     },
     {
       name: "Alchemy Pay",
@@ -103,6 +105,12 @@ const Exchanges = () => {
                           {exchange.usdSupported && (
                             <Badge variant="outline" className="text-xs bg-green-500/10 text-green-500 border-green-500/30">
                               $ USD Supported
+                            </Badge>
+                          )}
+                          {exchange.tradingPairs && (
+                            <Badge variant="outline" className="text-xs bg-orange-500/10 text-orange-500 border-orange-500/30 flex items-center gap-1">
+                              <img src={bitcoinIcon} alt="BTC" className="w-3 h-3" />
+                              DCR/BTC
                             </Badge>
                           )}
                         </div>
