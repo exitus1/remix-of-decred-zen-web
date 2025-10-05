@@ -174,10 +174,7 @@ const Exchanges = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">SimpleSwap</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">SimpleSwap</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -217,10 +214,7 @@ const Exchanges = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">Godex</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">Godex</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -260,10 +254,7 @@ const Exchanges = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">StealthEX</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">StealthEX</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -299,10 +290,7 @@ const Exchanges = () => {
                       <Zap className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">Trocador</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">Trocador</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -338,10 +326,7 @@ const Exchanges = () => {
                       <ArrowUpRight className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">Exolix</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">Exolix</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -377,10 +362,7 @@ const Exchanges = () => {
                       <Zap className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">ChangeNOW</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">ChangeNOW</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -416,10 +398,7 @@ const Exchanges = () => {
                       <Zap className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">Swapzone</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">Swapzone</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
@@ -455,10 +434,7 @@ const Exchanges = () => {
                       <ArrowUpRight className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-xl">Flyp.me</CardTitle>
-                        <Badge variant="outline" className="text-xs">Custodial</Badge>
-                      </div>
+                      <CardTitle className="text-xl">Flyp.me</CardTitle>
                     </div>
                   </div>
                   <CardDescription>
