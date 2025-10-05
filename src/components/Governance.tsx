@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Coins, Vote, CheckCircle, TrendingUp, Users, FileText } from "lucide-react";
 import decredIcon from "@/assets/decred-icon-2.jpg";
+import { Card } from "@/components/ui/card";
 
 const Governance = () => {
   return (
@@ -97,8 +98,103 @@ const Governance = () => {
             </div>
           </div>
           
+          {/* Visual Governance Flow */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-12">How Governance Works</h3>
+            
+            <div className="grid md:grid-cols-4 gap-6 items-start relative">
+              {/* Step 1: Stake DCR */}
+              <div className="relative">
+                <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30 hover:border-primary transition-all">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4 animate-pulse">
+                      <Coins className="w-10 h-10 text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">1</div>
+                    <h4 className="text-xl font-bold mb-3">Stake DCR</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Lock your DCR to purchase tickets and gain voting power
+                    </p>
+                  </div>
+                </Card>
+                <ArrowRight className="hidden md:block absolute -right-8 top-1/2 -translate-y-1/2 w-6 h-6 text-primary z-10" />
+              </div>
+
+              {/* Step 2: Community Proposes */}
+              <div className="relative">
+                <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30 hover:border-primary transition-all">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                      <FileText className="w-10 h-10 text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">2</div>
+                    <h4 className="text-xl font-bold mb-3">Proposals</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Community submits proposals for protocol changes or treasury spending
+                    </p>
+                  </div>
+                </Card>
+                <ArrowRight className="hidden md:block absolute -right-8 top-1/2 -translate-y-1/2 w-6 h-6 text-primary z-10" />
+              </div>
+
+              {/* Step 3: Vote */}
+              <div className="relative">
+                <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30 hover:border-primary transition-all">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                      <Vote className="w-10 h-10 text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">3</div>
+                    <h4 className="text-xl font-bold mb-3">Cast Vote</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Your tickets vote Yes or No—binding, on-chain decisions
+                    </p>
+                  </div>
+                </Card>
+                <ArrowRight className="hidden md:block absolute -right-8 top-1/2 -translate-y-1/2 w-6 h-6 text-primary z-10" />
+              </div>
+
+              {/* Step 4: Earn Rewards */}
+              <div className="relative">
+                <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30 hover:border-primary transition-all">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4 hover-glow">
+                      <TrendingUp className="w-10 h-10 text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">4</div>
+                    <h4 className="text-xl font-bold mb-3">Earn Rewards</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Receive ~10% annual rewards for participating in governance
+                    </p>
+                  </div>
+                </Card>
+              </div>
+            </div>
+
+            {/* Stats Bar */}
+            <div className="mt-12 grid md:grid-cols-3 gap-6">
+              <Card className="p-6 text-center bg-card/50 backdrop-blur-sm">
+                <Users className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <div className="text-3xl font-bold text-primary mb-1">100%</div>
+                <p className="text-sm text-muted-foreground">Stakeholder Control</p>
+              </Card>
+              
+              <Card className="p-6 text-center bg-card/50 backdrop-blur-sm">
+                <CheckCircle className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <div className="text-3xl font-bold text-primary mb-1">Binding</div>
+                <p className="text-sm text-muted-foreground">On-Chain Votes</p>
+              </Card>
+              
+              <Card className="p-6 text-center bg-card/50 backdrop-blur-sm">
+                <TrendingUp className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <div className="text-3xl font-bold text-primary mb-1">~10%</div>
+                <p className="text-sm text-muted-foreground">Annual Rewards</p>
+              </Card>
+            </div>
+          </div>
+          
           <div className="text-center">
-            <Button 
+            <Button
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground hover-glow group"
             >
