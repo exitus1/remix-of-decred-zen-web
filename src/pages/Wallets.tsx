@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Monitor, Smartphone, Terminal } from "lucide-react";
 import cakewalletLogo from "@/assets/cakewallet-square.png";
 import decreditonLogo from "@/assets/decrediton-logo.svg";
-import bisonWalletLogo from "@/assets/bison-wallet-logo.png";
+import bisonWalletLogo from "@/assets/bison-wallet-logo.jpg";
 
 const Wallets = () => {
   const desktopWallets = [
@@ -85,7 +85,7 @@ const Wallets = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
                         {(wallet.icon || wallet.logo) && (
-                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-2 border border-border">
+                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-1 border border-border">
                             {wallet.icon ? (
                               <wallet.icon className="w-full h-full text-primary" />
                             ) : (
