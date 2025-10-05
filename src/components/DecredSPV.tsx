@@ -114,15 +114,15 @@ const DecredSPV = () => {
                 </div>
                 <div className="flex items-center justify-center gap-4">
                   <div className="text-center">
-                    <div className="w-8 h-8 rounded-full bg-primary/20 mx-auto mb-1" />
+                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                   <div className="text-center">
-                    <div className="w-8 h-8 rounded-full bg-primary/20 mx-auto mb-1" />
+                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                   <div className="text-center">
-                    <div className="w-8 h-8 rounded-full bg-primary/20 mx-auto mb-1" />
+                    <CheckCircle2 className="w-8 h-8 text-primary mx-auto mb-1" />
                     <p className="text-xs text-muted-foreground">Peer</p>
                   </div>
                 </div>
