@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo-square.jpg";
 import mexcLogo from "@/assets/mexc-logo.svg";
-import alchemyPayLogo from "@/assets/alchemy-pay-logo-square.jpg";
+import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
