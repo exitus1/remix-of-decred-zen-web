@@ -84,7 +84,7 @@ const Exchanges = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
                       {exchange.logo ? (
-                        <div className="w-16 h-16 rounded-lg bg-background p-1.5 flex items-center justify-center">
+                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0.5" : "p-1.5"}`}>
                           <img 
                             src={exchange.logo} 
                             alt={exchange.name}
