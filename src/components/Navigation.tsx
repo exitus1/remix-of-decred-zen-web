@@ -22,6 +22,9 @@ const Navigation = () => {
             <Link to="/exchanges" className="text-muted-foreground hover:text-foreground transition-colors">
               Exchanges
             </Link>
+            <Link to="/wallets" className="text-muted-foreground hover:text-foreground transition-colors">
+              Wallets
+            </Link>
           </div>
           
           <Link to="/exchanges">
