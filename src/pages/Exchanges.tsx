@@ -128,7 +128,11 @@ const Exchanges = () => {
                           key={feature}
                           className="flex items-center gap-2 text-sm text-muted-foreground"
                         >
-                          <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : feature === "Bitcoin Trading" ? "bg-orange-500" : "bg-primary"}`} />
+                          {feature === "Bitcoin Trading" ? (
+                            <img src={bitcoinIcon} alt="Bitcoin" className="w-3.5 h-3.5" />
+                          ) : (
+                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                          )}
                           {feature}
                         </div>
                       ))}
