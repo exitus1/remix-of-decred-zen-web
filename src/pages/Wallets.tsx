@@ -85,7 +85,7 @@ const Wallets = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
                         {(wallet.icon || wallet.logo) && (
-                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-0.5 border border-border">
+                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center border border-border">
                             {wallet.icon ? (
                               <wallet.icon className="w-full h-full text-primary" />
                             ) : (
