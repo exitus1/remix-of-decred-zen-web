@@ -68,7 +68,7 @@ const DecredSPV = () => {
           {/* Decred SPV */}
           <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/30 glow-primary animate-fade-in">
             <div className="flex items-center gap-3 mb-6">
-              <img src={decredIcon} alt="Decred" className="w-8 h-8 rounded" />
+              <img src={decredIcon} alt="Decred" className="w-12 h-12 rounded" />
               <h3 className="text-2xl font-bold gradient-text">Decred SPV</h3>
             </div>
             
