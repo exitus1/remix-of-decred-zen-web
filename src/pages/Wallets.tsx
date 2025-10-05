@@ -11,7 +11,7 @@ const Wallets = () => {
   const desktopWallets = [
     {
       name: "Decrediton",
-      description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
+      description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities. Supports staking and privacy mixing.",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["Recommended"],
       logo: decreditonLogo,
