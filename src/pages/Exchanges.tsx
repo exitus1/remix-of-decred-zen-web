@@ -303,6 +303,135 @@ const Exchanges = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">Trocador</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
+                  </div>
+                  <CardDescription>
+                    Multi-platform aggregator for best rates
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Compare multiple exchanges
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Best rates guaranteed
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Privacy-focused platform
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://trocador.app/en/', '_blank')}
+                    >
+                      Visit Trocador
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <ArrowUpRight className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">Exolix</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
+                  </div>
+                  <CardDescription>
+                    Seamless crypto exchanges at best rates
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      No registration needed
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Fast processing
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Secure transactions
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://exolix.com/currencies/dcr', '_blank')}
+                    >
+                      Visit Exolix
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">ChangeNOW</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
+                  </div>
+                  <CardDescription>
+                    Instant crypto swaps with no limits
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      No account required
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      500+ cryptocurrencies
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Unlimited exchanges
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://changenow.io/?from=btc&to=dcr', '_blank')}
+                    >
+                      Visit ChangeNOW
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Warning Card */}
