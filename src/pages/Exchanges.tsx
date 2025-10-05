@@ -51,7 +51,8 @@ const Exchanges = () => {
       features: ["Debit Card", "Instant Purchase", "Fiat to Crypto", "Easy Onboarding"],
       url: "https://ramp.alchemypay.org/",
       badge: "Fastest",
-      icon: <CreditCard className="w-5 h-5" />
+      icon: <CreditCard className="w-5 h-5" />,
+      usdSupported: true
     }
   ];
 
@@ -94,9 +95,16 @@ const Exchanges = () => {
                       )}
                       <div>
                         <CardTitle className="text-2xl mb-1">{exchange.name}</CardTitle>
-                        <Badge variant="secondary" className="text-xs">
-                          {exchange.type}
-                        </Badge>
+                        <div className="flex items-center gap-2">
+                          <Badge variant="secondary" className="text-xs">
+                            {exchange.type}
+                          </Badge>
+                          {exchange.usdSupported && (
+                            <Badge variant="outline" className="text-xs bg-green-500/10 text-green-500 border-green-500/30">
+                              $ USD Supported
+                            </Badge>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <Badge variant="default" className="bg-primary/20 text-primary border-primary/30">
