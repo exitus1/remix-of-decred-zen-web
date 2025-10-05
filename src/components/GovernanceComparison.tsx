@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, X, AlertCircle } from "lucide-react";
+import decredIcon from "@/assets/decred-icon.jpg";
+import moneroLogo from "@/assets/monero-logo.png";
 
 const GovernanceComparison = () => {
   const features = [
@@ -14,7 +16,8 @@ const GovernanceComparison = () => {
   const cryptocurrencies = [
     {
       name: "Decred",
-      icon: "🔷",
+      icon: decredIcon,
+      isImage: true,
       color: "primary",
       governance: [true, true, true, true, true],
       highlight: true,
@@ -22,24 +25,28 @@ const GovernanceComparison = () => {
     {
       name: "Bitcoin",
       icon: "₿",
+      isImage: false,
       color: "orange-500",
       governance: [false, false, false, false, false],
     },
     {
       name: "Ethereum",
       icon: "Ξ",
+      isImage: false,
       color: "purple-500",
       governance: ["partial", false, false, "partial", false],
     },
     {
       name: "Monero",
-      icon: "ɱ",
+      icon: moneroLogo,
+      isImage: true,
       color: "orange-600",
       governance: [false, false, false, false, false],
     },
     {
       name: "Zcash",
       icon: "ⓩ",
+      isImage: false,
       color: "yellow-600",
       governance: [false, false, "partial", false, false],
     },
@@ -91,7 +98,11 @@ const GovernanceComparison = () => {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-3xl">{crypto.icon}</span>
+                  {crypto.isImage ? (
+                    <img src={crypto.icon} alt={crypto.name} className="w-10 h-10 rounded-full" />
+                  ) : (
+                    <span className="text-3xl">{crypto.icon}</span>
+                  )}
                   <div>
                     <div className="font-bold text-lg">{crypto.name}</div>
                     {crypto.highlight && (
