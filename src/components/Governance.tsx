@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import decredIcon from "@/assets/decred-icon-2.jpg";
 
 const Governance = () => {
   return (
@@ -45,7 +46,10 @@ const Governance = () => {
             </div>
             
             <div className="p-6 rounded-xl bg-primary/10 border border-primary/30">
-              <h3 className="text-2xl font-bold mb-4 text-primary">Decred</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
+                <img src={decredIcon} alt="Decred" className="w-8 h-8 rounded-full" />
+                Decred
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
