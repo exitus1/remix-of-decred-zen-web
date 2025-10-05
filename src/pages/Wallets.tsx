@@ -19,7 +19,7 @@ const Wallets = () => {
     },
     {
       name: "Bison Wallet",
-      description: "Multicurrency wallet with built-in DCRDEX for seamless decentralized trading experience",
+      description: "Multicurrency wallet with built-in DEX for Atomic-Swap trading",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       logo: bisonWalletLogo,
