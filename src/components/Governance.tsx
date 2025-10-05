@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Coins, Vote, CheckCircle, TrendingUp, Users, FileText } from "lucide-react";
+import { ArrowRight, Coins, Vote, CheckCircle, TrendingUp, Users, FileText, X } from "lucide-react";
 import decredIcon from "@/assets/decred-icon-2.jpg";
+import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import { Card } from "@/components/ui/card";
 
 const Governance = () => {
@@ -22,53 +23,122 @@ const Governance = () => {
             </p>
           </div>
           
-          {/* Comparison */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="p-6 rounded-xl bg-destructive/10 border border-destructive/30">
-              <h3 className="text-2xl font-bold mb-4 text-destructive">Most Cryptocurrencies</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive mt-1">✗</span>
-                  <span>No formal governance structure</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive mt-1">✗</span>
-                  <span>Controlled by founders or VCs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive mt-1">✗</span>
-                  <span>Miners dictate network direction</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive mt-1">✗</span>
-                  <span>Contentious hard forks</span>
-                </li>
-              </ul>
-            </div>
+          {/* Bitcoin vs Decred Comparison Infographic */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-8">Bitcoin vs Decred: Evolution of Cryptocurrency</h3>
             
-            <div className="p-6 rounded-xl bg-primary/10 border border-primary/30">
-              <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
-                <img src={decredIcon} alt="Decred" className="w-8 h-8 rounded-full" />
-                Decred
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Formal on-chain governance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Coinholders control the network</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Binding stakeholder votes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Smooth consensus upgrades</span>
-                </li>
-              </ul>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Bitcoin Column */}
+              <Card className="p-8 bg-gradient-to-br from-orange-500/10 to-orange-600/5 border-orange-500/30">
+                <div className="flex items-center gap-3 mb-6 justify-center">
+                  <img src={bitcoinIcon} alt="Bitcoin" className="w-12 h-12" />
+                  <h3 className="text-3xl font-bold text-orange-500">Bitcoin</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Vote className="w-4 h-4" />
+                      <span>GOVERNANCE</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm">No formal governance—changes require social consensus among developers and miners</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Coins className="w-4 h-4" />
+                      <span>FUNDING</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm">Relies on donations and external funding—no sustainable built-in mechanism</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <TrendingUp className="w-4 h-4" />
+                      <span>CONSENSUS</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm">Pure Proof-of-Work—vulnerable to 51% attacks and miner centralization</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Users className="w-4 h-4" />
+                      <span>UPGRADES</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm">Contentious hard forks (Bitcoin Cash, Bitcoin SV) split the community</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Decred Column */}
+              <Card className="p-8 bg-gradient-to-br from-primary/20 to-primary/5 border-primary/50 relative overflow-hidden">
+                <div className="absolute top-4 right-4 bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full">
+                  EVOLVED
+                </div>
+                
+                <div className="flex items-center gap-3 mb-6 justify-center">
+                  <img src={decredIcon} alt="Decred" className="w-12 h-12 rounded-full" />
+                  <h3 className="text-3xl font-bold text-primary">Decred</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Vote className="w-4 h-4" />
+                      <span>GOVERNANCE</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <p className="text-sm font-medium">On-chain governance with binding stakeholder votes on all protocol changes</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Coins className="w-4 h-4" />
+                      <span>FUNDING</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <p className="text-sm font-medium">Self-funded treasury receives 10% of block rewards—sustainable development forever</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <TrendingUp className="w-4 h-4" />
+                      <span>CONSENSUS</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <p className="text-sm font-medium">Hybrid PoW+PoS—stakeholders can override miners, making attacks exponentially harder</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                      <Users className="w-4 h-4" />
+                      <span>UPGRADES</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <p className="text-sm font-medium">Smooth, coordinated upgrades via stakeholder approval—no chain splits</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
           
