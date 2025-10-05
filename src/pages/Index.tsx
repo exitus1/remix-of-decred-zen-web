@@ -11,6 +11,7 @@ import HybridConsensus from "@/components/HybridConsensus";
 import DecredSPV from "@/components/DecredSPV";
 import StakeShuffle from "@/components/StakeShuffle";
 import DCRDEX from "@/components/DCRDEX";
+import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <DCRDEX />
       <Treasury />
       <Governance />
+      <ConsensusUpgrade />
     </div>
   );
 };
