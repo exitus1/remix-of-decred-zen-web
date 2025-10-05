@@ -2,16 +2,12 @@ import { Shield, Server, Smartphone, CheckCircle2, XCircle, Zap } from "lucide-r
 import { Card } from "./ui/card";
 import cakeWalletSymbol from "@/assets/cw-dark.webp";
 import decredIcon from "@/assets/decred-icon-2.jpg";
-
 const DecredSPV = () => {
-  return (
-    <section className="py-20 px-4 relative">
+  return <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <img src={cakeWalletSymbol} alt="Cake Wallet" className="h-24 mx-auto mb-6" />
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Most crypto users unknowingly rely on centralized services. Decred's SPV is different.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Most crypto users unknowingly rely on centralized services. Decred's syncing process is different.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -159,8 +155,6 @@ const DecredSPV = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default DecredSPV;
