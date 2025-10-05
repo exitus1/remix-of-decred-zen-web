@@ -1,12 +1,16 @@
 import { Shield, Server, Smartphone, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { Card } from "./ui/card";
+import { Badge } from "./ui/badge";
 import cakeWalletSymbol from "@/assets/cw-dark.webp";
 import decredIcon from "@/assets/decred-icon-2.jpg";
 const DecredSPV = () => {
   return <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <img src={cakeWalletSymbol} alt="Cake Wallet" className="h-24 mx-auto mb-6" />
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <Badge variant="secondary" className="text-xs">Now on</Badge>
+            <img src={cakeWalletSymbol} alt="Cake Wallet" className="h-24" />
+          </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Most crypto users unknowingly rely on centralized services for syncing.</p>
           <p className="text-xl text-primary max-w-3xl mx-auto">Decred's syncing process is different.</p>
         </div>
