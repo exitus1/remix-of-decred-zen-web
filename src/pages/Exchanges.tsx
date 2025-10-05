@@ -108,9 +108,8 @@ const Exchanges = () => {
                             </Badge>
                           )}
                           {exchange.tradingPairs && (
-                            <Badge variant="outline" className="text-xs bg-orange-500/10 text-orange-500 border-orange-500/30 flex items-center gap-1">
-                              <img src={bitcoinIcon} alt="BTC" className="w-3 h-3" />
-                              DCR/BTC
+                            <Badge variant="outline" className="text-xs bg-orange-500/10 text-orange-500 border-orange-500/30">
+                              Bitcoin Trading
                             </Badge>
                           )}
                         </div>
