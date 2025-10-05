@@ -34,7 +34,7 @@ const Wallets = () => {
   const mobileWallets = [
     {
       name: "Cake Wallet",
-      description: "Multi-currency mobile wallet with Decred support for iOS and Android",
+      description: "Privacy-focused multi-currency mobile wallet with Decred support for iOS and Android",
       platforms: ["iOS", "Android"],
       logo: cakewalletLogo,
       link: "https://cakewallet.com/",
