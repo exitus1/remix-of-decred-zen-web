@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
-import binanceLogo from "@/assets/binance-logo.webp";
+import binanceLogo from "@/assets/binance-logo-square.jpg";
 import mexcLogo from "@/assets/mexc-logo.png";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
