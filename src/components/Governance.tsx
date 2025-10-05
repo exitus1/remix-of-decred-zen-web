@@ -16,7 +16,7 @@ const Governance = () => {
             </p>
             <p className="text-xl leading-relaxed">
               <span className="font-semibold text-primary">Decred's governance is purely by coinholders.</span> Through on-chain voting, 
-              stakeholders have binding votes on consensus changes, treasury spending, and project policies via Politeia—your vote isn't advisory, it's final.
+              stakeholders have binding votes on consensus changes, treasury spending, and project policies via Proposals—your vote isn't advisory, it's final.
             </p>
           </div>
           
