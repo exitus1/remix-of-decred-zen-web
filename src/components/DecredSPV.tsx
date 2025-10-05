@@ -1,11 +1,16 @@
 import { Shield, Server, Smartphone, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { Card } from "./ui/card";
+import cakeWalletLogo from "@/assets/cakewallet.png";
 
 const DecredSPV = () => {
   return (
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
+          <div className="inline-flex items-center gap-3 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3 mb-6">
+            <img src={cakeWalletLogo} alt="Cake Wallet" className="h-6" />
+            <span className="text-sm text-muted-foreground">Powered by Decred SPV</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
             Decentralized Verification
           </h2>
