@@ -19,7 +19,7 @@ const Exchanges = () => {
       logo: binanceLogo,
       description: "World's largest cryptocurrency exchange by trading volume",
       type: "Centralized Exchange",
-      features: ["High Liquidity", "Low Fees", "Advanced Trading", "Staking Available"],
+      features: ["High Liquidity", "Low Fees", "Advanced Trading", "Non-USA"],
       url: "https://www.binance.com/en/trade/DCR_USDT",
       badge: "Most Popular",
       icon: <Users className="w-5 h-5" />
@@ -126,7 +126,7 @@ const Exchanges = () => {
                           key={feature}
                           className="flex items-center gap-2 text-sm text-muted-foreground"
                         >
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                          <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
                           {feature}
                         </div>
                       ))}
