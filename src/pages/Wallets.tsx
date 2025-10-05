@@ -16,7 +16,7 @@ const Wallets = () => {
     },
     {
       name: "Bison Wallet",
-      description: "Built-in DCRDEX wallet for seamless decentralized trading experience",
+      description: "Multicurrency wallet with built-in DCRDEX for seamless decentralized trading experience",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       link: "https://dex.decred.org/",
