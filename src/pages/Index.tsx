@@ -4,7 +4,7 @@ import Features from "@/components/Features";
 import Stats from "@/components/Stats";
 import Governance from "@/components/Governance";
 import Treasury from "@/components/Treasury";
-import NeonCodeBackground from "@/components/NeonCodeBackground";
+import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
@@ -13,7 +13,7 @@ import DecredSPV from "@/components/DecredSPV";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
-      <NeonCodeBackground />
+      <ArtisticBackground />
       <Navigation />
       <Hero />
       <Stats />
