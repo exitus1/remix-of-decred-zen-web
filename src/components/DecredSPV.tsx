@@ -14,7 +14,7 @@ const DecredSPV = () => {
           {/* Centralized Services */}
           <Card className="p-8 bg-card/50 backdrop-blur-sm border-destructive/30 animate-fade-in">
             <div className="flex items-center gap-3 mb-6">
-              <Server className="w-8 h-8 text-destructive" />
+              <Server className="w-12 h-12 text-destructive" />
               <h3 className="text-2xl font-bold text-destructive">Centralized Services</h3>
             </div>
             
