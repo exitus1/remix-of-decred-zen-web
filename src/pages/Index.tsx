@@ -13,6 +13,7 @@ import DecredSPV from "@/components/DecredSPV";
 import StakeShuffle from "@/components/StakeShuffle";
 import DCRDEX from "@/components/DCRDEX";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
+import GovernanceComparison from "@/components/GovernanceComparison";
 
 const Index = () => {
   return (
@@ -29,6 +30,7 @@ const Index = () => {
       <StakeShuffle />
       <CoinMixing />
       <DCRDEX />
+      <GovernanceComparison />
       <Treasury />
       <Governance />
       <ConsensusUpgrade />
