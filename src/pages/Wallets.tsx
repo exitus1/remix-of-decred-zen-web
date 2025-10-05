@@ -94,6 +94,7 @@ const Wallets = () => {
                                   key={label}
                                   variant="outline" 
                                   className={
+                                    label === "Primary" ? "border-green-500 text-green-500" :
                                     label === "DEX" ? "border-primary text-primary" :
                                     label === "Trezor" ? "border-accent text-accent" :
                                     "border-muted-foreground text-muted-foreground"
