@@ -134,6 +134,143 @@ const Exchanges = () => {
             ))}
           </div>
 
+          {/* Instant Swaps Section */}
+          <div className="mt-20 max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4 text-white">
+                Instant Crypto Swaps
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Quick and simple crypto-to-crypto exchanges. Note: These are custodial services.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-xl">SimpleSwap</CardTitle>
+                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  </div>
+                  <CardDescription>
+                    Fast and easy crypto swaps with competitive rates
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      No registration required
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      400+ cryptocurrencies
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Fixed & floating rates
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://simpleswap.io/', '_blank')}
+                    >
+                      Visit SimpleSwap
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-xl">Godex</CardTitle>
+                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  </div>
+                  <CardDescription>
+                    Anonymous crypto exchange with no limits
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      No KYC or limits
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Fast transactions
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Wide coin selection
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://godex.io/', '_blank')}
+                    >
+                      Visit Godex
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <CardTitle className="text-xl">StealthEX</CardTitle>
+                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  </div>
+                  <CardDescription>
+                    Private crypto exchange with instant swaps
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Privacy-focused
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      700+ crypto assets
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Unlimited exchanges
+                    </div>
+                    <Button 
+                      className="w-full mt-4"
+                      variant="outline"
+                      onClick={() => window.open('https://stealthex.io/?to=dcr', '_blank')}
+                    >
+                      Visit StealthEX
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Warning Card */}
+            <Card className="bg-yellow-500/10 border-yellow-500/30">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold mb-1 text-yellow-500">Custodial Service Notice</h4>
+                    <p className="text-sm text-muted-foreground">
+                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using DCRDEX for trustless, non-custodial atomic swaps.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Additional Info */}
           <div className="mt-20 max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-primary/5 to-purple-500/5 border-primary/20">
