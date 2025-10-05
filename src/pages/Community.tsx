@@ -92,26 +92,28 @@ const Community = () => {
           {/* Social Media Platforms */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6">Social Media</h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {socialPlatforms.map((platform) => (
                 <Card key={platform.name} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center border border-border">
-                        <platform.icon className={`w-6 h-6 ${platform.color}`} />
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center border border-border">
+                          <platform.icon className={`w-5 h-5 ${platform.color}`} />
+                        </div>
+                        <CardTitle className="text-lg">{platform.name}</CardTitle>
                       </div>
-                      <CardTitle className="text-xl">{platform.name}</CardTitle>
                     </div>
-                    <CardDescription className="text-sm leading-relaxed">
+                  </CardHeader>
+                  <CardContent className="pt-0 pb-4">
+                    <CardDescription className="text-sm mb-3">
                       {platform.description}
                     </CardDescription>
-                  </CardHeader>
-                  <CardContent>
                     <a
                       href={platform.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block w-full text-center py-2 px-4 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
+                      className="inline-block w-full text-center py-1.5 px-4 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                     >
                       Visit
                     </a>
