@@ -7,7 +7,7 @@ const DecredSPV = () => {
   return <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex flex-col items-center justify-center gap-3 mb-6">
             <Badge variant="secondary" className="text-xs">Now on</Badge>
             <img src={cakeWalletSymbol} alt="Cake Wallet" className="h-24" />
           </div>
