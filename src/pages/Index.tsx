@@ -8,6 +8,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
+import GovernanceLayer from "@/components/GovernanceLayer";
 import DecredSPV from "@/components/DecredSPV";
 import StakeShuffle from "@/components/StakeShuffle";
 import DCRDEX from "@/components/DCRDEX";
@@ -22,6 +23,7 @@ const Index = () => {
       <Stats />
       <DecredEvolution />
       <HybridConsensus />
+      <GovernanceLayer />
       <Features />
       <DecredSPV />
       <StakeShuffle />
