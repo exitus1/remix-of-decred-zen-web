@@ -58,7 +58,7 @@ const GovernanceComparison = () => {
     } else if (value === "partial") {
       return <AlertCircle className="w-6 h-6 text-yellow-500" />;
     }
-    return <X className="w-6 h-6 text-muted-foreground/40" />;
+    return <X className="w-6 h-6 text-red-500" />;
   };
 
   return (
@@ -132,7 +132,7 @@ const GovernanceComparison = () => {
               <span className="text-sm text-muted-foreground">Partial/Informal</span>
             </div>
             <div className="flex items-center gap-2">
-              <X className="w-5 h-5 text-muted-foreground/40" />
+              <X className="w-5 h-5 text-red-500" />
               <span className="text-sm text-muted-foreground">Not Available</span>
             </div>
           </div>
