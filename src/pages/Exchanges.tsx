@@ -43,7 +43,7 @@ const Exchanges = () => {
     {
       name: "Alchemy Pay",
       logo: alchemyPayLogo,
-      description: "Buy DCR instantly with debit card through FAST platform",
+      description: "Buy DCR instantly with debit card - fast and easy onboarding",
       type: "Fiat Gateway",
       features: ["Debit Card", "Instant Purchase", "Fiat to Crypto", "Easy Onboarding"],
       url: "https://ramp.alchemypay.org/",
@@ -166,7 +166,7 @@ const Exchanges = () => {
                       Alchemy Pay
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      The fastest way for newcomers to purchase DCR directly with a debit card through the FAST platform. Simple, quick, and beginner-friendly.
+                      The fastest way for newcomers to purchase DCR directly with a debit card. Simple, quick, and beginner-friendly onboarding.
                     </p>
                   </div>
                   <div>
