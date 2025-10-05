@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo-square.jpg";
-import mexcLogo from "@/assets/mexc-logo.png";
+import mexcLogo from "@/assets/mexc-logo-square.jpg";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
@@ -80,7 +80,7 @@ const Exchanges = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
                       {exchange.logo ? (
-                        <div className="w-16 h-16 rounded-lg bg-background p-2 flex items-center justify-center">
+                        <div className="w-16 h-16 rounded-lg bg-background p-1.5 flex items-center justify-center">
                           <img 
                             src={exchange.logo} 
                             alt={exchange.name}
