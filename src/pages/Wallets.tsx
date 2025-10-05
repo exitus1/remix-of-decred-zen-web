@@ -11,7 +11,7 @@ const Wallets = () => {
       name: "Decrediton",
       description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
       platforms: ["Windows", "Mac", "Linux"],
-      labels: ["Primary"],
+      labels: ["Recommended"],
       link: "https://decred.org/wallets/",
     },
     {
@@ -94,7 +94,7 @@ const Wallets = () => {
                                   key={label}
                                   variant="outline" 
                                   className={
-                                    label === "Primary" ? "border-green-500 text-green-500" :
+                                    label === "Recommended" ? "border-green-500 text-green-500" :
                                     label === "DEX" ? "border-primary text-primary" :
                                     label === "Trezor" ? "border-accent text-accent" :
                                     "border-muted-foreground text-muted-foreground"
