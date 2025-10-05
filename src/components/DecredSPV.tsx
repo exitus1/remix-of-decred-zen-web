@@ -1,6 +1,7 @@
 import { Shield, Server, Smartphone, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { Card } from "./ui/card";
 import cakeWalletSymbol from "@/assets/cw-dark.webp";
+import decredIcon from "@/assets/decred-icon-2.jpg";
 
 const DecredSPV = () => {
   return (
@@ -67,7 +68,7 @@ const DecredSPV = () => {
           {/* Decred SPV */}
           <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/30 glow-primary animate-fade-in">
             <div className="flex items-center gap-3 mb-6">
-              <Shield className="w-8 h-8 text-primary" />
+              <img src={decredIcon} alt="Decred" className="w-8 h-8 rounded" />
               <h3 className="text-2xl font-bold gradient-text">Decred SPV</h3>
             </div>
             
