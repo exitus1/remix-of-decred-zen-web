@@ -7,6 +7,9 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo.webp";
 import mexcLogo from "@/assets/mexc-logo.png";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo.png";
+import simpleswapLogo from "@/assets/simpleswap-logo.png";
+import godexLogo from "@/assets/godex-logo.png";
+import stealthexLogo from "@/assets/stealthex-logo.png";
 
 const Exchanges = () => {
   const exchanges = [
@@ -148,9 +151,20 @@ const Exchanges = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-xl">SimpleSwap</CardTitle>
-                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <img 
+                        src={simpleswapLogo} 
+                        alt="SimpleSwap"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">SimpleSwap</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
                   </div>
                   <CardDescription>
                     Fast and easy crypto swaps with competitive rates
@@ -184,9 +198,20 @@ const Exchanges = () => {
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-xl">Godex</CardTitle>
-                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <img 
+                        src={godexLogo} 
+                        alt="Godex"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">Godex</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
                   </div>
                   <CardDescription>
                     Anonymous crypto exchange with no limits
@@ -220,9 +245,20 @@ const Exchanges = () => {
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-xl">StealthEX</CardTitle>
-                    <Badge variant="outline" className="text-xs">Custodial</Badge>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                      <img 
+                        src={stealthexLogo} 
+                        alt="StealthEX"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">StealthEX</CardTitle>
+                        <Badge variant="outline" className="text-xs">Custodial</Badge>
+                      </div>
+                    </div>
                   </div>
                   <CardDescription>
                     Private crypto exchange with instant swaps
