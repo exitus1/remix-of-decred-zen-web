@@ -40,7 +40,7 @@ const Exchanges = () => {
       logo: dcrdexLogo,
       description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
       type: "Decentralized Exchange",
-      features: ["No KYC", "Non-Custodial", "Atomic Swaps", "Zero Trading Fees"],
+      features: ["No KYC", "Non-Custodial", "Bitcoin Trading", "Zero Trading Fees"],
       url: "https://dex.decred.org/",
       badge: "Recommended",
       icon: <Shield className="w-5 h-5" />,
@@ -107,11 +107,6 @@ const Exchanges = () => {
                               $ USD Supported
                             </Badge>
                           )}
-                          {exchange.tradingPairs && (
-                            <Badge variant="outline" className="text-xs bg-orange-500/10 text-orange-500 border-orange-500/30">
-                              Bitcoin Trading
-                            </Badge>
-                          )}
                         </div>
                       </div>
                     </div>
@@ -133,7 +128,7 @@ const Exchanges = () => {
                           key={feature}
                           className="flex items-center gap-2 text-sm text-muted-foreground"
                         >
-                          <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                          <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : feature === "Bitcoin Trading" ? "bg-orange-500" : "bg-primary"}`} />
                           {feature}
                         </div>
                       ))}
