@@ -1,24 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
-import heroAbstractBg from "@/assets/hero-abstract-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Abstract cyberpunk background */}
-      <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url(${heroAbstractBg})`,
-          }}
-        />
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-background/40" />
-        {/* Animated gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-green-500/20 animate-glow-pulse" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-muted/20">
+      {/* Subtle animated gradient orbs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-glow-pulse" />
+        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '2s' }} />
       </div>
+      
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20" />
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in">
