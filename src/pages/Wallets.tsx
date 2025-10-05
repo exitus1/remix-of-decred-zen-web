@@ -11,7 +11,7 @@ const Wallets = () => {
   const desktopWallets = [
     {
       name: "Decrediton",
-      description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities. Supports staking and privacy mixing.",
+      description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["Recommended"],
       logo: decreditonLogo,
@@ -19,7 +19,7 @@ const Wallets = () => {
     },
     {
       name: "Bison Wallet",
-      description: "Multicurrency wallet with built-in DEX for Atomic-Swap trading",
+      description: "Multicurrency wallet with built-in DEX for Atomic-Swap trading. Supports staking and privacy mixing.",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       logo: bisonWalletLogo,
@@ -85,7 +85,7 @@ const Wallets = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
                         {(wallet.icon || wallet.logo) && (
-                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-1 border border-border">
+                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-0.5 border border-border">
                             {wallet.icon ? (
                               <wallet.icon className="w-full h-full text-primary" />
                             ) : (
