@@ -14,7 +14,7 @@ const Community = () => {
     },
     {
       name: "Matrix (Element)",
-      description: "Join the Decred community chat on Matrix",
+      description: "Official Decred chat",
       icon: MessageCircle,
       link: "https://chat.decred.org/",
       color: "text-green-400",
