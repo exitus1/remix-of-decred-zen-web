@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Monitor, Smartphone, Terminal } from "lucide-react";
 import cakewalletLogo from "@/assets/cakewallet-square.png";
+import decreditonLogo from "@/assets/decrediton-logo.png";
+import bisonWalletLogo from "@/assets/bison-wallet-logo.png";
 
 const Wallets = () => {
   const desktopWallets = [
@@ -12,6 +14,7 @@ const Wallets = () => {
       description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["Recommended"],
+      logo: decreditonLogo,
       link: "https://decred.org/wallets/",
     },
     {
@@ -19,6 +22,7 @@ const Wallets = () => {
       description: "Multicurrency wallet with built-in DCRDEX for seamless decentralized trading experience",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
+      logo: bisonWalletLogo,
       link: "https://dex.decred.org/",
     },
     {
@@ -80,9 +84,17 @@ const Wallets = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
-                        {wallet.icon && (
+                        {(wallet.icon || wallet.logo) && (
                           <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-3 border border-border">
-                            <wallet.icon className="w-full h-full text-primary" />
+                            {wallet.icon ? (
+                              <wallet.icon className="w-full h-full text-primary" />
+                            ) : (
+                              <img 
+                                src={wallet.logo} 
+                                alt={wallet.name}
+                                className="w-full h-full object-contain"
+                              />
+                            )}
                           </div>
                         )}
                         <div>
