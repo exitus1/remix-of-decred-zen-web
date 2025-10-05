@@ -10,6 +10,7 @@ import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
 import DecredSPV from "@/components/DecredSPV";
 import StakeShuffle from "@/components/StakeShuffle";
+import DCRDEX from "@/components/DCRDEX";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <DecredSPV />
       <StakeShuffle />
       <CoinMixing />
+      <DCRDEX />
       <Treasury />
       <Governance />
     </div>
