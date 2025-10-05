@@ -1,6 +1,7 @@
-import { ArrowLeftRight, Shield, AlertTriangle, Lock, Unlock, Users } from "lucide-react";
+import { ArrowLeftRight, Shield, AlertTriangle, Lock, Unlock, Users, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import decredIcon from "@/assets/decred-icon.jpg";
+import usdcLogo from "@/assets/usdc-logo.png";
 
 const DCRDEX = () => {
   return (
@@ -13,6 +14,11 @@ const DCRDEX = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Atomic swaps enable direct peer-to-peer cryptocurrency trading without custodians, intermediaries, or counterparty risk.
           </p>
+          <div className="mt-6 flex items-center justify-center gap-3 text-primary">
+            <CheckCircle2 className="w-6 h-6" />
+            <span className="text-xl font-semibold">Full USDC Support</span>
+            <img src={usdcLogo} alt="USDC" className="w-8 h-8" />
+          </div>
         </div>
 
         {/* Comparison Infographic */}
@@ -188,9 +194,7 @@ const DCRDEX = () => {
               {/* Bob */}
               <div className="text-center space-y-4">
                 <div className="inline-block p-6 rounded-full bg-primary/10 border-2 border-primary">
-                  <div className="w-16 h-16 rounded-full bg-green-500/20 border-2 border-green-500 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-green-500">$</span>
-                  </div>
+                  <img src={usdcLogo} alt="USDC" className="w-16 h-16" />
                 </div>
                 <div>
                   <p className="font-bold text-lg">Bob</p>
