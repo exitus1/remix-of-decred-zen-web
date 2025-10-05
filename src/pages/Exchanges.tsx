@@ -11,7 +11,7 @@ import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
-import dcrdexLogo from "@/assets/dcrdex-symbol.png";
+import dcrdexLogo from "@/assets/dcrdex-logo.png";
 
 const Exchanges = () => {
   const exchanges = [
