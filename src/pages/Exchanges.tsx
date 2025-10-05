@@ -61,7 +61,7 @@ const Exchanges = () => {
         <div className="container mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Get Decred (DCR)
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
