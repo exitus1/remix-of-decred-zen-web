@@ -11,7 +11,7 @@ const Wallets = () => {
       name: "Decrediton",
       description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
       platforms: ["Windows", "Mac", "Linux"],
-      labels: ["Trezor"],
+      labels: ["Primary"],
       link: "https://decred.org/wallets/",
     },
     {
