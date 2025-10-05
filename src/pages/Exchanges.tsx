@@ -12,6 +12,7 @@ import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
+import trocadorLogo from "@/assets/trocador-logo.png";
 
 const Exchanges = () => {
   const exchanges = [
@@ -287,7 +288,11 @@ const Exchanges = () => {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-primary" />
+                      <img 
+                        src={trocadorLogo} 
+                        alt="Trocador"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-xl">Trocador</CardTitle>
