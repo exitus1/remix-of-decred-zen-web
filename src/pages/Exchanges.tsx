@@ -10,6 +10,7 @@ import alchemyPayLogo from "@/assets/alchemy-pay-logo-square.jpg";
 import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
+import dcrdexLogo from "@/assets/dcrdex-symbol.png";
 
 const Exchanges = () => {
   const exchanges = [
@@ -35,7 +36,7 @@ const Exchanges = () => {
     },
     {
       name: "DCRDEX",
-      logo: null,
+      logo: dcrdexLogo,
       description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
       type: "Decentralized Exchange",
       features: ["No KYC", "Non-Custodial", "Atomic Swaps", "Zero Trading Fees"],
