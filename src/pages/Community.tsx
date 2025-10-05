@@ -59,7 +59,7 @@ const Community = () => {
     },
     {
       name: "Proposals",
-      description: "Review and discuss governance proposals",
+      description: "Review, discuss, and submit governance proposals",
       icon: FileText,
       link: "https://proposals.decred.org/",
       color: "text-accent",
