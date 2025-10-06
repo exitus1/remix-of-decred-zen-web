@@ -51,7 +51,7 @@ const Exchanges = () => {
       type: "Decentralized Exchange",
       features: ["No KYC", "Non-Custodial", "Bitcoin Trading", "Zero Trading Fees"],
       url: "https://dex.decred.org/",
-      badge: "Recommended",
+      badge: "Maximum Security",
       icon: <Shield className="w-5 h-5" />,
       tradingPairs: true
     },
