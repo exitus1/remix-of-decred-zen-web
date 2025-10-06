@@ -18,6 +18,8 @@ import htxLogo from "@/assets/htx-logo-square.jpg";
 import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
 import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
+import basicswapLogo from "@/assets/basicswap-logo-square.jpg";
+import bitvavoLogo from "@/assets/bitvavo-logo-square.jpg";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -107,6 +109,19 @@ const Exchanges = () => {
       logo: nonkycLogo,
       description: "Privacy-focused exchange with no KYC requirements",
       url: "https://nonkyc.io/market/DCR_USDT"
+    },
+    {
+      name: "BasicSwap",
+      logo: basicswapLogo,
+      description: "Cross-chain DEX for peer-to-peer atomic swaps",
+      url: "https://basicswapdex.com/",
+      badge: "DEX"
+    },
+    {
+      name: "Bitvavo",
+      logo: bitvavoLogo,
+      description: "European cryptocurrency exchange platform",
+      url: "https://bitvavo.com/en"
     }
   ];
 
