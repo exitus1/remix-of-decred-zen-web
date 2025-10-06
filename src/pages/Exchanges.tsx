@@ -145,7 +145,7 @@ const Exchanges = () => {
                         </div>
                       </div>
                       <Badge variant="default" className="bg-primary/20 text-primary border-primary/30">
-                        {exchange.badge}
+                        Maximum Security
                       </Badge>
                     </div>
                     <CardDescription className="text-base">
