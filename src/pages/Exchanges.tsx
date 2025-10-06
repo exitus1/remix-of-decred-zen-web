@@ -12,6 +12,7 @@ import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
+import kucoinLogo from "@/assets/kucoin-logo-square.jpg";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -47,6 +48,16 @@ const Exchanges = () => {
       badge: "Recommended",
       icon: <Shield className="w-5 h-5" />,
       tradingPairs: true
+    },
+    {
+      name: "KuCoin",
+      logo: kucoinLogo,
+      description: "Leading global cryptocurrency exchange with advanced trading features",
+      type: "Centralized Exchange",
+      features: ["Wide Selection", "Low Fees", "Spot & Futures", "Mobile App"],
+      url: "https://www.kucoin.com/price/DCR",
+      badge: "Popular",
+      icon: <Zap className="w-5 h-5" />
     },
     {
       name: "Alchemy Pay",
@@ -86,7 +97,7 @@ const Exchanges = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
                       {exchange.logo ? (
-                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0" : exchange.name === "DCRDEX" ? "p-0.5" : exchange.name === "MEXC" ? "p-0.5" : "p-1.5"}`}>
+                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0" : exchange.name === "DCRDEX" ? "p-0.5" : exchange.name === "MEXC" ? "p-0.5" : exchange.name === "KuCoin" ? "p-0.5" : "p-1.5"}`}>
                           <img 
                             src={exchange.logo} 
                             alt={exchange.name}
