@@ -50,16 +50,6 @@ const Exchanges = () => {
       tradingPairs: true
     },
     {
-      name: "KuCoin",
-      logo: kucoinLogo,
-      description: "Leading global cryptocurrency exchange with advanced trading features",
-      type: "Centralized Exchange",
-      features: ["Wide Selection", "Low Fees", "Spot & Futures", "Mobile App"],
-      url: "https://www.kucoin.com/price/DCR",
-      badge: "Popular",
-      icon: <Zap className="w-5 h-5" />
-    },
-    {
       name: "Alchemy Pay",
       logo: alchemyPayLogo,
       description: "Buy DCR instantly with debit card - fast and easy onboarding",
@@ -69,6 +59,16 @@ const Exchanges = () => {
       badge: "Fastest",
       icon: <CreditCard className="w-5 h-5" />,
       usdSupported: true
+    },
+    {
+      name: "KuCoin",
+      logo: kucoinLogo,
+      description: "Leading global cryptocurrency exchange with advanced trading features",
+      type: "Centralized Exchange",
+      features: ["Wide Selection", "Low Fees", "Spot & Futures", "Mobile App"],
+      url: "https://www.kucoin.com/price/DCR",
+      badge: "Popular",
+      icon: <Zap className="w-5 h-5" />
     }
   ];
 
