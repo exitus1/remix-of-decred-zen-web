@@ -275,8 +275,17 @@ const Exchanges = () => {
                       <div className="flex-1">
                         <CardTitle className="text-lg">{exchange.name}</CardTitle>
                         {exchange.badge && (
-                          <Badge variant="outline" className="text-xs mt-1 bg-green-500/10 text-green-500 border-green-500/30">
-                            🇧🇷 {exchange.badge}
+                          <Badge 
+                            variant="outline" 
+                            className={`text-xs mt-1 ${
+                              exchange.name === "Swyftx" 
+                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30" 
+                                : "bg-green-500/10 text-green-500 border-green-500/30"
+                            }`}
+                          >
+                            {exchange.name === "Novadax" && "🇧🇷 "}
+                            {exchange.name === "Swyftx" && "🇦🇺 "}
+                            {exchange.badge}
                           </Badge>
                         )}
                       </div>
