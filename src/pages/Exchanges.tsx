@@ -13,7 +13,7 @@ import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
 import trocadorLogo from "@/assets/trocador-logo.png";
-import changenowLogo from "@/assets/changenow-logo.png";
+import changenowLogo from "@/assets/changenow-logo.webp";
 
 const Exchanges = () => {
   const exchanges = [
