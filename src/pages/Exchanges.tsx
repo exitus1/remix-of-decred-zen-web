@@ -19,7 +19,7 @@ import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
 import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
 import basicswapLogo from "@/assets/basicswap-logo-square.jpg";
-import bitvavoLogo from "@/assets/bitvavo-logo-square.jpg";
+import bitvavoLogo from "@/assets/bitvavo-logo-square.png";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -121,7 +121,8 @@ const Exchanges = () => {
       name: "Bitvavo",
       logo: bitvavoLogo,
       description: "European cryptocurrency exchange platform",
-      url: "https://bitvavo.com/en"
+      url: "https://bitvavo.com/en",
+      badge: "EU"
     }
   ];
 
@@ -301,12 +302,17 @@ const Exchanges = () => {
                             variant="outline" 
                             className={`text-xs mt-1 ${
                               exchange.name === "Swyftx" 
-                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30" 
+                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30"
+                                : exchange.name === "BasicSwap"
+                                ? "bg-purple-500/10 text-purple-500 border-purple-500/30"
+                                : exchange.name === "Bitvavo"
+                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30"
                                 : "bg-green-500/10 text-green-500 border-green-500/30"
                             }`}
                           >
                             {exchange.name === "Novadax" && "🇧🇷 "}
                             {exchange.name === "Swyftx" && "🇦🇺 "}
+                            {exchange.name === "Bitvavo" && "🇪🇺 "}
                             {exchange.badge}
                           </Badge>
                         )}
