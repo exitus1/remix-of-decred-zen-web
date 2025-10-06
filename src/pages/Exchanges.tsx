@@ -17,7 +17,7 @@ import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
 const Exchanges = () => {
-  const exchanges = [
+  const primaryExchanges = [
     {
       name: "Binance",
       logo: binanceLogo,
@@ -37,7 +37,10 @@ const Exchanges = () => {
       url: "https://www.mexc.com/exchange/DCR_USDT",
       badge: "High Volume",
       icon: <Zap className="w-5 h-5" />
-    },
+    }
+  ];
+
+  const mainExchanges = [
     {
       name: "DCRDEX",
       logo: dcrdexLogo,
@@ -59,16 +62,6 @@ const Exchanges = () => {
       badge: "Fastest",
       icon: <CreditCard className="w-5 h-5" />,
       usdSupported: true
-    },
-    {
-      name: "KuCoin",
-      logo: kucoinLogo,
-      description: "Leading global cryptocurrency exchange with advanced trading features",
-      type: "Centralized Exchange",
-      features: ["Wide Selection", "Low Fees", "Spot & Futures", "Mobile App"],
-      url: "https://www.kucoin.com/price/DCR",
-      badge: "Popular",
-      icon: <Zap className="w-5 h-5" />
     }
   ];
 
@@ -89,9 +82,76 @@ const Exchanges = () => {
             </p>
           </div>
 
-          {/* Exchanges Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {exchanges.map((exchange) => (
+          {/* Primary Exchanges */}
+          <div className="mb-12 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Primary</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {primaryExchanges.map((exchange) => (
+                <Card key={exchange.name} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardHeader>
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        {exchange.logo ? (
+                          <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0" : exchange.name === "MEXC" ? "p-0.5" : "p-1.5"}`}>
+                            <img 
+                              src={exchange.logo} 
+                              alt={exchange.name}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center">
+                            {exchange.icon}
+                          </div>
+                        )}
+                        <div>
+                          <CardTitle className="text-2xl mb-1">{exchange.name}</CardTitle>
+                          <div className="flex items-center gap-2">
+                            <Badge variant="secondary" className="text-xs">
+                              {exchange.type}
+                            </Badge>
+                          </div>
+                        </div>
+                      </div>
+                      <Badge variant="default" className="bg-primary/20 text-primary border-primary/30">
+                        {exchange.badge}
+                      </Badge>
+                    </div>
+                    <CardDescription className="text-base">
+                      {exchange.description}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-2">
+                        {exchange.features.map((feature) => (
+                          <div 
+                            key={feature}
+                            className="flex items-center gap-2 text-sm text-muted-foreground"
+                          >
+                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                      <Button 
+                        className="w-full group-hover:scale-[1.02] transition-transform"
+                        onClick={() => window.open(exchange.url, '_blank')}
+                      >
+                        Visit {exchange.name}
+                        <ArrowUpRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Main Exchanges */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+            {mainExchanges.map((exchange) => (
               <Card key={exchange.name} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-4">
@@ -162,6 +222,43 @@ const Exchanges = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Alternative Exchanges */}
+          <div className="mb-12 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Alternative</h2>
+            <Card className="max-w-md hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center p-0.5">
+                    <img 
+                      src={kucoinLogo} 
+                      alt="KuCoin"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-xl">KuCoin</CardTitle>
+                    <Badge variant="secondary" className="text-xs mt-1">
+                      Centralized Exchange
+                    </Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Global cryptocurrency exchange with spot and futures trading
+                </p>
+                <Button 
+                  className="w-full"
+                  variant="outline"
+                  onClick={() => window.open('https://www.kucoin.com/price/DCR', '_blank')}
+                >
+                  Visit KuCoin
+                  <ArrowUpRight className="w-4 h-4 ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Instant Swaps Section */}
