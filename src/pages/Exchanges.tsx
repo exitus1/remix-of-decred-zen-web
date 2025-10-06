@@ -13,6 +13,9 @@ import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
 import kucoinLogo from "@/assets/kucoin-logo-square.jpg";
+import gateioLogo from "@/assets/gateio-logo-square.jpg";
+import htxLogo from "@/assets/htx-logo-square.jpg";
+import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -62,6 +65,34 @@ const Exchanges = () => {
       badge: "Fastest",
       icon: <CreditCard className="w-5 h-5" />,
       usdSupported: true
+    }
+  ];
+
+  const alternativeExchanges = [
+    {
+      name: "KuCoin",
+      logo: kucoinLogo,
+      description: "Global cryptocurrency exchange with spot and futures trading",
+      url: "https://www.kucoin.com/price/DCR"
+    },
+    {
+      name: "Gate.io",
+      logo: gateioLogo,
+      description: "Comprehensive trading platform with wide coin selection",
+      url: "https://www.gate.com/price/decred-dcr"
+    },
+    {
+      name: "HTX",
+      logo: htxLogo,
+      description: "Leading global digital asset exchange platform",
+      url: "https://www.htx.com/"
+    },
+    {
+      name: "Novadax",
+      logo: novadaxLogo,
+      description: "Brazilian cryptocurrency exchange with local support",
+      url: "https://www.novadax.com.br/en-US",
+      badge: "Brazil"
     }
   ];
 
@@ -227,38 +258,44 @@ const Exchanges = () => {
           {/* Alternative Exchanges */}
           <div className="mb-12 max-w-6xl mx-auto">
             <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Alternative</h2>
-            <Card className="max-w-md hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center p-0.5">
-                    <img 
-                      src={kucoinLogo} 
-                      alt="KuCoin"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-xl">KuCoin</CardTitle>
-                    <Badge variant="secondary" className="text-xs mt-1">
-                      Centralized Exchange
-                    </Badge>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Global cryptocurrency exchange with spot and futures trading
-                </p>
-                <Button 
-                  className="w-full"
-                  variant="outline"
-                  onClick={() => window.open('https://www.kucoin.com/price/DCR', '_blank')}
-                >
-                  Visit KuCoin
-                  <ArrowUpRight className="w-4 h-4 ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {alternativeExchanges.map((exchange) => (
+                <Card key={exchange.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center p-0.5">
+                        <img 
+                          src={exchange.logo} 
+                          alt={exchange.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="text-lg">{exchange.name}</CardTitle>
+                        {exchange.badge && (
+                          <Badge variant="outline" className="text-xs mt-1 bg-green-500/10 text-green-500 border-green-500/30">
+                            🇧🇷 {exchange.badge}
+                          </Badge>
+                        )}
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {exchange.description}
+                    </p>
+                    <Button 
+                      className="w-full"
+                      variant="outline"
+                      onClick={() => window.open(exchange.url, '_blank')}
+                    >
+                      Visit {exchange.name}
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           {/* Instant Swaps Section */}
