@@ -17,6 +17,7 @@ import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import htxLogo from "@/assets/htx-logo-square.jpg";
 import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
+import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -100,6 +101,12 @@ const Exchanges = () => {
       description: "Australian cryptocurrency exchange with easy fiat onramp",
       url: "https://swyftx.com/au/buy/decred/",
       badge: "Australia"
+    },
+    {
+      name: "NonKYC",
+      logo: nonkycLogo,
+      description: "Privacy-focused exchange with no KYC requirements",
+      url: "https://nonkyc.io/market/DCR_USDT"
     }
   ];
 
