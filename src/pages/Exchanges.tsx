@@ -16,6 +16,7 @@ import kucoinLogo from "@/assets/kucoin-logo-square.jpg";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import htxLogo from "@/assets/htx-logo-square.jpg";
 import novadaxLogo from "@/assets/novadax-logo-square.jpg";
+import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 
@@ -92,6 +93,13 @@ const Exchanges = () => {
       description: "Brazilian cryptocurrency exchange with local support",
       url: "https://www.novadax.com.br/en-US",
       badge: "Brazil"
+    },
+    {
+      name: "Swyftx",
+      logo: swyftxLogo,
+      description: "Australian cryptocurrency exchange with easy fiat onramp",
+      url: "https://swyftx.com/au/buy/decred/",
+      badge: "Australia"
     }
   ];
 
