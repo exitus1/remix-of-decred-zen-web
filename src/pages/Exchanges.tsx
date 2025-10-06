@@ -216,7 +216,7 @@ const Exchanges = () => {
                         </div>
                       </div>
                     </div>
-                    <Badge variant="default" className="bg-primary/20 text-primary border-primary/30">
+                    <Badge variant="default" className={exchange.name === "Alchemy Pay" ? "bg-green-500/10 text-green-500 border-green-500/30" : "bg-primary/20 text-primary border-primary/30"}>
                       {exchange.badge}
                     </Badge>
                   </div>
