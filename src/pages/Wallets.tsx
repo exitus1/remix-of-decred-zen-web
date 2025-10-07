@@ -73,7 +73,7 @@ const Wallets = () => {
       
       <main className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-24">
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Secure your <span className="text-primary font-semibold">DCR</span> with official wallets designed for desktop, mobile, and advanced users
             </p>
@@ -87,7 +87,20 @@ const Wallets = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {desktopWallets.map((wallet) => (
-                <Card key={wallet.name} className="hover:shadow-lg transition-shadow">
+                <Card key={wallet.name} className="hover:shadow-lg transition-shadow relative">
+                  {wallet.labels && wallet.labels.some(l => l === "Trezor" || l === "Ledger") && (
+                    <div className="absolute top-4 right-4 flex gap-2">
+                      {wallet.labels.filter(l => l === "Trezor" || l === "Ledger").map((label) => (
+                        <Badge 
+                          key={label}
+                          variant="outline" 
+                          className="border-accent text-accent"
+                        >
+                          {label}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
@@ -108,14 +121,13 @@ const Wallets = () => {
                           <CardTitle className="text-xl mb-2">{wallet.name}</CardTitle>
                           {wallet.labels && (
                             <div className="flex flex-wrap gap-2">
-                              {wallet.labels.map((label) => (
+                              {wallet.labels.filter(l => l !== "Trezor" && l !== "Ledger").map((label) => (
                                 <Badge 
                                   key={label}
                                   variant="outline" 
                                   className={
                                     label === "Recommended" ? "border-green-500 text-green-500" :
                                     label === "DEX" ? "border-primary text-primary" :
-                                    label === "Trezor" || label === "Ledger" ? "border-accent text-accent" :
                                     "border-muted-foreground text-muted-foreground"
                                   }
                                 >
