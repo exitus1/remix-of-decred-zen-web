@@ -6,6 +6,8 @@ import { Monitor, Smartphone, Terminal } from "lucide-react";
 import cakewalletLogo from "@/assets/cakewallet-square.png";
 import decreditonLogo from "@/assets/decrediton-logo.svg";
 import bisonWalletLogo from "@/assets/bison-wallet-logo.jpg";
+import trustwalletLogo from "@/assets/trustwallet-logo.png";
+import exodusLogo from "@/assets/exodus-logo.webp";
 
 const Wallets = () => {
   const desktopWallets = [
@@ -44,6 +46,13 @@ const Wallets = () => {
       logo: cakewalletLogo,
       link: "https://cakewallet.com/",
     },
+    {
+      name: "Trust Wallet",
+      description: "Multi-currency mobile wallet trusted by millions worldwide with Decred support",
+      platforms: ["iOS", "Android"],
+      logo: trustwalletLogo,
+      link: "https://trustwallet.com/",
+    },
   ];
 
   const otherWallets = [
@@ -52,6 +61,7 @@ const Wallets = () => {
       description: "Multi-currency desktop and mobile wallet with hardware wallet integration",
       platforms: ["Windows", "Mac", "Linux", "iOS", "Android"],
       labels: ["Trezor"],
+      logo: exodusLogo,
       link: "https://www.exodus.com/",
     },
   ];
@@ -61,17 +71,8 @@ const Wallets = () => {
       <ArtisticBackground />
       <Navigation />
       
-      <main className="container mx-auto px-4 py-24 relative z-10">
+      <main className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Decred Wallets
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Secure your DCR with official wallets designed for desktop, mobile, and advanced users
-            </p>
-          </div>
-
           {/* Desktop Wallets */}
           <section className="mb-12">
             <div className="flex items-center gap-3 mb-6">
@@ -232,21 +233,32 @@ const Wallets = () => {
                 <Card key={wallet.name} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <CardTitle className="text-xl mb-2">{wallet.name}</CardTitle>
-                        {wallet.labels && (
-                          <div className="flex flex-wrap gap-2">
-                            {wallet.labels.map((label) => (
-                              <Badge 
-                                key={label}
-                                variant="outline" 
-                                className="border-accent text-accent"
-                              >
-                                {label}
-                              </Badge>
-                            ))}
+                      <div className="flex items-center gap-4">
+                        {wallet.logo && (
+                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-2">
+                            <img 
+                              src={wallet.logo} 
+                              alt={wallet.name}
+                              className="w-full h-full object-contain"
+                            />
                           </div>
                         )}
+                        <div>
+                          <CardTitle className="text-xl mb-2">{wallet.name}</CardTitle>
+                          {wallet.labels && (
+                            <div className="flex flex-wrap gap-2">
+                              {wallet.labels.map((label) => (
+                                <Badge 
+                                  key={label}
+                                  variant="outline" 
+                                  className="border-accent text-accent"
+                                >
+                                  {label}
+                                </Badge>
+                              ))}
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <CardDescription className="text-sm leading-relaxed">
