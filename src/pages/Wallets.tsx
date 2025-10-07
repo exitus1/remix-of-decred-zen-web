@@ -73,7 +73,7 @@ const Wallets = () => {
       
       <main className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-24 mt-32">
+          <div className="text-center mb-24 mt-20">
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Secure your <span className="text-primary font-semibold">DCR</span> with official wallets designed for desktop, mobile, and advanced users
             </p>
