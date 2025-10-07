@@ -15,7 +15,7 @@ const Wallets = () => {
       name: "Decrediton",
       description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
       platforms: ["Windows", "Mac", "Linux"],
-      labels: ["Recommended"],
+      labels: ["Recommended", "Trezor", "Ledger"],
       logo: decreditonLogo,
       link: "https://decred.org/wallets/",
     },
@@ -73,9 +73,9 @@ const Wallets = () => {
       
       <main className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Secure your DCR with official wallets designed for desktop, mobile, and advanced users
+              Secure your <span className="text-primary font-semibold">DCR</span> with official wallets designed for desktop, mobile, and advanced users
             </p>
           </div>
 
@@ -115,7 +115,7 @@ const Wallets = () => {
                                   className={
                                     label === "Recommended" ? "border-green-500 text-green-500" :
                                     label === "DEX" ? "border-primary text-primary" :
-                                    label === "Trezor" ? "border-accent text-accent" :
+                                    label === "Trezor" || label === "Ledger" ? "border-accent text-accent" :
                                     "border-muted-foreground text-muted-foreground"
                                   }
                                 >
