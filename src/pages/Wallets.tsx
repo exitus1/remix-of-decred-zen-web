@@ -71,7 +71,7 @@ const Wallets = () => {
       <ArtisticBackground />
       <Navigation />
       
-      <main className="container mx-auto px-4 py-16 relative z-10">
+      <main className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Desktop Wallets */}
           <section className="mb-12">
