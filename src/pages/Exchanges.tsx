@@ -15,6 +15,7 @@ import dcrdexLogo from "@/assets/dcrdex-logo.png";
 import kucoinLogo from "@/assets/kucoin-logo-square.png";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import htxLogo from "@/assets/htx-logo-square.jpg";
+import holytransactionLogo from "@/assets/holytransaction-logo.jpg";
 import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
 import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
@@ -88,7 +89,7 @@ const Exchanges = () => {
     },
     {
       name: "HolyTransaction",
-      logo: htxLogo,
+      logo: holytransactionLogo,
       description: "Multi-currency wallet and exchange platform",
       url: "https://holytransaction.com/"
     },
@@ -514,7 +515,7 @@ const Exchanges = () => {
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                    <div className="w-18 h-18 rounded-lg bg-background p-2 flex items-center justify-center">
                       <img 
                         src={exolixLogo} 
                         alt="Exolix"
