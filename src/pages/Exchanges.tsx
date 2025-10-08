@@ -22,6 +22,8 @@ import basicswapLogo from "@/assets/basicswap-logo-square.jpg";
 import bitvavoLogo from "@/assets/bitvavo-logo-square.png";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
+import exolixLogo from "@/assets/exolix-logo.jpg";
+import swapzoneLogo from "@/assets/swapzone-logo.jpg";
 
 const Exchanges = () => {
   const primaryExchanges = [
@@ -513,7 +515,11 @@ const Exchanges = () => {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
-                      <ArrowUpRight className="w-6 h-6 text-primary" />
+                      <img 
+                        src={exolixLogo} 
+                        alt="Exolix"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-xl">Exolix</CardTitle>
@@ -588,8 +594,12 @@ const Exchanges = () => {
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                      <img 
+                        src={swapzoneLogo} 
+                        alt="Swapzone"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-xl">Swapzone</CardTitle>
