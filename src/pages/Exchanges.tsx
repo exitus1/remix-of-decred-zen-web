@@ -8,7 +8,7 @@ import binanceLogo from "@/assets/binance-logo-square.jpg";
 import mexcLogo from "@/assets/mexc-logo.svg";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import bitcoinIcon from "@/assets/bitcoin-icon.png";
-import simpleswapLogo from "@/assets/simpleswap-logo.png";
+import simpleswapLogo from "@/assets/simpleswap-logo.webp";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
