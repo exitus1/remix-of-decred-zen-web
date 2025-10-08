@@ -125,7 +125,7 @@ const Exchanges = () => {
       logo: bitvavoLogo,
       description: "European cryptocurrency exchange platform",
       url: "https://bitvavo.com/en",
-      badge: "EU"
+      badge: "Europe"
     }
   ];
 
