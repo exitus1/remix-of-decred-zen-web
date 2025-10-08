@@ -136,7 +136,7 @@ const Exchanges = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              Get Decred (DCR)
+              Get Decred
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Trade, swap, or purchase DCR on these featured exchanges and platforms
