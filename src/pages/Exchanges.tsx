@@ -12,7 +12,7 @@ import simpleswapLogo from "@/assets/simpleswap-logo.png";
 import godexLogo from "@/assets/godex-logo.png";
 import stealthexLogo from "@/assets/stealthex-logo.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
-import kucoinLogo from "@/assets/kucoin-logo-square.jpg";
+import kucoinLogo from "@/assets/kucoin-logo-square.png";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import htxLogo from "@/assets/htx-logo-square.jpg";
 import novadaxLogo from "@/assets/novadax-logo-square.jpg";
@@ -85,10 +85,10 @@ const Exchanges = () => {
       url: "https://www.gate.com/price/decred-dcr"
     },
     {
-      name: "HTX",
+      name: "HolyTransaction",
       logo: htxLogo,
-      description: "Leading global digital asset exchange platform",
-      url: "https://www.htx.com/"
+      description: "Multi-currency wallet and exchange platform",
+      url: "https://holytransaction.com/"
     },
     {
       name: "Novadax",
