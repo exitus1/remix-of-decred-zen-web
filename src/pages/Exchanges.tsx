@@ -362,13 +362,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">SimpleSwap</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Fast and easy crypto swaps with competitive rates
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -402,13 +399,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">Godex</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Anonymous crypto exchange with no limits
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -442,13 +436,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">StealthEX</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Private crypto exchange with instant swaps
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -482,13 +473,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">Trocador</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Multi-platform aggregator for best rates
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -522,13 +510,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">Exolix</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Seamless crypto exchanges at best rates
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -562,13 +547,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">ChangeNOW</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Instant crypto swaps with no limits
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -602,13 +584,10 @@ const Exchanges = () => {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">Swapzone</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Compare rates across 20+ exchanges
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
@@ -638,13 +617,10 @@ const Exchanges = () => {
                     <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
                       <ArrowUpRight className="w-6 h-6 text-primary" />
                     </div>
-                    <div className="flex-1">
+                  <div className="flex-1">
                       <CardTitle className="text-xl">Flyp.me</CardTitle>
                     </div>
                   </div>
-                  <CardDescription>
-                    Fast crypto swaps with minimal info
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
