@@ -156,31 +156,31 @@ const CoinMixing = () => {
         <div className="grid md:grid-cols-3 gap-6 animate-fade-in">
           <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover-scale">
             <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
-              <Eye className="w-6 h-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Supply Transparency</h3>
-            <p className="text-muted-foreground">
-              Total supply remains fully transparent and auditable on the blockchain. Privacy without compromising verifiability.
-            </p>
-          </Card>
-
-          <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover-scale">
-            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
               <Shield className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">Non-Custodial</h3>
+            <h3 className="text-xl font-semibold mb-3">No trusted setup</h3>
             <p className="text-muted-foreground">
-              You maintain full control of your coins throughout the mixing process. No trusted third parties required.
+              StakeShuffle requires no trusted setup or third-party coordinators. Fully decentralized privacy.
             </p>
           </Card>
 
           <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover-scale">
             <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
-              <Lock className="w-6 h-6 text-primary" />
+              <Eye className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">Post-Quantum Ready</h3>
+            <h3 className="text-xl font-semibold mb-3">Supply remains auditable</h3>
             <p className="text-muted-foreground">
-              Built with future-proof cryptography designed to resist attacks from quantum computers.
+              Total supply stays fully transparent and verifiable on the blockchain. Privacy without hidden inflation.
+            </p>
+          </Card>
+
+          <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all hover-scale">
+            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
+              <FileText className="w-6 h-6 text-primary" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">Blockchain can be pruned</h3>
+            <p className="text-muted-foreground">
+              Efficient design allows nodes to prune old data while maintaining security and verification capabilities.
             </p>
           </Card>
         </div>
