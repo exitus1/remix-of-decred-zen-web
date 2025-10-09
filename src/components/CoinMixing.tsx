@@ -15,7 +15,7 @@ const CoinMixing = () => {
           </p>
           <div className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
             <span className="text-primary font-semibold flex items-center gap-2 justify-center">
-              63% of <img src={decredIcon} alt="DCR" className="w-5 h-5 inline-block rounded-full" /> DCR supply is mixed
+              63% of DCR <img src={decredIcon} alt="DCR" className="w-5 h-5 inline-block rounded-full" /> supply is mixed
             </span>
           </div>
         </div>
@@ -33,13 +33,13 @@ const CoinMixing = () => {
                 
                 <div className="space-y-2 mb-4 flex-grow">
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> A: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> A: 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> B: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> B: 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> C: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> C: 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                 </div>
                 
@@ -125,15 +125,21 @@ const CoinMixing = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-center">Broadcast</h3>
                 
+                <div className="text-center mb-3">
+                  <p className="text-sm font-semibold text-green-500 flex items-center gap-1.5 justify-center">
+                    17M DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> Mixed
+                  </p>
+                </div>
+                
                 <div className="space-y-2 mb-4 flex-grow">
                   <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                   <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                   <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
-                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /></p>
                   </div>
                 </div>
                 
