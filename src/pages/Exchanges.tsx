@@ -10,7 +10,7 @@ import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.webp";
 import godexLogo from "@/assets/godex-logo-new.jpg";
-import stealthexLogo from "@/assets/stealthex-logo.png";
+import stealthexLogo from "@/assets/stealthex-logo-new.png";
 import dcrdexLogo from "@/assets/dcrdex-logo.png";
 import kucoinLogo from "@/assets/kucoin-logo-square.png";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
@@ -355,7 +355,7 @@ const Exchanges = () => {
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-16 h-16 rounded-lg bg-background p-2 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
                       <img 
                         src={simpleswapLogo} 
                         alt="SimpleSwap"
