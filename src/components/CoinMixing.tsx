@@ -62,6 +62,9 @@ const CoinMixing = () => {
                     <Lock className="w-8 h-8 text-primary" />
                   </div>
                   <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
+                  <div className="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/10 mb-2">
+                    <span className="text-xs font-semibold text-primary">PQ-Cryptography</span>
+                  </div>
                   <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
                 </div>
                 
