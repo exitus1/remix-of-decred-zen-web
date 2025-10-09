@@ -25,6 +25,7 @@ import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 import exolixLogo from "@/assets/exolix-logo.jpg";
 import swapzoneLogo from "@/assets/swapzone-logo.jpg";
+import flypMeLogo from "@/assets/flypme-logo.jpg";
 
 const Exchanges = () => {
   const primaryExchanges = [
@@ -577,7 +578,7 @@ const Exchanges = () => {
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-background p-0.5 flex items-center justify-center">
                       <img 
                         src={swapzoneLogo} 
                         alt="Swapzone"
@@ -614,8 +615,12 @@ const Exchanges = () => {
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
-                      <ArrowUpRight className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-background p-0.5 flex items-center justify-center">
+                      <img 
+                        src={flypMeLogo} 
+                        alt="Flyp.me"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   <div className="flex-1">
                       <CardTitle className="text-xl">Flyp.me</CardTitle>
