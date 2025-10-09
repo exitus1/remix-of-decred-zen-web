@@ -15,7 +15,7 @@ const CoinMixing = () => {
           </p>
           <div className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
             <span className="text-primary font-semibold flex items-center gap-2 justify-center">
-              63% of DCR <img src={decredIcon} alt="DCR" className="w-5 h-5 inline-block rounded-full" /> supply is mixed
+              63% of DCR supply is mixed
             </span>
           </div>
         </div>
@@ -44,7 +44,7 @@ const CoinMixing = () => {
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Nodes submit identical amounts
+                  Nodes submit Decred
                 </p>
               </div>
             </Card>
@@ -127,7 +127,7 @@ const CoinMixing = () => {
                 
                 <div className="text-center mb-3">
                   <p className="text-sm font-semibold text-green-500 flex items-center gap-1.5 justify-center">
-                    17M DCR <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> Mixed
+                    17M DCR Mixed
                   </p>
                 </div>
                 
