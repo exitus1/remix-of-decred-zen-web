@@ -7,10 +7,10 @@ const CoinMixing = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Privacy Through CoinShuffle++
+            Privacy Through StakeShuffle
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Non-custodial coin mixing that preserves transparency while protecting your privacy
+            Decentralized coin mixing that preserves transparency while protecting your privacy
           </p>
         </div>
 
@@ -24,7 +24,8 @@ const CoinMixing = () => {
                   <Lock className="w-10 h-10 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2">Your Coins</h3>
-                <p className="text-sm text-muted-foreground">Original transaction</p>
+                <p className="text-sm text-muted-foreground">Identifiable DCR from your wallet</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">Traceable on-chain</p>
               </div>
 
               <ArrowRight className="hidden md:block w-8 h-8 text-primary/50 mx-auto" />
@@ -43,7 +44,8 @@ const CoinMixing = () => {
                   </div>
                 </div>
                 <h3 className="font-semibold mb-2">Mixing Pool</h3>
-                <p className="text-sm text-muted-foreground">CoinShuffle++</p>
+                <p className="text-sm text-muted-foreground">Peer-coordinated shuffling</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">Non-custodial mixing</p>
               </div>
 
               <ArrowRight className="hidden md:block w-8 h-8 text-primary/50 mx-auto" />
@@ -54,13 +56,14 @@ const CoinMixing = () => {
                   <Shield className="w-10 h-10 text-green-500" />
                 </div>
                 <h3 className="font-semibold mb-2">Private Output</h3>
-                <p className="text-sm text-muted-foreground">Unlinkable coins</p>
+                <p className="text-sm text-muted-foreground">Anonymous DCR with broken links</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">Untraceable destination</p>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t border-border/50 text-center">
               <p className="text-muted-foreground">
-                Non-custodial mixing breaks the link between input and output addresses
+                StakeShuffle breaks the link between input and output addresses through decentralized peer coordination, ensuring your transaction history remains private while maintaining full control of your funds.
               </p>
             </div>
           </Card>
