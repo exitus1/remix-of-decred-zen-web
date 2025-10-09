@@ -7,7 +7,8 @@ const CoinMixing = () => {
     <section className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text flex items-center gap-3 justify-center">
+            <img src={decredIcon} alt="Decred" className="w-12 h-12 rounded-full" />
             StakeShuffle Mixing
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
@@ -50,34 +51,26 @@ const CoinMixing = () => {
             </Card>
 
             {/* Step 2: Key Exchange */}
-            <div className="relative">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/10">
-                <span className="text-xs font-semibold text-primary flex items-center gap-1.5">
-                  <Cpu className="w-3 h-3" />
-                  PQ-Cryptography
-                </span>
-              </div>
-              <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
-                <div className="flex flex-col h-full">
-                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
-                    <span className="text-2xl font-bold text-primary">2</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-4 text-center">Key Exchange</h3>
-                  
-                  <div className="flex-grow flex flex-col items-center justify-center mb-4">
-                    <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
-                      <Lock className="w-8 h-8 text-primary" />
-                    </div>
-                    <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
-                    <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
-                  </div>
-                  
-                  <p className="text-xs text-muted-foreground text-center">
-                    Nodes coordinate P2P
-                  </p>
+            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
+              <div className="flex flex-col h-full">
+                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-              </Card>
-            </div>
+                <h3 className="text-lg font-semibold mb-4 text-center">Key Exchange</h3>
+                
+                <div className="flex-grow flex flex-col items-center justify-center mb-4">
+                  <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
+                    <Lock className="w-8 h-8 text-primary" />
+                  </div>
+                  <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
+                  <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
+                </div>
+                
+                <p className="text-xs text-muted-foreground text-center">
+                  Nodes coordinate P2P using PQ-cryptography
+                </p>
+              </div>
+            </Card>
 
             {/* Step 3: Shuffle */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
