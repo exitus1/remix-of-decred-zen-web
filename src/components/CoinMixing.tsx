@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Shield, Lock, FileText, EyeOff, Shuffle, Eye } from "lucide-react";
+import { Shield, Lock, FileText, EyeOff, Shuffle, Eye, Cpu } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
 
 const CoinMixing = () => {
@@ -50,29 +50,34 @@ const CoinMixing = () => {
             </Card>
 
             {/* Step 2: Key Exchange */}
-            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
-              <div className="flex flex-col h-full">
-                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-2xl font-bold text-primary">2</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Key Exchange</h3>
-                
-                <div className="flex-grow flex flex-col items-center justify-center mb-4">
-                  <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
-                    <Lock className="w-8 h-8 text-primary" />
-                  </div>
-                  <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
-                  <div className="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/10 mb-2">
-                    <span className="text-xs font-semibold text-primary">PQ-Cryptography</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
-                </div>
-                
-                <p className="text-xs text-muted-foreground text-center">
-                  Nodes coordinate P2P
-                </p>
+            <div className="relative">
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/10">
+                <span className="text-xs font-semibold text-primary flex items-center gap-1.5">
+                  <Cpu className="w-3 h-3" />
+                  PQ-Cryptography
+                </span>
               </div>
-            </Card>
+              <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
+                <div className="flex flex-col h-full">
+                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-primary">2</span>
+                  </div>
+                  <h3 className="text-lg font-semibold mb-4 text-center">Key Exchange</h3>
+                  
+                  <div className="flex-grow flex flex-col items-center justify-center mb-4">
+                    <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
+                      <Lock className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
+                    <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
+                  </div>
+                  
+                  <p className="text-xs text-muted-foreground text-center">
+                    Nodes coordinate P2P
+                  </p>
+                </div>
+              </Card>
+            </div>
 
             {/* Step 3: Shuffle */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
