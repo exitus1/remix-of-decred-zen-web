@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Shield, Lock, FileText, EyeOff, Shuffle, Eye } from "lucide-react";
+import decredIcon from "@/assets/decred-icon.jpg";
 
 const CoinMixing = () => {
   return (
@@ -13,7 +14,9 @@ const CoinMixing = () => {
             Node-coordinated, non-custodial privacy mixing
           </p>
           <div className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
-            <span className="text-primary font-semibold">63% of DCR supply is mixed</span>
+            <span className="text-primary font-semibold flex items-center gap-2 justify-center">
+              63% of <img src={decredIcon} alt="DCR" className="w-5 h-5 inline-block rounded-full" /> DCR supply is mixed
+            </span>
           </div>
         </div>
 
@@ -30,13 +33,13 @@ const CoinMixing = () => {
                 
                 <div className="space-y-2 mb-4 flex-grow">
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm"><span className="text-primary">•</span> A: 10 DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> A: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm"><span className="text-primary">•</span> B: 10 DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> B: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
-                    <p className="text-sm"><span className="text-primary">•</span> C: 10 DCR</p>
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-primary">•</span> C: 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
                 </div>
                 
@@ -115,22 +118,22 @@ const CoinMixing = () => {
             </Card>
 
             {/* Step 5: Broadcast */}
-            <Card className="p-6 bg-accent/20 backdrop-blur-sm border-accent/30 hover:border-accent/50 transition-all">
+            <Card className="p-6 bg-green-500/10 backdrop-blur-sm border-green-500/30 hover:border-green-500/50 transition-all">
               <div className="flex flex-col h-full">
-                <div className="w-12 h-12 rounded-lg bg-accent/30 flex items-center justify-center mb-4 mx-auto">
-                  <EyeOff className="w-6 h-6 text-accent-foreground" />
+                <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center mb-4 mx-auto">
+                  <EyeOff className="w-6 h-6 text-green-500" />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-center">Broadcast</h3>
                 
                 <div className="space-y-2 mb-4 flex-grow">
-                  <div className="px-3 py-2 rounded bg-accent/10 border border-accent/20">
-                    <p className="text-sm"><span className="text-accent-foreground">•</span> ??? 10 DCR</p>
+                  <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
-                  <div className="px-3 py-2 rounded bg-accent/10 border border-accent/20">
-                    <p className="text-sm"><span className="text-accent-foreground">•</span> ??? 10 DCR</p>
+                  <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
-                  <div className="px-3 py-2 rounded bg-accent/10 border border-accent/20">
-                    <p className="text-sm"><span className="text-accent-foreground">•</span> ??? 10 DCR</p>
+                  <div className="px-3 py-2 rounded bg-green-500/10 border border-green-500/20">
+                    <p className="text-sm flex items-center gap-1.5"><span className="text-green-500">•</span> ??? 10 <img src={decredIcon} alt="DCR" className="w-4 h-4 rounded-full" /> DCR</p>
                   </div>
                 </div>
                 
