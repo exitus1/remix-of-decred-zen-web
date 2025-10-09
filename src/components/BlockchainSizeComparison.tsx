@@ -11,10 +11,9 @@ const BlockchainSizeComparison = () => {
     { name: "Monero", size: 240, unit: "GB", logo: moneroLogo },
     { name: "Zcash", size: 266, unit: "GB", logo: null },
     { name: "Bitcoin", size: 689, unit: "GB", logo: bitcoinIcon },
-    { name: "Ethereum", size: 1400, unit: "GB", displaySize: "1.4 TB", logo: null },
   ];
 
-  const maxSize = 1400;
+  const maxSize = 689;
 
   return (
     <section className="py-24 px-6 relative">
@@ -29,7 +28,7 @@ const BlockchainSizeComparison = () => {
           <div className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
             <span className="text-primary font-semibold flex items-center gap-2 justify-center">
               <Award className="w-5 h-5" />
-              Under 20 GB - 89x smaller than Ethereum
+              Under 20 GB - 44x smaller than Bitcoin
             </span>
           </div>
         </div>
@@ -78,7 +77,7 @@ const BlockchainSizeComparison = () => {
                       >
                         {widthPercent > 15 && (
                           <span className={`text-sm font-bold ${isDecred ? "text-primary-foreground" : "text-foreground"}`}>
-                            {chain.displaySize || `${chain.size} ${chain.unit}`}
+                            {`${chain.size} ${chain.unit}`}
                           </span>
                         )}
                       </div>
@@ -86,7 +85,7 @@ const BlockchainSizeComparison = () => {
                   </div>
                   <div className="min-w-[120px] text-right">
                     <p className={`text-2xl font-bold ${isDecred ? "text-primary" : ""}`}>
-                      {chain.displaySize || `${chain.size} ${chain.unit}`}
+                      {`${chain.size} ${chain.unit}`}
                     </p>
                   </div>
                 </div>
