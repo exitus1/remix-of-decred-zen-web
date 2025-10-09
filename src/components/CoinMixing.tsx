@@ -14,10 +14,22 @@ const CoinMixing = () => {
           <p className="text-lg text-muted-foreground mb-6">
             Node-coordinated, non-custodial privacy mixing
           </p>
-          <div className="inline-block px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
-            <span className="text-primary font-semibold flex items-center gap-2 justify-center">
-              63% of DCR supply is mixed
-            </span>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
+              <span className="text-primary font-semibold">
+                No trusted setup
+              </span>
+            </div>
+            <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
+              <span className="text-primary font-semibold">
+                63% of DCR supply is mixed
+              </span>
+            </div>
+            <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
+              <span className="text-primary font-semibold">
+                Supply remains auditable
+              </span>
+            </div>
           </div>
         </div>
 
