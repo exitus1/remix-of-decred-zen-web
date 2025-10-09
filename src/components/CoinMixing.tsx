@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Shield, Lock, FileText, EyeOff, Shuffle, Eye } from "lucide-react";
+import { Shield, Lock, FileText, EyeOff, Shuffle, Eye, ArrowRight } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
 
 const CoinMixing = () => {
@@ -22,7 +22,7 @@ const CoinMixing = () => {
 
         {/* 5-Step Flow Diagram */}
         <div className="mb-16 animate-fade-in">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-9 gap-4 items-center">
             {/* Step 1: Initiate */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
               <div className="flex flex-col h-full">
@@ -49,6 +49,11 @@ const CoinMixing = () => {
               </div>
             </Card>
 
+            {/* Arrow 1 */}
+            <div className="hidden md:flex justify-center items-center">
+              <ArrowRight className="w-8 h-8 text-green-500" />
+            </div>
+
             {/* Step 2: Key Exchange */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
               <div className="flex flex-col h-full">
@@ -74,6 +79,11 @@ const CoinMixing = () => {
               </div>
             </Card>
 
+            {/* Arrow 2 */}
+            <div className="hidden md:flex justify-center items-center">
+              <ArrowRight className="w-8 h-8 text-green-500" />
+            </div>
+
             {/* Step 3: Shuffle */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
               <div className="flex flex-col h-full">
@@ -98,6 +108,11 @@ const CoinMixing = () => {
               </div>
             </Card>
 
+            {/* Arrow 3 */}
+            <div className="hidden md:flex justify-center items-center">
+              <ArrowRight className="w-8 h-8 text-green-500" />
+            </div>
+
             {/* Step 4: Sign */}
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
               <div className="flex flex-col h-full">
@@ -119,6 +134,11 @@ const CoinMixing = () => {
                 </p>
               </div>
             </Card>
+
+            {/* Arrow 4 */}
+            <div className="hidden md:flex justify-center items-center">
+              <ArrowRight className="w-8 h-8 text-green-500" />
+            </div>
 
             {/* Step 5: Broadcast */}
             <Card className="p-6 bg-green-500/10 backdrop-blur-sm border-green-500/30 hover:border-green-500/50 transition-all">
