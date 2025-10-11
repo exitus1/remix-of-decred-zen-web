@@ -47,19 +47,19 @@ const Wallets = () => {
       link: "https://cakewallet.com/",
     },
     {
-      name: "Trust Wallet",
-      description: "Multi-currency mobile wallet trusted by millions worldwide with Decred support",
-      platforms: ["iOS", "Android"],
-      logo: trustwalletLogo,
-      link: "https://trustwallet.com/",
-    },
-    {
       name: "Exodus",
       description: "Multi-currency desktop and mobile wallet with hardware wallet integration",
       platforms: ["Windows", "Mac", "Linux", "iOS", "Android"],
       labels: ["Trezor"],
       logo: exodusLogo,
       link: "https://www.exodus.com/",
+    },
+    {
+      name: "Trust Wallet",
+      description: "Multi-currency mobile wallet trusted by millions worldwide with Decred support",
+      platforms: ["iOS", "Android"],
+      logo: trustwalletLogo,
+      link: "https://trustwallet.com/",
     },
   ];
 
