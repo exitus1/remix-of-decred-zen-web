@@ -80,7 +80,7 @@ const Wallets = () => {
           <section className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <Monitor className="w-6 h-6 text-primary" />
-              <h2 className="text-3xl font-bold">Desktop Wallets</h2>
+              <h2 className="text-3xl font-bold">Core Wallets</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {desktopWallets.map((wallet) => (
