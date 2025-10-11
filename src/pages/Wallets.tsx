@@ -21,7 +21,7 @@ const Wallets = () => {
     },
     {
       name: "Bison Wallet",
-      description: "Multicurrency wallet with built-in DEX for Atomic-Swap trading. Supports staking and privacy mixing.",
+      description: "Multicurrency wallet with Atomic-Swap trading. Supports staking, stablecoins, and mixing.",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       logo: bisonWalletLogo,
