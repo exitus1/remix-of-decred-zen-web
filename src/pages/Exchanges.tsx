@@ -374,10 +374,6 @@ const Exchanges = () => {
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No registration required
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      400+ cryptocurrencies
-                    </div>
                     <Button 
                       className="w-full mt-4"
                       variant="outline"
@@ -410,10 +406,6 @@ const Exchanges = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No KYC or limits
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Fast transactions
                     </div>
                     <Button 
                       className="w-full mt-4"
@@ -448,10 +440,6 @@ const Exchanges = () => {
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       Privacy-focused
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      700+ crypto assets
-                    </div>
                     <Button 
                       className="w-full mt-4"
                       variant="outline"
@@ -484,10 +472,6 @@ const Exchanges = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       Compare multiple exchanges
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Best rates guaranteed
                     </div>
                     <Button 
                       className="w-full mt-4"
@@ -522,10 +506,6 @@ const Exchanges = () => {
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No registration needed
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Fast processing
-                    </div>
                     <Button 
                       className="w-full mt-4"
                       variant="outline"
@@ -559,10 +539,6 @@ const Exchanges = () => {
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No account required
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      500+ cryptocurrencies
-                    </div>
                     <Button 
                       className="w-full mt-4"
                       variant="outline"
@@ -592,10 +568,6 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Best price aggregator
-                    </div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No account needed
@@ -632,10 +604,6 @@ const Exchanges = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       No signup required
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Quick exchanges
                     </div>
                     <Button 
                       className="w-full mt-4"
