@@ -180,7 +180,7 @@ const Wallets = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
                         {wallet.logo && (
-                          <div className="w-16 h-16 rounded-lg bg-background flex items-center justify-center p-2">
+                          <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${wallet.name === 'Exodus' ? 'p-1' : 'p-2'}`}>
                             <img 
                               src={wallet.logo} 
                               alt={wallet.name}
