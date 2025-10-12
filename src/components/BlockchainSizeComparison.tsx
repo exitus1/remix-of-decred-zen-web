@@ -68,11 +68,13 @@ const BlockchainSizeComparison = () => {
                     </div>
                   </div>
                   <div className="flex-grow">
-                    <div className="w-full bg-muted/30 rounded-full h-8 overflow-hidden">
+                    <div className="w-full bg-muted/30 rounded-lg h-12 overflow-hidden">
                       <div
-                        className={`h-full rounded-full flex items-center justify-end pr-3 transition-all duration-1000 ${
+                        className={`h-full rounded-lg flex items-center justify-end pr-3 transition-all duration-1000 ${
                           isDecred
-                            ? "bg-gradient-to-r from-primary to-primary/80"
+                            ? "bg-gradient-to-r from-green-500 to-green-600"
+                            : chain.name === "Bitcoin"
+                            ? "bg-gradient-to-r from-red-400 to-red-500"
                             : "bg-muted-foreground/40"
                         }`}
                         style={{ width: `${Math.max(widthPercent, 3)}%` }}
