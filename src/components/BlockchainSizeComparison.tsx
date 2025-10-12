@@ -3,13 +3,15 @@ import { HardDrive, Award } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
 import bitcoinIcon from "@/assets/bitcoin-icon.png";
 import moneroLogo from "@/assets/monero-logo.png";
+import zcashLogo from "@/assets/zcash-logo.png";
+import litecoinLogo from "@/assets/litecoin-logo.png";
 
 const BlockchainSizeComparison = () => {
   const blockchains = [
     { name: "Decred", size: 15.7, unit: "GB", logo: decredIcon, highlight: true },
-    { name: "Litecoin", size: 205, unit: "GB", logo: null },
+    { name: "Litecoin", size: 205, unit: "GB", logo: litecoinLogo },
     { name: "Monero", size: 240, unit: "GB", logo: moneroLogo },
-    { name: "Zcash", size: 266, unit: "GB", logo: null },
+    { name: "Zcash", size: 266, unit: "GB", logo: zcashLogo },
     { name: "Bitcoin", size: 689, unit: "GB", logo: bitcoinIcon },
   ];
 
