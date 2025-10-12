@@ -43,11 +43,7 @@ const BlockchainSizeComparison = () => {
             return (
               <Card
                 key={chain.name}
-                className={`p-6 ${
-                  isDecred
-                    ? "bg-primary/20 border-primary hover:border-primary/80"
-                    : "bg-card/50 border-border/50 hover:border-primary/30"
-                } backdrop-blur-sm transition-all hover-scale`}
+                className="p-6 bg-card/50 border-border/50 hover:border-primary/30 backdrop-blur-sm transition-all hover-scale"
               >
                 <div className="flex items-center gap-4 mb-3">
                   <div className="flex items-center gap-3 min-w-[180px]">
@@ -59,12 +55,9 @@ const BlockchainSizeComparison = () => {
                       />
                     )}
                     <div>
-                      <h3 className={`text-xl font-bold ${isDecred ? "text-primary" : ""}`}>
+                      <h3 className={`text-xl font-bold ${isDecred ? "text-white" : ""}`}>
                         {chain.name}
                       </h3>
-                      {isDecred && (
-                        <p className="text-xs text-primary/80 font-semibold">Most Efficient</p>
-                      )}
                     </div>
                   </div>
                   <div className="flex-grow">
@@ -88,7 +81,7 @@ const BlockchainSizeComparison = () => {
                     </div>
                   </div>
                   <div className="min-w-[120px] text-right">
-                    <p className={`text-2xl font-bold ${isDecred ? "text-primary" : ""}`}>
+                    <p className={`text-2xl font-bold ${isDecred ? "text-green-500" : ""}`}>
                       {`${chain.size} ${chain.unit}`}
                     </p>
                   </div>
