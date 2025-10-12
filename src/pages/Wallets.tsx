@@ -3,7 +3,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Monitor, Smartphone, Terminal } from "lucide-react";
-import cakewalletLogo from "@/assets/cakewallet-square.png";
+import cakewalletLogo from "@/assets/cakewallet-logo-new.png";
 import decreditonLogo from "@/assets/decrediton-logo.svg";
 import bisonWalletLogo from "@/assets/bison-wallet-logo.jpg";
 import trustwalletLogo from "@/assets/trustwallet-logo.png";
