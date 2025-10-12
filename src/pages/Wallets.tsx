@@ -85,19 +85,6 @@ const Wallets = () => {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {desktopWallets.map((wallet) => (
                 <Card key={wallet.name} className="hover:shadow-lg transition-shadow relative">
-                  {wallet.labels && wallet.labels.some(l => l === "Trezor" || l === "Ledger") && (
-                    <div className="absolute top-4 right-4 flex gap-2">
-                      {wallet.labels.filter(l => l === "Trezor" || l === "Ledger").map((label) => (
-                        <Badge 
-                          key={label}
-                          variant="outline" 
-                          className="border-accent text-accent"
-                        >
-                          {label}
-                        </Badge>
-                      ))}
-                    </div>
-                  )}
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
@@ -148,6 +135,15 @@ const Wallets = () => {
                           {wallet.platforms.map((platform) => (
                             <Badge key={platform} variant="secondary">
                               {platform}
+                            </Badge>
+                          ))}
+                          {wallet.labels && wallet.labels.filter(l => l === "Trezor" || l === "Ledger").map((label) => (
+                            <Badge 
+                              key={label}
+                              variant="outline" 
+                              className="border-accent text-accent"
+                            >
+                              {label}
                             </Badge>
                           ))}
                         </div>
