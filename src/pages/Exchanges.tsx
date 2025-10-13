@@ -371,11 +371,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No registration required
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://simpleswap.io/', '_blank')}
@@ -404,11 +400,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No KYC or limits
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://godex.io/', '_blank')}
@@ -437,11 +429,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Privacy-focused
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://stealthex.io/?to=dcr', '_blank')}
@@ -470,11 +458,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      Compare multiple exchanges
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://trocador.app/en/', '_blank')}
@@ -503,11 +487,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No registration needed
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://exolix.com/currencies/dcr', '_blank')}
@@ -536,11 +516,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No account required
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://changenow.io/?from=btc&to=dcr', '_blank')}
@@ -569,11 +545,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No account needed
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://swapzone.io/exchange/btc/dcr', '_blank')}
@@ -602,11 +574,7 @@ const Exchanges = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      No signup required
-                    </div>
-                    <Button 
+                    <Button
                       className="w-full mt-4"
                       variant="outline"
                       onClick={() => window.open('https://flyp.me/en/', '_blank')}
