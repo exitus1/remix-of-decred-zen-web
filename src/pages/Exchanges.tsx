@@ -355,234 +355,210 @@ const Exchanges = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-1 flex items-center justify-center">
                       <img 
                         src={simpleswapLogo} 
                         alt="SimpleSwap"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">SimpleSwap</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">SimpleSwap</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://simpleswap.io/', '_blank')}
-                    >
-                      Visit SimpleSwap
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://simpleswap.io/', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-1 flex items-center justify-center">
                       <img 
                         src={godexLogo} 
                         alt="Godex"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">Godex</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">Godex</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://godex.io/', '_blank')}
-                    >
-                      Visit Godex
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://godex.io/', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-2 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-2 flex items-center justify-center">
                       <img 
                         src={stealthexLogo} 
                         alt="StealthEX"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">StealthEX</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">StealthEX</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://stealthex.io/?to=dcr', '_blank')}
-                    >
-                      Visit StealthEX
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://stealthex.io/?to=dcr', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-1 flex items-center justify-center">
                       <img 
                         src={trocadorLogo} 
                         alt="Trocador"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">Trocador</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">Trocador</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://trocador.app/en/', '_blank')}
-                    >
-                      Visit Trocador
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://trocador.app/en/', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-1 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-1 flex items-center justify-center">
                       <img 
                         src={exolixLogo} 
                         alt="Exolix"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">Exolix</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">Exolix</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://exolix.com/currencies/dcr', '_blank')}
-                    >
-                      Visit Exolix
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://exolix.com/currencies/dcr', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-0.5 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-0.5 flex items-center justify-center">
                       <img 
                         src={changenowLogo} 
                         alt="ChangeNOW"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">ChangeNOW</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">ChangeNOW</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://changenow.io/?from=btc&to=dcr', '_blank')}
-                    >
-                      Visit ChangeNOW
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://changenow.io/?from=btc&to=dcr', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-0.5 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-0.5 flex items-center justify-center">
                       <img 
                         src={swapzoneLogo} 
                         alt="Swapzone"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">Swapzone</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">Swapzone</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://swapzone.io/exchange/btc/dcr', '_blank')}
-                    >
-                      Visit Swapzone
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://swapzone.io/exchange/btc/dcr', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-background p-0.5 flex items-center justify-center">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-background p-0.5 flex items-center justify-center">
                       <img 
                         src={flypMeLogo} 
                         alt="Flyp.me"
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  <div className="flex-1">
-                      <CardTitle className="text-xl">Flyp.me</CardTitle>
-                    </div>
+                    <CardTitle className="text-lg">Flyp.me</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full mt-4"
-                      variant="outline"
-                      onClick={() => window.open('https://flyp.me/en/', '_blank')}
-                    >
-                      Visit Flyp.me
-                      <ArrowUpRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
+                <CardContent className="pt-0">
+                  <Button 
+                    className="w-full"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open('https://flyp.me/en/', '_blank')}
+                  >
+                    Visit
+                    <ArrowUpRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </CardContent>
               </Card>
             </div>
