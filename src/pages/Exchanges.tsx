@@ -349,7 +349,7 @@ const Exchanges = () => {
                 Instant Crypto Swaps
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Quick and simple crypto-to-crypto exchanges. Note: These are custodial services.
+                Quick and simple crypto-to-crypto exchanges. <span className="text-yellow-500">Note:</span> These are custodial services.
               </p>
             </div>
 
