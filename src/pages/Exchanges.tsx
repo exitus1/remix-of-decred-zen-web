@@ -143,7 +143,7 @@ const Exchanges = () => {
               Get Decred
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Trade, swap, or purchase DCR on these featured exchanges and platforms
+              Trade, swap, or purchase <span className="text-primary font-semibold">DCR</span> on these featured exchanges and platforms
             </p>
           </div>
 
