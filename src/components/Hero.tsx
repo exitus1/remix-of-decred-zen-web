@@ -1,20 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
-import heroBg from "@/assets/hero-binary-bg.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Background image with subtle overlay */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
-          alt="" 
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
-      </div>
+      {/* Soft majestic gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-cyan-500/15 to-green-500/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in">
