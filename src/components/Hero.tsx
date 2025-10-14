@@ -1,10 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
+import heroBg from "@/assets/hero-tech-bg.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Background image */}
+      <div className="absolute inset-0 opacity-20">
+        <img 
+          src={heroBg} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
       {/* Floating neon orbs */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(15)].map((_, i) => (
