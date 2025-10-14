@@ -1,38 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
-import heroBg from "@/assets/hero-tech-bg.png";
+import heroBg from "@/assets/hero-binary-bg.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Background image */}
-      <div className="absolute inset-0 opacity-20">
+      {/* Background image with subtle overlay */}
+      <div className="absolute inset-0">
         <img 
           src={heroBg} 
           alt="" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-30"
         />
-      </div>
-      
-      {/* Floating neon orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full"
-            style={{
-              width: Math.random() * 8 + 4 + 'px',
-              height: Math.random() * 8 + 4 + 'px',
-              left: Math.random() * 100 + '%',
-              top: Math.random() * 100 + '%',
-              background: i % 2 === 0 ? '#00ff41' : '#00d4ff',
-              boxShadow: `0 0 ${Math.random() * 30 + 20}px currentColor, 0 0 ${Math.random() * 60 + 40}px currentColor`,
-              animation: `float ${Math.random() * 15 + 10}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`
-            }}
-          />
-        ))}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
       </div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
