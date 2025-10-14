@@ -15,6 +15,7 @@ import DCRDEX from "@/components/DCRDEX";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import GovernanceComparison from "@/components/GovernanceComparison";
 import BlockchainSizeComparison from "@/components/BlockchainSizeComparison";
+import Roadmap from "@/components/Roadmap";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
       <Treasury />
       <Governance />
       <ConsensusUpgrade />
+      <Roadmap />
     </div>
   );
 };
