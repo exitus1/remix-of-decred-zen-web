@@ -15,6 +15,7 @@ import DCRDEX from "@/components/DCRDEX";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import GovernanceComparison from "@/components/GovernanceComparison";
 import BlockchainSizeComparison from "@/components/BlockchainSizeComparison";
+import MoneroComparison from "@/components/MoneroComparison";
 import Roadmap from "@/components/Roadmap";
 
 const Index = () => {
@@ -33,6 +34,7 @@ const Index = () => {
       <CoinMixing />
       <BlockchainSizeComparison />
       <DCRDEX />
+      <MoneroComparison />
       <GovernanceComparison />
       <Treasury />
       <Governance />
