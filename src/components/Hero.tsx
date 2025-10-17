@@ -59,11 +59,11 @@ const Hero = () => {
             alt="Decred Desktop Wallet Interface" 
             className="w-full h-auto rounded-t-lg shadow-2xl"
           />
-          <div className="absolute right-8 bottom-0 w-64 md:w-72 lg:w-80 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="absolute right-8 bottom-0 w-48 md:w-56 lg:w-64 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <img 
               src={mobileWalletImage} 
               alt="Decred Mobile Wallet Interface" 
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              className="w-full h-auto rounded-2xl shadow-2xl border-2 border-white/10"
             />
           </div>
         </div>
