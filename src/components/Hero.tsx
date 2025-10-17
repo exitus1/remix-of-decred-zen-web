@@ -1,51 +1,50 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from "lucide-react";
-import decredIcon from "@/assets/decred-icon.jpg";
+import { ArrowRight, Shield } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Soft majestic gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-cyan-500/15 to-green-500/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="animate-fade-in">
-          {/* Decred Logo */}
-          <div className="mb-8 flex justify-center">
-            <img 
-              src={decredIcon} 
-              alt="Decred" 
-              className="w-24 h-24 md:w-32 md:h-32 rounded-2xl shadow-glow"
-            />
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-            <span className="text-primary">Money</span>{" "}
-            <span className="text-accent">Evolved</span>
+      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          {/* Main Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+            Decentralized Governance for{" "}
+            <span className="text-primary">Digital Currency</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
-            A hybrid PoW/PoS cryptocurrency with on-chain governance, self-funding treasury, and privacy features. Built for long-term value and true stakeholder control.
+          {/* Subheadline */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Trustless, stakeholder-governed cryptocurrency you can trust. Experience true decentralization without compromising security or functionality.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button 
               size="lg" 
-              className="group bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg hover-glow"
+              className="text-base px-8 h-12 group"
             >
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Get started for free
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="px-8 py-6 text-lg border-border hover:bg-secondary"
+            
+            <a 
+              href="#features" 
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
-            </Button>
+              <span className="flex items-center gap-2">
+                <Shield className="w-4 h-4" />
+                <span>Learn about Decred</span>
+              </span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
+          
+          {/* No central authority text */}
+          <p className="text-sm text-muted-foreground/70">
+            No central authority required
+          </p>
         </div>
       </div>
     </section>
