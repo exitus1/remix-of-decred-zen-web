@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield } from "lucide-react";
 import walletImage from "@/assets/decrediton-wallet-ui.png";
-import mobileWalletImage from "@/assets/cakewallet-mobile.png";
+import mobileWalletImage from "@/assets/decred-mobile-wallet.png";
 
 const Hero = () => {
   return (
@@ -53,18 +53,16 @@ const Hero = () => {
         </div>
         
         {/* Wallet Images at bottom */}
-        <div className="relative max-w-6xl mx-auto w-full mt-auto mb-0 flex items-end gap-6 justify-center">
-          <div className="flex-1 max-w-4xl">
-            <img 
-              src={walletImage} 
-              alt="Decred Desktop Wallet Interface" 
-              className="w-full h-auto rounded-t-lg shadow-2xl"
-            />
-          </div>
-          <div className="w-64 flex-shrink-0 pb-4">
+        <div className="relative max-w-6xl mx-auto w-full mt-auto mb-0">
+          <img 
+            src={walletImage} 
+            alt="Decred Desktop Wallet Interface" 
+            className="w-full h-auto rounded-t-lg shadow-2xl"
+          />
+          <div className="absolute right-8 bottom-0 w-64 md:w-72 lg:w-80 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <img 
               src={mobileWalletImage} 
-              alt="Cake Wallet Mobile Interface" 
+              alt="Decred Mobile Wallet Interface" 
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
