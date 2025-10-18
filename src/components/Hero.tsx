@@ -18,12 +18,12 @@ const Hero = () => {
       {/* Subtle grain texture overlay */}
       <div className="absolute inset-0 opacity-[0.15] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]" />
       
-      <div className="relative z-10 container mx-auto px-6 pt-24 pb-8 flex-1 flex flex-col">
-        <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in mb-8">
+      <div className="relative z-10 container mx-auto px-6 pt-20 pb-12 flex-1 flex flex-col">
+        <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in mb-12">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Decentralized Governance for{" "}
-            <span className="text-primary">Digital Currency</span>
+            Decentralized Credits -{" "}
+            <span className="text-primary">Money controlled by its stakeholders</span>
           </h1>
           
           {/* Subheadline */}
