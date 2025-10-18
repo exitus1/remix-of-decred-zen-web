@@ -18,8 +18,8 @@ const Hero = () => {
       {/* Subtle grain texture overlay */}
       <div className="absolute inset-0 opacity-[0.15] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]" />
       
-      <div className="relative z-10 container mx-auto px-6 pt-20 pb-12 flex-1 flex flex-col">
-        <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in mb-12">
+      <div className="relative z-10 container mx-auto px-6 pt-32 pb-8 flex-1 flex flex-col">
+        <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in mb-16">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Decentralized Credits -{" "}
@@ -59,13 +59,13 @@ const Hero = () => {
         </div>
         
         {/* Wallet Images at bottom */}
-        <div className="relative max-w-6xl mx-auto w-full mt-auto mb-0">
+        <div className="relative max-w-5xl mx-auto w-full mt-auto mb-0">
           <img 
             src={walletImage} 
             alt="Decred Desktop Wallet Interface" 
             className="w-full h-auto rounded-t-lg shadow-2xl"
           />
-          <div className="absolute right-8 bottom-0 w-48 md:w-56 lg:w-64 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="absolute right-8 bottom-0 w-40 md:w-48 lg:w-56 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <img 
               src={mobileWalletImage} 
               alt="Decred Mobile Wallet Interface" 
