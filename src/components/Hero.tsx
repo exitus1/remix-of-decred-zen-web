@@ -6,8 +6,9 @@ import mobileWalletImage from "@/assets/decred-mobile-wallet.png";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Dark sophisticated gradient with vignette effect */}
-      <div className="absolute inset-0 bg-gradient-radial from-neutral-800/50 via-neutral-900 to-black" />
+      {/* Jet black center with gray edges - reverse vignette */}
+      <div className="absolute inset-0 bg-black" />
+      <div className="absolute inset-0 bg-gradient-to-r from-neutral-700/30 via-transparent to-neutral-700/30" />
       
       {/* Subtle grain texture overlay */}
       <div className="absolute inset-0 opacity-[0.15] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]" />
