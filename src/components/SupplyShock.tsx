@@ -34,20 +34,20 @@ const SupplyShock = () => {
           </div>
 
           {/* Main Visual - Single Line Supply Bar */}
-          <div className="mb-16">
+          <div className="mb-12">
             <Card className="bg-card/50 backdrop-blur border-primary/20">
-              <CardContent className="p-8 md:p-12">
+              <CardContent className="p-6 md:p-8">
                 {/* Total Supply Label */}
-                <div className="flex justify-between items-baseline mb-6">
-                  <h3 className="text-2xl font-bold">Maximum Supply</h3>
-                  <span className="text-3xl font-bold gradient-text">{maxSupply.toLocaleString()} DCR</span>
+                <div className="flex justify-between items-baseline mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold">Maximum Supply</h3>
+                  <span className="text-2xl md:text-3xl font-bold gradient-text">{maxSupply.toLocaleString()} DCR</span>
                 </div>
-                <div className="text-sm text-muted-foreground mb-4">
+                <div className="text-sm text-muted-foreground mb-6">
                   Current circulating: {totalCirculating.toLocaleString()} DCR ({((totalCirculating / maxSupply) * 100).toFixed(1)}% mined)
                 </div>
 
                 {/* Single Supply Bar */}
-                <div className="relative h-24 bg-muted/30 rounded-lg overflow-hidden mb-8">
+                <div className="relative h-32 md:h-40 bg-muted/30 rounded-lg overflow-hidden mb-6">
                   {/* Staked Section */}
                   <div 
                     className="absolute left-0 top-0 h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-1000 flex items-center justify-center group"
@@ -120,56 +120,56 @@ const SupplyShock = () => {
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                  <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-primary/5 border border-primary/20">
                     <div className="p-2 rounded-lg bg-primary/10">
-                      <Shield className="w-5 h-5 text-primary" />
+                      <Shield className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-muted-foreground mb-1">Staked (PoS Security)</div>
-                      <div className="text-2xl font-bold">{staked.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((staked / maxSupply) * 100).toFixed(1)}% of max supply</div>
+                      <div className="text-xs font-medium text-muted-foreground mb-1">Staked (PoS Security)</div>
+                      <div className="text-xl font-bold">{staked.toLocaleString()}</div>
+                      <div className="text-xs text-muted-foreground">{((staked / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-primary/5 border border-primary/20">
                     <div className="p-2 rounded-lg bg-primary/10">
-                      <Vault className="w-5 h-5 text-primary" />
+                      <Vault className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-muted-foreground mb-1">Treasury (Development)</div>
-                      <div className="text-2xl font-bold">{treasury.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((treasury / maxSupply) * 100).toFixed(1)}% of max supply</div>
+                      <div className="text-xs font-medium text-muted-foreground mb-1">Treasury (Development)</div>
+                      <div className="text-xl font-bold">{treasury.toLocaleString()}</div>
+                      <div className="text-xs text-muted-foreground">{((treasury / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/30">
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-muted/30">
                     <div className="p-2 rounded-lg bg-muted/50">
-                      <TrendingUp className="w-5 h-5 text-muted-foreground" />
+                      <TrendingUp className="w-4 h-4 text-muted-foreground" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-muted-foreground mb-1">Available to Trade</div>
-                      <div className="text-2xl font-bold text-muted-foreground">{circulating.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((circulating / maxSupply) * 100).toFixed(1)}% of max supply</div>
+                      <div className="text-xs font-medium text-muted-foreground mb-1">Available to Trade</div>
+                      <div className="text-xl font-bold text-muted-foreground">{circulating.toLocaleString()}</div>
+                      <div className="text-xs text-muted-foreground">{((circulating / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/20 border border-dashed border-muted-foreground/30">
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-muted/20 border border-dashed border-muted-foreground/30">
                     <div className="p-2 rounded-lg bg-muted/30">
-                      <Lock className="w-5 h-5 text-muted-foreground" />
+                      <Lock className="w-4 h-4 text-muted-foreground" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-muted-foreground mb-1">Not Yet Mined</div>
-                      <div className="text-2xl font-bold text-muted-foreground">{notYetMined.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((notYetMined / maxSupply) * 100).toFixed(1)}% of max supply</div>
+                      <div className="text-xs font-medium text-muted-foreground mb-1">Not Yet Mined</div>
+                      <div className="text-xl font-bold text-muted-foreground">{notYetMined.toLocaleString()}</div>
+                      <div className="text-xs text-muted-foreground">{((notYetMined / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Locked Percentage Highlight */}
-                <div className="mt-6 p-6 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
-                  <div className="text-5xl font-bold gradient-text mb-2">{percentageLocked.toFixed(2)}%</div>
-                  <div className="text-lg font-medium text-muted-foreground">
+                <div className="mt-4 p-4 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
+                  <div className="text-4xl font-bold gradient-text mb-1">{percentageLocked.toFixed(2)}%</div>
+                  <div className="text-sm font-medium text-muted-foreground">
                     of circulating supply is locked (Staked + Treasury)
                   </div>
                 </div>
@@ -178,38 +178,38 @@ const SupplyShock = () => {
           </div>
 
           {/* Impact Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-4">
             <Card className="bg-card/50 backdrop-blur border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                  <Shield className="w-6 h-6 text-primary" />
+              <CardContent className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 mb-3">
+                  <Shield className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Network Security</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-bold mb-2">Network Security</h3>
+                <p className="text-xs text-muted-foreground">
                   60% of supply staked provides robust proof-of-stake security layer
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-card/50 backdrop-blur border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+              <CardContent className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 mb-3">
+                  <TrendingUp className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Supply Pressure</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-bold mb-2">Supply Pressure</h3>
+                <p className="text-xs text-muted-foreground">
                   Reduced circulating supply creates natural scarcity and price support
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-card/50 backdrop-blur border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                  <Vault className="w-6 h-6 text-primary" />
+              <CardContent className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 mb-3">
+                  <Vault className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Long-term Funding</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-bold mb-2">Long-term Funding</h3>
+                <p className="text-xs text-muted-foreground">
                   Treasury ensures sustainable development without relying on donations
                 </p>
               </CardContent>
