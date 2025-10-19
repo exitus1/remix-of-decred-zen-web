@@ -2,13 +2,15 @@ import { Lock, TrendingUp, Shield, Vault } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const SupplyShock = () => {
+  const maxSupply = 21000000;
   const totalCirculating = 17074999;
   const treasury = 905031;
   const staked = 10298939;
   const totalLocked = 11203970;
-  const percentageLocked = 65.62;
+  const percentageLocked = (totalLocked / totalCirculating) * 100;
   const circulating = totalCirculating - totalLocked;
-  const percentageCirculating = 100 - percentageLocked;
+  const percentageCirculating = (circulating / totalCirculating) * 100;
+  const notYetMined = maxSupply - totalCirculating;
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -37,8 +39,11 @@ const SupplyShock = () => {
               <CardContent className="p-8 md:p-12">
                 {/* Total Supply Label */}
                 <div className="flex justify-between items-baseline mb-6">
-                  <h3 className="text-2xl font-bold">Total Circulating Supply</h3>
-                  <span className="text-3xl font-bold gradient-text">{totalCirculating.toLocaleString()} DCR</span>
+                  <h3 className="text-2xl font-bold">Maximum Supply</h3>
+                  <span className="text-3xl font-bold gradient-text">{maxSupply.toLocaleString()} DCR</span>
+                </div>
+                <div className="text-sm text-muted-foreground mb-4">
+                  Current circulating: {totalCirculating.toLocaleString()} DCR ({((totalCirculating / maxSupply) * 100).toFixed(1)}% mined)
                 </div>
 
                 {/* Single Supply Bar */}
@@ -47,7 +52,7 @@ const SupplyShock = () => {
                   <div 
                     className="absolute left-0 top-0 h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-1000 flex items-center justify-center group"
                     style={{ 
-                      width: `${(staked / totalCirculating) * 100}%`,
+                      width: `${(staked / maxSupply) * 100}%`,
                       boxShadow: "inset 0 0 20px rgba(255,255,255,0.1)"
                     }}
                   >
@@ -61,8 +66,8 @@ const SupplyShock = () => {
                   <div 
                     className="absolute top-0 h-full bg-gradient-to-r from-primary/60 to-primary/40 transition-all duration-1000 flex items-center justify-center group"
                     style={{ 
-                      left: `${(staked / totalCirculating) * 100}%`,
-                      width: `${(treasury / totalCirculating) * 100}%`,
+                      left: `${(staked / maxSupply) * 100}%`,
+                      width: `${(treasury / maxSupply) * 100}%`,
                       boxShadow: "inset 0 0 20px rgba(255,255,255,0.05)"
                     }}
                   >
@@ -74,9 +79,10 @@ const SupplyShock = () => {
 
                   {/* Circulating Section */}
                   <div 
-                    className="absolute right-0 top-0 h-full bg-muted/50 transition-all duration-1000 flex items-center justify-center group"
+                    className="absolute top-0 h-full bg-muted/50 transition-all duration-1000 flex items-center justify-center group"
                     style={{ 
-                      width: `${percentageCirculating}%`
+                      left: `${((staked + treasury) / maxSupply) * 100}%`,
+                      width: `${(circulating / maxSupply) * 100}%`
                     }}
                   >
                     <div className="flex items-center gap-2 text-muted-foreground opacity-70 group-hover:opacity-100 transition-opacity">
@@ -85,19 +91,36 @@ const SupplyShock = () => {
                     </div>
                   </div>
 
+                  {/* Not Yet Mined Section */}
+                  <div 
+                    className="absolute right-0 top-0 h-full bg-muted/20 transition-all duration-1000 flex items-center justify-center group border-l-2 border-dashed border-muted-foreground/30"
+                    style={{ 
+                      width: `${(notYetMined / maxSupply) * 100}%`
+                    }}
+                  >
+                    <div className="flex items-center gap-2 text-muted-foreground opacity-50 group-hover:opacity-100 transition-opacity">
+                      <Lock className="w-5 h-5" />
+                      <span className="font-bold text-sm hidden md:inline">Not Yet Mined</span>
+                    </div>
+                  </div>
+
                   {/* Divider Lines */}
                   <div 
                     className="absolute top-0 h-full w-px bg-background/50"
-                    style={{ left: `${(staked / totalCirculating) * 100}%` }}
+                    style={{ left: `${(staked / maxSupply) * 100}%` }}
                   />
                   <div 
                     className="absolute top-0 h-full w-px bg-background/50"
-                    style={{ left: `${((staked + treasury) / totalCirculating) * 100}%` }}
+                    style={{ left: `${((staked + treasury) / maxSupply) * 100}%` }}
+                  />
+                  <div 
+                    className="absolute top-0 h-full w-px bg-background/50"
+                    style={{ left: `${(totalCirculating / maxSupply) * 100}%` }}
                   />
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                   <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <Shield className="w-5 h-5 text-primary" />
@@ -105,7 +128,7 @@ const SupplyShock = () => {
                     <div>
                       <div className="text-sm font-medium text-muted-foreground mb-1">Staked (PoS Security)</div>
                       <div className="text-2xl font-bold">{staked.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((staked / totalCirculating) * 100).toFixed(1)}% of supply</div>
+                      <div className="text-sm text-muted-foreground">{((staked / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
 
@@ -116,7 +139,7 @@ const SupplyShock = () => {
                     <div>
                       <div className="text-sm font-medium text-muted-foreground mb-1">Treasury (Development)</div>
                       <div className="text-2xl font-bold">{treasury.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{((treasury / totalCirculating) * 100).toFixed(1)}% of supply</div>
+                      <div className="text-sm text-muted-foreground">{((treasury / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
 
@@ -127,16 +150,27 @@ const SupplyShock = () => {
                     <div>
                       <div className="text-sm font-medium text-muted-foreground mb-1">Available to Trade</div>
                       <div className="text-2xl font-bold text-muted-foreground">{circulating.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">{percentageCirculating.toFixed(1)}% of supply</div>
+                      <div className="text-sm text-muted-foreground">{((circulating / maxSupply) * 100).toFixed(1)}% of max supply</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/20 border border-dashed border-muted-foreground/30">
+                    <div className="p-2 rounded-lg bg-muted/30">
+                      <Lock className="w-5 h-5 text-muted-foreground" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-muted-foreground mb-1">Not Yet Mined</div>
+                      <div className="text-2xl font-bold text-muted-foreground">{notYetMined.toLocaleString()}</div>
+                      <div className="text-sm text-muted-foreground">{((notYetMined / maxSupply) * 100).toFixed(1)}% of max supply</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Locked Percentage Highlight */}
                 <div className="mt-6 p-6 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
-                  <div className="text-5xl font-bold gradient-text mb-2">{percentageLocked}%</div>
+                  <div className="text-5xl font-bold gradient-text mb-2">{percentageLocked.toFixed(2)}%</div>
                   <div className="text-lg font-medium text-muted-foreground">
-                    of total supply is locked (Staked + Treasury)
+                    of circulating supply is locked (Staked + Treasury)
                   </div>
                 </div>
               </CardContent>
