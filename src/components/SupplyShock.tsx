@@ -31,110 +31,112 @@ const SupplyShock = () => {
             </p>
           </div>
 
-          {/* Main Visual - Circular Progress */}
+          {/* Main Visual - Single Line Supply Bar */}
           <div className="mb-16">
             <Card className="bg-card/50 backdrop-blur border-primary/20">
               <CardContent className="p-8 md:p-12">
-                <div className="flex flex-col md:flex-row items-center gap-12">
-                  {/* Circular Chart */}
-                  <div className="relative w-64 h-64 flex-shrink-0">
-                    <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                      {/* Background circle */}
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="hsl(var(--muted))"
-                        strokeWidth="12"
-                        opacity="0.2"
-                      />
-                      {/* Locked supply arc */}
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="hsl(var(--primary))"
-                        strokeWidth="12"
-                        strokeDasharray={`${percentageLocked * 2.513} ${(100 - percentageLocked) * 2.513}`}
-                        strokeLinecap="round"
-                        className="transition-all duration-1000"
-                        style={{
-                          filter: "drop-shadow(0 0 8px hsl(var(--primary) / 0.5))"
-                        }}
-                      />
-                    </svg>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <div className="text-5xl font-bold gradient-text">{percentageLocked}%</div>
-                      <div className="text-sm text-muted-foreground mt-1">Locked</div>
+                {/* Total Supply Label */}
+                <div className="flex justify-between items-baseline mb-6">
+                  <h3 className="text-2xl font-bold">Total Circulating Supply</h3>
+                  <span className="text-3xl font-bold gradient-text">{totalCirculating.toLocaleString()} DCR</span>
+                </div>
+
+                {/* Single Supply Bar */}
+                <div className="relative h-24 bg-muted/30 rounded-lg overflow-hidden mb-8">
+                  {/* Staked Section */}
+                  <div 
+                    className="absolute left-0 top-0 h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-1000 flex items-center justify-center group"
+                    style={{ 
+                      width: `${(staked / totalCirculating) * 100}%`,
+                      boxShadow: "inset 0 0 20px rgba(255,255,255,0.1)"
+                    }}
+                  >
+                    <div className="flex items-center gap-2 text-white opacity-90 group-hover:opacity-100 transition-opacity">
+                      <Shield className="w-5 h-5" />
+                      <span className="font-bold text-sm hidden md:inline">Staked</span>
                     </div>
                   </div>
 
-                  {/* Stats Breakdown */}
-                  <div className="flex-1 space-y-6 w-full">
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-3">
-                        <div className="mt-1 p-2 rounded-lg bg-primary/10">
-                          <Shield className="w-5 h-5 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-baseline mb-1">
-                            <span className="text-sm font-medium text-muted-foreground">Staked (PoS Security)</span>
-                            <span className="text-xl font-bold">{staked.toLocaleString()} DCR</span>
-                          </div>
-                          <div className="h-2 bg-muted rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-primary rounded-full transition-all duration-1000"
-                              style={{ width: `${(staked / totalCirculating) * 100}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-3">
-                        <div className="mt-1 p-2 rounded-lg bg-primary/10">
-                          <Vault className="w-5 h-5 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-baseline mb-1">
-                            <span className="text-sm font-medium text-muted-foreground">Treasury (Development Fund)</span>
-                            <span className="text-xl font-bold">{treasury.toLocaleString()} DCR</span>
-                          </div>
-                          <div className="h-2 bg-muted rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-primary/70 rounded-full transition-all duration-1000"
-                              style={{ width: `${(treasury / totalCirculating) * 100}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-3">
-                        <div className="mt-1 p-2 rounded-lg bg-muted/50">
-                          <TrendingUp className="w-5 h-5 text-muted-foreground" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-baseline mb-1">
-                            <span className="text-sm font-medium text-muted-foreground">Circulating Supply</span>
-                            <span className="text-xl font-bold text-muted-foreground">{circulating.toLocaleString()} DCR</span>
-                          </div>
-                          <div className="h-2 bg-muted rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-muted-foreground/50 rounded-full transition-all duration-1000"
-                              style={{ width: `${percentageCirculating}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
+                  {/* Treasury Section */}
+                  <div 
+                    className="absolute top-0 h-full bg-gradient-to-r from-primary/60 to-primary/40 transition-all duration-1000 flex items-center justify-center group"
+                    style={{ 
+                      left: `${(staked / totalCirculating) * 100}%`,
+                      width: `${(treasury / totalCirculating) * 100}%`,
+                      boxShadow: "inset 0 0 20px rgba(255,255,255,0.05)"
+                    }}
+                  >
+                    <div className="flex items-center gap-2 text-white opacity-90 group-hover:opacity-100 transition-opacity">
+                      <Vault className="w-5 h-5" />
+                      <span className="font-bold text-sm hidden md:inline">Treasury</span>
                     </div>
+                  </div>
 
-                    <div className="pt-4 border-t border-border">
-                      <div className="flex justify-between items-baseline">
-                        <span className="text-sm font-medium">Total Supply</span>
-                        <span className="text-2xl font-bold">{totalCirculating.toLocaleString()} DCR</span>
-                      </div>
+                  {/* Circulating Section */}
+                  <div 
+                    className="absolute right-0 top-0 h-full bg-muted/50 transition-all duration-1000 flex items-center justify-center group"
+                    style={{ 
+                      width: `${percentageCirculating}%`
+                    }}
+                  >
+                    <div className="flex items-center gap-2 text-muted-foreground opacity-70 group-hover:opacity-100 transition-opacity">
+                      <TrendingUp className="w-5 h-5" />
+                      <span className="font-bold text-sm hidden md:inline">Circulating</span>
                     </div>
+                  </div>
+
+                  {/* Divider Lines */}
+                  <div 
+                    className="absolute top-0 h-full w-px bg-background/50"
+                    style={{ left: `${(staked / totalCirculating) * 100}%` }}
+                  />
+                  <div 
+                    className="absolute top-0 h-full w-px bg-background/50"
+                    style={{ left: `${((staked + treasury) / totalCirculating) * 100}%` }}
+                  />
+                </div>
+
+                {/* Stats Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <Shield className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-muted-foreground mb-1">Staked (PoS Security)</div>
+                      <div className="text-2xl font-bold">{staked.toLocaleString()}</div>
+                      <div className="text-sm text-muted-foreground">{((staked / totalCirculating) * 100).toFixed(1)}% of supply</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <Vault className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-muted-foreground mb-1">Treasury (Development)</div>
+                      <div className="text-2xl font-bold">{treasury.toLocaleString()}</div>
+                      <div className="text-sm text-muted-foreground">{((treasury / totalCirculating) * 100).toFixed(1)}% of supply</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/30">
+                    <div className="p-2 rounded-lg bg-muted/50">
+                      <TrendingUp className="w-5 h-5 text-muted-foreground" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-muted-foreground mb-1">Available to Trade</div>
+                      <div className="text-2xl font-bold text-muted-foreground">{circulating.toLocaleString()}</div>
+                      <div className="text-sm text-muted-foreground">{percentageCirculating.toFixed(1)}% of supply</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Locked Percentage Highlight */}
+                <div className="mt-6 p-6 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
+                  <div className="text-5xl font-bold gradient-text mb-2">{percentageLocked}%</div>
+                  <div className="text-lg font-medium text-muted-foreground">
+                    of total supply is locked (Staked + Treasury)
                   </div>
                 </div>
               </CardContent>
