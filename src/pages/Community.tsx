@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, MessageCircle, Send, Hash, Users, Vote, FileText, Radio } from "lucide-react";
+import discordLogo from "@/assets/discord-logo.webp";
 
 const Community = () => {
   const socialPlatforms = [
@@ -37,6 +38,7 @@ const Community = () => {
       name: "Discord",
       description: "Chat with Decred enthusiasts on Discord",
       icon: Users,
+      logo: discordLogo,
       link: "https://discord.gg/decred",
       color: "text-indigo-400",
     },
@@ -99,7 +101,15 @@ const Community = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center border border-border">
-                          <platform.icon className={`w-5 h-5 ${platform.color}`} />
+                          {platform.logo ? (
+                            <img 
+                              src={platform.logo} 
+                              alt={platform.name}
+                              className="w-full h-full object-contain rounded-lg"
+                            />
+                          ) : (
+                            <platform.icon className={`w-5 h-5 ${platform.color}`} />
+                          )}
                         </div>
                         <CardTitle className="text-lg">{platform.name}</CardTitle>
                       </div>
