@@ -3,6 +3,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, MessageCircle, Send, Hash, Users, Vote, FileText, Radio } from "lucide-react";
 import discordLogo from "@/assets/discord-logo.webp";
+import xLogo from "@/assets/x-logo.png";
 
 const Community = () => {
   const socialPlatforms = [
@@ -10,6 +11,7 @@ const Community = () => {
       name: "X (Twitter)",
       description: "Follow Decred on X for the latest news and updates",
       icon: Hash,
+      logo: xLogo,
       link: "https://x.com/decredproject",
       color: "text-blue-400",
     },
