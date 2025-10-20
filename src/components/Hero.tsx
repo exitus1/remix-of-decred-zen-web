@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield } from "lucide-react";
 import walletImage from "@/assets/decrediton-wallet-ui.png";
-import mobileWalletImage from "@/assets/decred-mobile-wallet.png";
+import mobileWalletImage from "@/assets/decred-mobile-wallet-new.png";
 
 const Hero = () => {
   return (
