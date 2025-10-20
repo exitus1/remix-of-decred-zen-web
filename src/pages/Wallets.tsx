@@ -56,8 +56,8 @@ const Wallets = () => {
     },
     {
       name: "Trust Wallet",
-      description: "Multi-currency mobile wallet trusted by millions worldwide with Decred support",
-      platforms: ["iOS", "Android"],
+      description: "Multi-currency desktop and mobile wallet",
+      platforms: ["Windows", "Mac", "Linux", "Browser", "iOS", "Android"],
       logo: trustwalletLogo,
       link: "https://trustwallet.com/",
     },
