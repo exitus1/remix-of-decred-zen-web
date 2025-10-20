@@ -56,8 +56,8 @@ const Wallets = () => {
     },
     {
       name: "Trust Wallet",
-      description: "Multi-currency desktop and mobile wallet",
-      platforms: ["Windows", "Mac", "Linux", "Browser", "iOS", "Android"],
+      description: "Multi-currency desktop, browser and mobile wallet",
+      platforms: ["Windows", "Mac", "Linux", "iOS", "Android"],
       logo: trustwalletLogo,
       link: "https://trustwallet.com/",
     },
