@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Github, MessageCircle, Send, Hash, Users, Vote, FileText, Radio } from "lucide-react";
 import discordLogo from "@/assets/discord-logo.webp";
 import xLogo from "@/assets/x-logo.png";
+import elementLogo from "@/assets/element-logo.svg";
 
 const Community = () => {
   const socialPlatforms = [
@@ -19,6 +20,7 @@ const Community = () => {
       name: "Matrix (Element)",
       description: "Official Decred chat",
       icon: MessageCircle,
+      logo: elementLogo,
       link: "https://chat.decred.org/",
       color: "text-green-400",
     },
