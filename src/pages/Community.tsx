@@ -5,6 +5,7 @@ import { Github, MessageCircle, Send, Hash, Users, Vote, FileText, Radio } from 
 import discordLogo from "@/assets/discord-logo.webp";
 import xLogo from "@/assets/x-logo.png";
 import elementLogo from "@/assets/element-logo.svg";
+import redditLogo from "@/assets/reddit-logo.png";
 
 const Community = () => {
   const socialPlatforms = [
@@ -50,6 +51,7 @@ const Community = () => {
       name: "Reddit",
       description: "Join discussions on the Decred subreddit",
       icon: MessageCircle,
+      logo: redditLogo,
       link: "https://reddit.com/r/decred",
       color: "text-orange-500",
     },
