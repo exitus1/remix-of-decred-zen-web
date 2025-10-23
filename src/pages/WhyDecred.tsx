@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Vote, Wallet, Repeat, Eye, Zap, Database } from "lucide-react";
+import { Shield, Vote, Wallet, Repeat, Eye, Zap, Database, Lock, CheckCircle2, Code, DollarSign, FileText, AlertCircle, ArrowRight } from "lucide-react";
 
 const WhyDecred = () => {
   const features = [
@@ -85,6 +85,118 @@ const WhyDecred = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Binding Governance Section */}
+      <section className="relative py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">Truly Binding Governance</h2>
+            <p className="text-lg text-muted-foreground">
+              Unlike advisory votes in other projects, Decred's stakeholder decisions are automatically enforced by the protocol
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* How It Works */}
+            <Card className="border-primary/20 bg-card/50 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  Binding Process
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Lock className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Lock DCR to Buy Tickets</p>
+                    <p className="text-xs text-muted-foreground">Stakeholders commit funds to participate</p>
+                  </div>
+                </div>
+                <ArrowRight className="w-5 h-5 text-primary mx-auto" />
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Vote className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Vote On-Chain</p>
+                    <p className="text-xs text-muted-foreground">Cryptographically verifiable votes recorded on blockchain</p>
+                  </div>
+                </div>
+                <ArrowRight className="w-5 h-5 text-primary mx-auto" />
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Automatic Enforcement</p>
+                    <p className="text-xs text-muted-foreground">Protocol implements approved changes—no override possible</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Comparison */}
+            <Card className="border-primary/20 bg-card/50 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <AlertCircle className="w-5 h-5 text-primary" />
+                  Decred vs Others
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
+                  <p className="font-semibold text-sm text-primary mb-2">✓ Decred: Binding</p>
+                  <p className="text-xs text-muted-foreground">
+                    Stakeholder votes automatically enforced by code. Results cannot be ignored or overridden by any authority.
+                  </p>
+                </div>
+                <div className="p-3 rounded-lg bg-muted/50 border border-border">
+                  <p className="font-semibold text-sm text-muted-foreground mb-2">✗ Most Projects: Advisory</p>
+                  <p className="text-xs text-muted-foreground">
+                    Foundation or core team can choose whether to implement community preferences. Governance is often symbolic.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Types of Binding Votes */}
+          <div className="grid md:grid-cols-3 gap-4">
+            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 backdrop-blur-sm">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <Code className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Consensus Rules</h3>
+                <p className="text-sm text-muted-foreground">Protocol upgrades automatically activate after stakeholder approval</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 backdrop-blur-sm">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <DollarSign className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Treasury Spending</h3>
+                <p className="text-sm text-muted-foreground">Fund allocation requires stakeholder approval—guaranteed by protocol</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 backdrop-blur-sm">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <FileText className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Policy Decisions</h3>
+                <p className="text-sm text-muted-foreground">Major project direction changes enforced through stakeholder consensus</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
