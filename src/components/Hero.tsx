@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in mb-16">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            DECRED
+            Decentralized Credits
           </h1>
           <p className="text-sm md:text-base font-mono text-muted-foreground/80 tracking-wider">
             Governed by Code
