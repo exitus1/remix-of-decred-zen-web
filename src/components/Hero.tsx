@@ -24,7 +24,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Decentralized Credits
           </h1>
-          <p className="text-sm md:text-base font-mono text-muted-foreground/80 tracking-wider">
+          <p className="text-lg md:text-xl lg:text-2xl font-mono text-green-500 tracking-wider">
             Governed by Code
           </p>
           
