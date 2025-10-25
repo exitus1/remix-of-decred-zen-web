@@ -51,7 +51,7 @@ const WhyDecred = () => {
       <section className="relative pt-24 pb-12 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">
-            Decred (DCR): Secure, Sustainable, Self-Governing
+            Decred: Governed by Code
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Decred is a community-driven cryptocurrency built for long-term resilience and stakeholder sovereignty. 
