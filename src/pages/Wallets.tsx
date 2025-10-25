@@ -49,7 +49,7 @@ const Wallets = () => {
     {
       name: "Exodus",
       description: "Multi-currency desktop and mobile wallet with hardware wallet integration",
-      platforms: ["Windows", "Mac", "Linux", "iOS", "Android"],
+      platforms: ["Desktop", "Mobile"],
       labels: ["Trezor"],
       logo: exodusLogo,
       link: "https://www.exodus.com/",
@@ -57,7 +57,7 @@ const Wallets = () => {
     {
       name: "Trust Wallet",
       description: "Multi-currency desktop, browser and mobile wallet",
-      platforms: ["Windows", "Mac", "Linux", "iOS", "Android"],
+      platforms: ["Desktop", "Mobile"],
       logo: trustwalletLogo,
       link: "https://trustwallet.com/",
     },
