@@ -34,7 +34,7 @@ const Community = () => {
     },
     {
       name: "Telegram",
-      description: "Connect with the Decred community on Telegram",
+      description: "Connect on Telegram",
       icon: Send,
       link: "https://t.me/decred",
       color: "text-blue-500",
