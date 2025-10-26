@@ -63,8 +63,8 @@ const WhyDecred = () => {
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
               <span className="ml-2 text-xs text-primary/60 font-mono">decred-terminal</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold font-mono text-primary mb-6">
-              $ Decred: Governed by Code
+            <h1 className="text-3xl md:text-5xl font-bold font-mono text-green-400 mb-6 tracking-tight">
+              $ Decred: Decentralized Credits
             </h1>
             <div className="font-mono text-sm md:text-base text-primary/80 space-y-2 overflow-hidden">
               <div className="animate-fade-in">
