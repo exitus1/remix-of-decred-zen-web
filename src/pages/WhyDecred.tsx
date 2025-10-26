@@ -7,7 +7,7 @@ const WhyDecred = () => {
   const features = [
     {
       icon: Shield,
-      title: "Hybrid Proof-of-Work/Proof-of-Stake Consensus",
+      title: "Hybrid Consensus",
       description: "Decred combines PoW mining with PoS validation, making 51% attacks exponentially more difficult and expensive."
     },
     {
@@ -22,7 +22,7 @@ const WhyDecred = () => {
     },
     {
       icon: Repeat,
-      title: "DCRDEX Atomic-Swap Trading",
+      title: "Atomic Swaps",
       description: "Trustless, peer-to-peer trading across multiple blockchains with no accounts, custody, or trading fees."
     },
     {
@@ -32,17 +32,17 @@ const WhyDecred = () => {
     },
     {
       icon: Zap,
-      title: "Lightning Network Integration",
+      title: "Lightning Network",
       description: "Instant, low-cost transactions through the Lightning Network for everyday payments with on-chain security."
     },
     {
       icon: Database,
-      title: "Optimized Node Performance",
+      title: "Optimized Nodes",
       description: "Efficient full node design ensures anyone can run one, keeping the network truly decentralized."
     },
     {
       icon: Users,
-      title: "Community-Driven Development",
+      title: "Community-Driven",
       description: "Fully open-source with transparent development funded and directed entirely by the community."
     }
   ];
