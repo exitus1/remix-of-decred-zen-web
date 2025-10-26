@@ -8,37 +8,37 @@ const WhyDecred = () => {
     {
       icon: Shield,
       title: "Hybrid Proof-of-Work/Proof-of-Stake Consensus",
-      description: "Decred combines PoW mining with PoS validation, requiring both miners and stakeholders to approve blocks. This dual-layer security makes 51% attacks exponentially more difficult and expensive."
+      description: "Decred combines PoW mining with PoS validation, making 51% attacks exponentially more difficult and expensive."
     },
     {
       icon: Vote,
       title: "On-Chain Governance",
-      description: "DCR holders vote directly on protocol changes, budget allocations, and project direction through Politeia, Decred's proposal system. Every stakeholder has a voice—no central authority controls the roadmap."
+      description: "DCR holders vote directly on protocol changes and budget allocations through Politeia with no central authority."
     },
     {
       icon: Wallet,
       title: "Self-Funding Treasury",
-      description: "10% of every block reward flows into a decentralized treasury controlled by stakeholders. This ensures sustainable development funding without relying on external investors or ICOs."
+      description: "10% of every block reward flows into a decentralized treasury controlled by stakeholders for sustainable development."
     },
     {
       icon: Repeat,
       title: "DCRDEX Atomic-Swap Trading",
-      description: "Decred's decentralized exchange enables trustless, peer-to-peer trading across multiple blockchains without intermediaries. No accounts, no custody, no trading fees—just direct atomic swaps that eliminate counterparty risk."
+      description: "Trustless, peer-to-peer trading across multiple blockchains with no accounts, custody, or trading fees."
     },
     {
       icon: Eye,
       title: "Privacy Features",
-      description: "Built-in mixing through CoinShuffle++ enables optional transaction privacy, giving users control over their financial privacy without compromising network transparency."
+      description: "Built-in mixing through CoinShuffle++ enables optional transaction privacy without compromising network transparency."
     },
     {
       icon: Zap,
       title: "Lightning Network Integration",
-      description: "Decred supports instant, low-cost transactions through the Lightning Network, making it practical for everyday payments while maintaining on-chain security for larger transactions."
+      description: "Instant, low-cost transactions through the Lightning Network for everyday payments with on-chain security."
     },
     {
       icon: Database,
       title: "Optimized Node Performance",
-      description: "Great care has been taken to ensure that dcrd, Decred's full node, remains efficient so anyone can run one. This accessibility ensures the network stays truly decentralized, with low barriers to participation."
+      description: "Efficient full node design ensures anyone can run one, keeping the network truly decentralized."
     }
   ];
 
