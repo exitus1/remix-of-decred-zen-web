@@ -27,7 +27,7 @@ const Community = () => {
     },
     {
       name: "GitHub",
-      description: "Explore Decred's open-source codebase and contribute",
+      description: "Explore Decred's open-source codebase",
       icon: Github,
       link: "https://github.com/decred",
       color: "text-foreground",
