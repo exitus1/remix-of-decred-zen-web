@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Vote, Wallet, Repeat, Eye, Zap, Database, Lock, CheckCircle2, Code, DollarSign, FileText, AlertCircle, ArrowRight } from "lucide-react";
+import { Shield, Vote, Wallet, Repeat, Eye, Zap, Database, Lock, CheckCircle2, Code, DollarSign, FileText, AlertCircle, ArrowRight, Users } from "lucide-react";
 
 const WhyDecred = () => {
   const features = [
@@ -39,6 +39,11 @@ const WhyDecred = () => {
       icon: Database,
       title: "Optimized Node Performance",
       description: "Efficient full node design ensures anyone can run one, keeping the network truly decentralized."
+    },
+    {
+      icon: Users,
+      title: "Community-Driven Development",
+      description: "Fully open-source with transparent development funded and directed entirely by the community."
     }
   ];
 
@@ -96,7 +101,7 @@ const WhyDecred = () => {
             <p className="text-lg text-muted-foreground">Seven pillars of Decred's technological advantage</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm">
                 <CardHeader>
