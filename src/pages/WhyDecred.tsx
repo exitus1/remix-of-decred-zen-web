@@ -49,11 +49,38 @@ const WhyDecred = () => {
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-mono mb-8 bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">
-            Decred: Governed by Code
-          </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+        <div className="container mx-auto max-w-4xl">
+          {/* Terminal-style header */}
+          <div className="bg-black/90 border-2 border-primary/30 rounded-lg p-8 mb-8 shadow-2xl backdrop-blur-sm">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <span className="ml-2 text-xs text-primary/60 font-mono">decred-terminal</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl font-bold font-mono text-primary mb-6">
+              $ Decred: Governed by Code
+            </h1>
+            <div className="font-mono text-sm md:text-base text-primary/80 space-y-2 overflow-hidden">
+              <div className="animate-fade-in">
+                <span className="text-primary/60">{'>'}</span> votebits: <span className="text-green-400">0x0001</span>
+              </div>
+              <div className="animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
+                <span className="text-primary/60">{'>'}</span> stakeholder.vote(<span className="text-yellow-400">"consensus"</span>) → <span className="text-green-400">true</span>
+              </div>
+              <div className="animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'backwards' }}>
+                <span className="text-primary/60">{'>'}</span> treasury.balance: <span className="text-green-400">841,629 DCR</span>
+              </div>
+              <div className="animate-fade-in" style={{ animationDelay: '0.9s', animationFillMode: 'backwards' }}>
+                <span className="text-primary/60">{'>'}</span> pow + pos = <span className="text-green-400">hybrid_security</span>
+              </div>
+              <div className="animate-fade-in" style={{ animationDelay: '1.2s', animationFillMode: 'backwards' }}>
+                <span className="text-primary/60">{'>'}</span> governance: <span className="text-green-400">BINDING</span> <span className="animate-pulse">▊</span>
+              </div>
+            </div>
+          </div>
+          
+          <p className="text-lg text-muted-foreground leading-relaxed text-center">
             Decred is a community-driven cryptocurrency built for long-term resilience and stakeholder sovereignty. 
             It combines the security of Bitcoin-style mining with an innovative governance system that puts 
             decision-making power directly in the hands of DCR holders.
