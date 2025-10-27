@@ -79,11 +79,6 @@ const WhyDecred = () => {
             </div>
           </div>
           
-          <p className="text-lg text-muted-foreground leading-relaxed text-center">
-            Decred is a community-driven cryptocurrency built for long-term resilience and stakeholder sovereignty. 
-            It combines the security of Bitcoin-style mining with an innovative governance system that puts 
-            decision-making power directly in the hands of DCR holders.
-          </p>
         </div>
       </section>
 
@@ -92,13 +87,16 @@ const WhyDecred = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="mb-12 pl-6 border-l-4 border-green-500">
             <p className="font-mono text-green-500 text-sm md:text-base mb-2">
-              # Secure. Adaptable. Sustainable. A blockchain
+              # Decred is a community-driven cryptocurrency built for long-term
             </p>
             <p className="font-mono text-green-500 text-sm md:text-base mb-2">
-              # built for the future with stakeholder governance
+              # resilience and stakeholder sovereignty. It combines the security
+            </p>
+            <p className="font-mono text-green-500 text-sm md:text-base mb-2">
+              # of Bitcoin-style mining with an innovative governance system that
             </p>
             <p className="font-mono text-green-500 text-sm md:text-base">
-              # at its core.
+              # puts decision-making power directly in the hands of DCR holders.
             </p>
           </div>
 
