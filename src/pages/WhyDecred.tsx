@@ -57,12 +57,6 @@ const WhyDecred = () => {
         <div className="container mx-auto max-w-4xl">
           {/* Terminal-style header */}
           <div className="bg-black/90 border-2 border-primary/30 rounded-lg p-8 mb-8 shadow-2xl backdrop-blur-sm">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              <span className="ml-2 text-xs text-primary/60 font-mono">decred-terminal</span>
-            </div>
             <h1 className="text-2xl md:text-3xl font-semibold font-mono text-[#00ff00] mb-6 tracking-tighter">
               Decred: Decentralized Credits
             </h1>
