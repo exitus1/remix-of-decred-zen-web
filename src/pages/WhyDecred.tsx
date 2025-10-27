@@ -96,33 +96,33 @@ const WhyDecred = () => {
       {/* Core Features */}
       <section className="relative py-12 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/5 border border-primary/20">
-              <span className="font-mono text-xs text-primary">{'>'}</span>
-              <span className="font-mono text-xs text-muted-foreground">core_features.execute()</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">Core Features</h2>
-            <p className="text-lg text-muted-foreground">Eight pillars of Decred's technological advantage</p>
+          <div className="mb-12 pl-6 border-l-4 border-green-500">
+            <p className="font-mono text-green-500 text-sm md:text-base mb-2">
+              # Secure. Adaptable. Sustainable. A blockchain
+            </p>
+            <p className="font-mono text-green-500 text-sm md:text-base mb-2">
+              # built for the future with stakeholder governance
+            </p>
+            <p className="font-mono text-green-500 text-sm md:text-base">
+              # at its core.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, index) => (
-              <Card key={index} className="border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm group">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <feature.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <span className="font-mono text-xs text-muted-foreground/50">0{index + 1}</span>
-                  </div>
-                  <CardTitle className="text-lg">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+              <div key={index} className="bg-black/90 border-2 border-green-500/30 hover:border-green-500 transition-all duration-300 rounded p-4 group">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-mono text-green-500 text-sm">{'>'}</span>
+                  <feature.icon className="w-5 h-5 text-green-500" />
+                  <span className="font-mono text-xs text-green-500/60">0{index + 1}</span>
+                </div>
+                <h3 className="font-mono text-green-500 font-semibold text-sm mb-2">
+                  {feature.title}
+                </h3>
+                <p className="font-mono text-green-500/80 text-xs leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
