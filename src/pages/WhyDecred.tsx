@@ -85,18 +85,18 @@ const WhyDecred = () => {
       {/* Core Features */}
       <section className="relative py-12 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="mb-12 pl-6 border-l-4 border-green-500">
+          <div className="mb-12 border-l-4 border-green-500">
             <p className="font-mono text-green-500 text-sm md:text-base mb-2">
-              # Decred is a community-driven cryptocurrency built for long-term
+              Decred is a community-driven cryptocurrency built for long-term
             </p>
             <p className="font-mono text-green-500 text-sm md:text-base mb-2">
-              # resilience and stakeholder sovereignty. It combines the security
+              resilience and stakeholder sovereignty. It combines the security
             </p>
             <p className="font-mono text-green-500 text-sm md:text-base mb-2">
-              # of Bitcoin-style mining with an innovative governance system that
+              of Bitcoin-style mining with an innovative governance system that
             </p>
             <p className="font-mono text-green-500 text-sm md:text-base">
-              # puts decision-making power directly in the hands of DCR holders.
+              puts decision-making power directly in the hands of DCR holders.
             </p>
           </div>
 
