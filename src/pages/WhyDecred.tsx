@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Vote, Wallet, Repeat, Eye, Zap, Database, Lock, CheckCircle2, Code, DollarSign, FileText, AlertCircle, ArrowRight, Users } from "lucide-react";
+import DecredVsBitcoinChart from "@/components/DecredVsBitcoinChart";
 
 const WhyDecred = () => {
   const features = [
@@ -231,6 +232,9 @@ const WhyDecred = () => {
           </div>
         </div>
       </section>
+
+      {/* Decred vs Bitcoin Comparison Chart */}
+      <DecredVsBitcoinChart />
 
       {/* Closing Statement */}
       <section className="relative py-16 px-6">
