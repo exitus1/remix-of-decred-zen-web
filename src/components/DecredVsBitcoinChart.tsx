@@ -2,11 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, X } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
+import bitcoinLogo from "@/assets/bitcoin-logo-round.png";
 
 const DecredVsBitcoinChart = () => {
   const comparisonCategories = [
     {
-      category: "GOVERNANCE",
+      category: "ADAPTABILITY",
       decredFeature: "On-chain voting with binding decisions",
       decredStatus: true,
       bitcoinFeature: "Informal, contentious hard forks",
@@ -31,6 +32,13 @@ const DecredVsBitcoinChart = () => {
       decredFeature: "Self-sustaining treasury (10% block reward)",
       decredStatus: true,
       bitcoinFeature: "Relies on donations and volunteers",
+      bitcoinStatus: false,
+    },
+    {
+      category: "NODE SIZE",
+      decredFeature: "Lightweight, easy to run full node",
+      decredStatus: true,
+      bitcoinFeature: "Large blockchain (500+ GB)",
       bitcoinStatus: false,
     },
     {
@@ -59,7 +67,7 @@ const DecredVsBitcoinChart = () => {
             Decred vs Bitcoin: Head-to-Head Comparison
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See how Decred builds upon Bitcoin&apos;s foundation with enhanced governance, privacy, security, and funding
+            See how Decred builds upon Bitcoin&apos;s foundation with enhanced adaptability, privacy, security, funding, and accessibility
           </p>
         </div>
 
@@ -77,7 +85,7 @@ const DecredVsBitcoinChart = () => {
               <div></div>
               <div className="text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  <span className="text-3xl">₿</span>
+                  <img src={bitcoinLogo} alt="Bitcoin" className="w-8 h-8 rounded-full" />
                   <span className="font-bold text-xl">Bitcoin</span>
                 </div>
               </div>
@@ -127,8 +135,8 @@ const DecredVsBitcoinChart = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">The Decred Advantage</h3>
             <p className="text-muted-foreground">
-              Decred takes Bitcoin&apos;s proven security model and adds critical missing pieces: formal governance, 
-              sustainable funding, enhanced security through hybrid consensus, and optional privacy. 
+              Decred takes Bitcoin&apos;s proven security model and adds critical missing pieces: formal adaptable governance, 
+              sustainable funding, enhanced security through hybrid consensus, optional privacy, and accessible full nodes. 
               While maintaining the same 21M supply cap, Decred evolves the cryptocurrency design for{" "}
               <span className="font-semibold text-foreground">long-term sustainability and stakeholder control</span>.
             </p>
