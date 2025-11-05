@@ -18,6 +18,7 @@ import BlockchainSizeComparison from "@/components/BlockchainSizeComparison";
 import MoneroComparison from "@/components/MoneroComparison";
 import Roadmap from "@/components/Roadmap";
 import SupplyShock from "@/components/SupplyShock";
+import PowerToChoose from "@/components/PowerToChoose";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <Hero />
       <Stats />
       <SupplyShock />
+      <PowerToChoose />
       <DecredEvolution />
       <HybridConsensus />
       <GovernanceLayer />
