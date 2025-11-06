@@ -19,6 +19,7 @@ import MoneroComparison from "@/components/MoneroComparison";
 import Roadmap from "@/components/Roadmap";
 import SupplyShock from "@/components/SupplyShock";
 import PowerToChoose from "@/components/PowerToChoose";
+import MixingAnimation from "@/components/MixingAnimation";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
       <DecredSPV />
       <StakeShuffle />
       <CoinMixing />
+      <MixingAnimation />
       <BlockchainSizeComparison />
       <DCRDEX />
       <MoneroComparison />
