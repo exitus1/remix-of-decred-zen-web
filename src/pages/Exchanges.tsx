@@ -195,7 +195,7 @@ const Exchanges = () => {
                             key={feature}
                             className="flex items-center gap-2 text-sm text-muted-foreground"
                           >
-                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" || feature === "Set VPN to non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
                             {feature}
                           </div>
                         ))}
