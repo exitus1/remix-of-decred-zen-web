@@ -68,7 +68,7 @@ const Exchanges = () => {
       logo: alchemyPayLogo,
       description: "Buy DCR instantly with debit card - fast and easy onboarding",
       type: "Fiat Gateway",
-      features: ["Debit Card", "Instant Purchase", "Fiat to Crypto", "Easy Onboarding"],
+      features: ["Debit Card", "Instant Purchase", "Fiat to Crypto", "US Allowed"],
       url: "https://ramp.alchemypay.org/",
       badge: "$ USD Supported",
       icon: <CreditCard className="w-5 h-5" />
@@ -264,6 +264,7 @@ const Exchanges = () => {
                           <div className={`w-1.5 h-1.5 rounded-full ${
                             feature === "Bitcoin Trading" ? "bg-orange-500" : 
                             feature === "Non-USA" ? "bg-yellow-500" : 
+                            feature === "US Allowed" ? "bg-green-500" :
                             "bg-primary"
                           }`} />
                           {feature}
