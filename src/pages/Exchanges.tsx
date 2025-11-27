@@ -44,7 +44,7 @@ const Exchanges = () => {
       logo: mexcLogo,
       description: "Leading cryptocurrency exchange with extensive altcoin offerings",
       type: "Centralized Exchange",
-      features: ["Wide Selection", "Competitive Fees", "Fast Trading", "Mobile App"],
+      features: ["Set VPN to non-USA", "Competitive Fees", "Fast Trading", "Mobile App"],
       url: "https://www.mexc.com/exchange/DCR_USDT",
       badge: "High Volume",
       icon: <Zap className="w-5 h-5" />
