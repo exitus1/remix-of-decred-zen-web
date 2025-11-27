@@ -42,7 +42,7 @@ const Exchanges = () => {
     {
       name: "MEXC",
       logo: mexcLogo,
-      description: "Leading cryptocurrency exchange with extensive altcoin offerings",
+      description: "Popular altcoin exchange. US users must use a VPN to access.",
       type: "Centralized Exchange",
       features: ["Set VPN to non-USA", "Competitive Fees", "No KYC", "Mobile App"],
       url: "https://www.mexc.com/exchange/DCR_USDT",
