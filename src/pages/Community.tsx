@@ -11,7 +11,7 @@ const Community = () => {
   const socialPlatforms = [
     {
       name: "X (Twitter)",
-      description: "Follow Decred on X for the latest news and updates",
+      description: "Follow Decred on X",
       icon: Hash,
       logo: xLogo,
       link: "https://x.com/decredproject",
