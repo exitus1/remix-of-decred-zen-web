@@ -58,7 +58,7 @@ const Exchanges = () => {
       description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
       type: "Decentralized Exchange",
       features: ["No KYC", "Non-Custodial", "Bitcoin Trading", "Zero Trading Fees"],
-      url: "https://dex.decred.org/",
+      url: "https://bisonwallet.org/",
       badge: "Maximum Security",
       icon: <Shield className="w-5 h-5" />,
       tradingPairs: true
