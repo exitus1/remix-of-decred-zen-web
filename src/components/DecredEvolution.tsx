@@ -1,4 +1,4 @@
-import { ArrowRight, Check, X } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import bitcoinIcon from "@/assets/bitcoin-logo-round.png";
 import decredIcon from "@/assets/decred-icon.jpg";
@@ -17,7 +17,7 @@ const DecredEvolution = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Bitcoin */}
             <Card className="p-8 bg-card border-border">
               <div className="flex items-center justify-center gap-3 mb-6">
@@ -52,15 +52,6 @@ const DecredEvolution = () => {
               </div>
             </Card>
 
-            {/* Arrow */}
-            <div className="flex justify-center">
-              <div className="relative">
-                <ArrowRight className="w-12 h-12 text-primary animate-pulse" />
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                  <span className="text-sm font-semibold text-primary">Evolution</span>
-                </div>
-              </div>
-            </div>
 
             {/* Decred */}
             <Card className="p-8 bg-card border-primary/50 hover-glow">
