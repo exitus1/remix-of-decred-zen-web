@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import Exchanges from "./pages/Exchanges";
 import Wallets from "./pages/Wallets";
 import Community from "./pages/Community";
-import WhyDecred from "./pages/WhyDecred";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,7 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/why-decred" element={<WhyDecred />} />
+          
           <Route path="/exchanges" element={<Exchanges />} />
           <Route path="/wallets" element={<Wallets />} />
           <Route path="/community" element={<Community />} />
