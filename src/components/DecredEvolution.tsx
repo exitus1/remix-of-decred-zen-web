@@ -19,7 +19,7 @@ const DecredEvolution = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-start justify-center gap-4 max-w-3xl mx-auto">
             {/* Bitcoin */}
-            <Card className="p-10 bg-card border-border w-72">
+            <Card className="p-10 bg-card border-border w-80">
               <div className="flex items-center justify-center gap-3 mb-8">
                 <img src={bitcoinIcon} alt="Bitcoin" className="w-10 h-10 rounded-full" />
                 <h3 className="text-2xl font-bold">Bitcoin</h3>
