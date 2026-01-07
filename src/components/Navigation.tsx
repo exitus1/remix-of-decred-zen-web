@@ -13,15 +13,6 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/why-decred" className="text-muted-foreground hover:text-foreground transition-colors">
-              Why Decred
-            </Link>
-            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
-              Features
-            </a>
-            <a href="/#governance" className="text-muted-foreground hover:text-foreground transition-colors">
-              Governance
-            </a>
             <Link to="/exchanges" className="text-muted-foreground hover:text-foreground transition-colors">
               Exchanges
             </Link>
