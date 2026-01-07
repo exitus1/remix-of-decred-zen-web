@@ -62,7 +62,7 @@ const DecredEvolution = () => {
             </div>
 
             {/* Decred */}
-            <Card className="p-10 bg-card border-primary/50 hover-glow w-72">
+            <Card className="p-10 bg-card border-primary/50 hover-glow w-80">
               <div className="flex items-center justify-center gap-3 mb-8">
                 <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-full" />
                 <h3 className="text-2xl font-bold text-primary">Decred</h3>
