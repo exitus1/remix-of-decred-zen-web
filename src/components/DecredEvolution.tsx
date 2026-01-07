@@ -57,7 +57,7 @@ const DecredEvolution = () => {
             </Card>
 
             {/* Arrow */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 self-center">
               <ArrowRight className="w-8 h-8 text-primary" />
             </div>
 
