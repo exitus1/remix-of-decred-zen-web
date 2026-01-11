@@ -28,14 +28,6 @@ const Features = () => {
   return (
     <section className="py-32 relative">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Decred?
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Superior security architecture, real stakeholder power, and sustainable funding—built to preserve sovereignty for generations.
-          </p>
-        </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
