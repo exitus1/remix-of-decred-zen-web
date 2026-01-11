@@ -7,10 +7,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
-import DCRDEX from "@/components/DCRDEX";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
-import BlockchainSizeComparison from "@/components/BlockchainSizeComparison";
-import Roadmap from "@/components/Roadmap";
 import SupplyShock from "@/components/SupplyShock";
 import PowerToChoose from "@/components/PowerToChoose";
 
@@ -27,11 +24,8 @@ const Index = () => {
       <HybridConsensus />
       <Features />
       <CoinMixing />
-      <BlockchainSizeComparison />
-      <DCRDEX />
       <Treasury />
       <ConsensusUpgrade />
-      <Roadmap />
     </div>
   );
 };
