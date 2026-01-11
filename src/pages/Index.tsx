@@ -1,31 +1,421 @@
+import { ArrowUpRight, Shield, Zap, Users, CreditCard } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Stats from "@/components/Stats";
-import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
-import DecredEvolution from "@/components/DecredEvolution";
-import CoinMixing from "@/components/CoinMixing";
-import HybridConsensus from "@/components/HybridConsensus";
-import ConsensusUpgrade from "@/components/ConsensusUpgrade";
-import SupplyShock from "@/components/SupplyShock";
-import PowerToChoose from "@/components/PowerToChoose";
+import binanceLogo from "@/assets/binance-logo-square.jpg";
+import mexcLogo from "@/assets/mexc-logo.svg";
+import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
+import simpleswapLogo from "@/assets/simpleswap-logo.webp";
+import godexLogo from "@/assets/godex-logo-new.jpg";
+import stealthexLogo from "@/assets/stealthex-logo-new.png";
+import dcrdexLogo from "@/assets/dcrdex-logo.png";
+import kucoinLogo from "@/assets/kucoin-logo-square.png";
+import gateioLogo from "@/assets/gateio-logo-square.jpg";
+import holytransactionLogo from "@/assets/holytransaction-logo.jpg";
+import novadaxLogo from "@/assets/novadax-logo-square.jpg";
+import swyftxLogo from "@/assets/swyftx-logo-square.jpg";
+import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
+import basicswapLogo from "@/assets/basicswap-logo-square.jpg";
+import bitvavoLogo from "@/assets/bitvavo-logo-square.png";
+import trocadorLogo from "@/assets/trocador-logo.png";
+import changenowLogo from "@/assets/changenow-logo.webp";
+import exolixLogo from "@/assets/exolix-logo.jpg";
+import swapzoneLogo from "@/assets/swapzone-logo.jpg";
+import flypMeLogo from "@/assets/flypme-logo.jpg";
 
 const Index = () => {
+  const primaryExchanges = [
+    {
+      name: "Binance",
+      logo: binanceLogo,
+      description: "World's largest cryptocurrency exchange by trading volume",
+      type: "Centralized Exchange",
+      features: ["High Liquidity", "Low Fees", "Advanced Trading", "Non-USA"],
+      url: "https://www.binance.com/en/trade/DCR_USDT",
+      badge: "Most Popular",
+      icon: <Users className="w-5 h-5" />
+    },
+    {
+      name: "MEXC",
+      logo: mexcLogo,
+      description: "Popular altcoin exchange. US users must use a VPN to access.",
+      type: "Centralized Exchange",
+      features: ["Set VPN to non-USA", "Competitive Fees", "No KYC", "Mobile App"],
+      url: "https://www.mexc.com/exchange/DCR_USDT",
+      badge: "High Volume",
+      icon: <Zap className="w-5 h-5" />
+    }
+  ];
+
+  const mainExchanges = [
+    {
+      name: "DCRDEX",
+      logo: dcrdexLogo,
+      description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
+      type: "Decentralized Exchange",
+      features: ["No KYC", "Non-Custodial", "Bitcoin Trading", "Zero Trading Fees"],
+      url: "https://bisonwallet.org/",
+      badge: "Maximum Security",
+      icon: <Shield className="w-5 h-5" />,
+      tradingPairs: true
+    },
+    {
+      name: "Alchemy Pay",
+      logo: alchemyPayLogo,
+      description: "Buy DCR instantly with debit card - fast and easy onboarding",
+      type: "Fiat Gateway",
+      features: ["Debit Card", "Instant Purchase", "Fiat to Crypto", "US Allowed"],
+      url: "https://ramp.alchemypay.org/",
+      badge: "$ USD Supported",
+      icon: <CreditCard className="w-5 h-5" />
+    }
+  ];
+
+  const alternativeExchanges = [
+    {
+      name: "KuCoin",
+      logo: kucoinLogo,
+      description: "Global cryptocurrency exchange with spot and futures trading",
+      url: "https://www.kucoin.com/price/DCR"
+    },
+    {
+      name: "Gate.io",
+      logo: gateioLogo,
+      description: "Comprehensive trading platform with wide coin selection",
+      url: "https://www.gate.com/price/decred-dcr"
+    },
+    {
+      name: "HolyTransaction",
+      logo: holytransactionLogo,
+      description: "Multi-currency wallet and exchange platform",
+      url: "https://holytransaction.com/"
+    },
+    {
+      name: "Novadax",
+      logo: novadaxLogo,
+      description: "Brazilian cryptocurrency exchange with local support",
+      url: "https://www.novadax.com.br/en-US",
+      badge: "Brazil"
+    },
+    {
+      name: "Swyftx",
+      logo: swyftxLogo,
+      description: "Australian cryptocurrency exchange with easy fiat onramp",
+      url: "https://swyftx.com/au/buy/decred/",
+      badge: "Australia"
+    },
+    {
+      name: "NonKYC",
+      logo: nonkycLogo,
+      description: "Privacy-focused exchange with no KYC requirements",
+      url: "https://nonkyc.io/market/DCR_USDT"
+    },
+    {
+      name: "BasicSwap",
+      logo: basicswapLogo,
+      description: "Cross-chain DEX for peer-to-peer atomic swaps",
+      url: "https://basicswapdex.com/",
+      badge: "DEX"
+    },
+    {
+      name: "Bitvavo",
+      logo: bitvavoLogo,
+      description: "European cryptocurrency exchange platform",
+      url: "https://bitvavo.com/en",
+      badge: "Europe"
+    }
+  ];
+
+  const instantSwaps = [
+    { name: "SimpleSwap", logo: simpleswapLogo, url: "https://simpleswap.io/" },
+    { name: "Godex", logo: godexLogo, url: "https://godex.io/" },
+    { name: "StealthEx", logo: stealthexLogo, url: "https://stealthex.io/" },
+    { name: "Trocador", logo: trocadorLogo, url: "https://trocador.app/" },
+    { name: "ChangeNOW", logo: changenowLogo, url: "https://changenow.io/" },
+    { name: "Exolix", logo: exolixLogo, url: "https://exolix.com/" },
+    { name: "Swapzone", logo: swapzoneLogo, url: "https://swapzone.io/" },
+    { name: "Flyp.me", logo: flypMeLogo, url: "https://flyp.me/" }
+  ];
+
   return (
     <div className="min-h-screen bg-background relative">
       <ArtisticBackground />
       <Navigation />
-      <Hero />
-      <Stats />
-      <SupplyShock />
-      <PowerToChoose />
-      <DecredEvolution />
-      <HybridConsensus />
-      <Features />
-      <CoinMixing />
-      <Treasury />
-      <ConsensusUpgrade />
+      
+      <main className="relative z-10 pt-32 pb-20">
+        <div className="container mx-auto px-6">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+              Get Decred
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Trade, swap, or purchase <span className="text-primary font-semibold">DCR</span> on these featured exchanges and platforms
+            </p>
+          </div>
+
+          {/* Primary Exchanges */}
+          <div className="mb-12 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Primary</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {primaryExchanges.map((exchange) => (
+                <Card key={exchange.name} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardHeader>
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0" : exchange.name === "MEXC" ? "p-0.5" : "p-1.5"}`}>
+                          <img 
+                            src={exchange.logo} 
+                            alt={exchange.name}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div>
+                          <CardTitle className="text-2xl mb-1">{exchange.name}</CardTitle>
+                          <Badge variant="secondary" className="text-xs">
+                            {exchange.type}
+                          </Badge>
+                        </div>
+                      </div>
+                      <Badge variant="default" className="bg-primary/20 text-primary border-primary/30">
+                        {exchange.badge}
+                      </Badge>
+                    </div>
+                    <CardDescription className="text-base">
+                      {exchange.description}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-2">
+                        {exchange.features.map((feature) => (
+                          <div 
+                            key={feature}
+                            className="flex items-center gap-2 text-sm text-muted-foreground"
+                          >
+                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" || feature === "Set VPN to non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                      <Button 
+                        className="w-full group-hover:scale-[1.02] transition-transform"
+                        onClick={() => window.open(exchange.url, '_blank')}
+                      >
+                        Visit {exchange.name}
+                        <ArrowUpRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Main Exchanges */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+            {mainExchanges.map((exchange) => (
+              <Card key={exchange.name} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <CardHeader>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-4">
+                      <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "DCRDEX" ? "p-0.5" : "p-1.5"}`}>
+                        <img 
+                          src={exchange.logo} 
+                          alt={exchange.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div>
+                        <CardTitle className="text-2xl mb-1">{exchange.name}</CardTitle>
+                        <Badge variant="secondary" className="text-xs">
+                          {exchange.type}
+                        </Badge>
+                      </div>
+                    </div>
+                    <Badge variant="default" className={exchange.name === "Alchemy Pay" ? "bg-green-500/10 text-green-500 border-green-500/30" : "bg-primary/20 text-primary border-primary/30"}>
+                      {exchange.badge}
+                    </Badge>
+                  </div>
+                  <CardDescription className="text-base">
+                    {exchange.description}
+                  </CardDescription>
+                </CardHeader>
+                
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-2 gap-2">
+                      {exchange.features.map((feature) => (
+                        <div 
+                          key={feature}
+                          className="flex items-center gap-2 text-sm text-muted-foreground"
+                        >
+                          <div className={`w-1.5 h-1.5 rounded-full ${
+                            feature === "Bitcoin Trading" ? "bg-orange-500" : 
+                            feature === "Non-USA" ? "bg-yellow-500" : 
+                            feature === "US Allowed" ? "bg-green-500" :
+                            "bg-primary"
+                          }`} />
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
+                    <Button 
+                      className="w-full group-hover:scale-[1.02] transition-transform"
+                      onClick={() => window.open(exchange.url, '_blank')}
+                    >
+                      Visit {exchange.name}
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Alternative Exchanges */}
+          <div className="mb-12 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Alternative</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {alternativeExchanges.map((exchange) => (
+                <Card key={exchange.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center p-0.5">
+                        <img 
+                          src={exchange.logo} 
+                          alt={exchange.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="text-lg">{exchange.name}</CardTitle>
+                        {exchange.badge && (
+                          <Badge 
+                            variant="outline" 
+                            className={`text-xs mt-1 ${
+                              exchange.name === "Swyftx" 
+                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30"
+                                : exchange.name === "BasicSwap"
+                                ? "bg-purple-500/10 text-purple-500 border-purple-500/30"
+                                : exchange.name === "Bitvavo"
+                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30"
+                                : "bg-green-500/10 text-green-500 border-green-500/30"
+                            }`}
+                          >
+                            {exchange.name === "Novadax" && "🇧🇷 "}
+                            {exchange.name === "Swyftx" && "🇦🇺 "}
+                            {exchange.name === "Bitvavo" && "🇪🇺 "}
+                            {exchange.badge}
+                          </Badge>
+                        )}
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {exchange.description}
+                    </p>
+                    <Button 
+                      className="w-full"
+                      variant="outline"
+                      onClick={() => window.open(exchange.url, '_blank')}
+                    >
+                      Visit {exchange.name}
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Instant Swaps Section */}
+          <div className="mt-20 max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4 text-white">
+                Instant Crypto Swaps
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Quick and simple crypto-to-crypto exchanges. <span className="text-yellow-500">Note:</span> These are custodial services.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+              {instantSwaps.map((swap) => (
+                <Card key={swap.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 rounded-lg bg-background p-1 flex items-center justify-center">
+                        <img 
+                          src={swap.logo} 
+                          alt={swap.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <CardTitle className="text-lg">{swap.name}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <Button 
+                      className="w-full"
+                      size="sm"
+                      variant="outline"
+                      onClick={() => window.open(swap.url, '_blank')}
+                    >
+                      Visit
+                      <ArrowUpRight className="w-3 h-3 ml-1" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Why Choose Different Platforms */}
+          <div className="mt-20 max-w-4xl mx-auto">
+            <Card className="border-border/50 bg-card/30 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl">Why Choose Different Platforms?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                      <Shield className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Privacy</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Use DCRDEX, BasicSwap, or NonKYC for maximum privacy without identity verification
+                    </p>
+                  </div>
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Speed</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Instant swap services provide the fastest way to convert between cryptocurrencies
+                    </p>
+                  </div>
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                      <CreditCard className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Fiat Access</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Use Alchemy Pay or major exchanges to buy DCR directly with traditional currency
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };

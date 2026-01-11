@@ -13,8 +13,8 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/exchanges" className="text-muted-foreground hover:text-foreground transition-colors">
-              Exchanges
+            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+              About
             </Link>
             <Link to="/wallets" className="text-muted-foreground hover:text-foreground transition-colors">
               Wallets
@@ -24,11 +24,9 @@ const Navigation = () => {
             </Link>
           </div>
           
-          <Link to="/exchanges">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Get DCR
-            </Button>
-          </Link>
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            Get DCR
+          </Button>
         </div>
       </div>
     </nav>
