@@ -7,16 +7,12 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
-import DecredSPV from "@/components/DecredSPV";
-import StakeShuffle from "@/components/StakeShuffle";
 import DCRDEX from "@/components/DCRDEX";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import BlockchainSizeComparison from "@/components/BlockchainSizeComparison";
-import MoneroComparison from "@/components/MoneroComparison";
 import Roadmap from "@/components/Roadmap";
 import SupplyShock from "@/components/SupplyShock";
 import PowerToChoose from "@/components/PowerToChoose";
-import MixingAnimation from "@/components/MixingAnimation";
 
 const Index = () => {
   return (
@@ -30,13 +26,9 @@ const Index = () => {
       <DecredEvolution />
       <HybridConsensus />
       <Features />
-      <DecredSPV />
-      <StakeShuffle />
       <CoinMixing />
-      <MixingAnimation />
       <BlockchainSizeComparison />
       <DCRDEX />
-      <MoneroComparison />
       <Treasury />
       <ConsensusUpgrade />
       <Roadmap />
