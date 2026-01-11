@@ -7,7 +7,6 @@ import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import HybridConsensus from "@/components/HybridConsensus";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
-import SupplyShock from "@/components/SupplyShock";
 import PowerToChoose from "@/components/PowerToChoose";
 
 const About = () => {
@@ -19,7 +18,6 @@ const About = () => {
         <DecredEvolution />
       </div>
       <Stats />
-      <SupplyShock />
       <PowerToChoose />
       <HybridConsensus />
       <Features />
