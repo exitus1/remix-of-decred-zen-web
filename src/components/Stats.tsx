@@ -2,7 +2,7 @@ const stats = [
   { value: "64%", label: "Supply Mixed" },
   { value: "21M", label: "Max Supply" },
   { value: "60%", label: "Staked Supply" },
-  { value: "$2B+", label: "Market Cap" }
+  { value: "$50M+", label: "Treasury Size" }
 ];
 
 const Stats = () => {
