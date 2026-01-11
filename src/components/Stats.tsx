@@ -1,5 +1,5 @@
 const stats = [
-  { value: "99.99%", label: "Uptime Since 2016" },
+  { value: "64%", label: "Supply Mixed" },
   { value: "21M", label: "Max Supply" },
   { value: "60%", label: "Staked Supply" },
   { value: "$2B+", label: "Market Cap" }
