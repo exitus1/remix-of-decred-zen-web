@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Stats from "@/components/Stats";
 import Treasury from "@/components/Treasury";
@@ -16,11 +15,12 @@ const About = () => {
     <div className="min-h-screen bg-background relative">
       <ArtisticBackground />
       <Navigation />
-      <Hero />
+      <div className="pt-20">
+        <DecredEvolution />
+      </div>
       <Stats />
       <SupplyShock />
       <PowerToChoose />
-      <DecredEvolution />
       <HybridConsensus />
       <Features />
       <CoinMixing />
