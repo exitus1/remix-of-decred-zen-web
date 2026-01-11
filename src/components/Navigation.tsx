@@ -13,6 +13,9 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
+              Exchanges
+            </Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
