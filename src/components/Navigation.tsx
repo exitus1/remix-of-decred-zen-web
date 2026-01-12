@@ -16,11 +16,11 @@ const Navigation = () => {
             <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               Exchanges
             </Link>
-            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </Link>
             <Link to="/wallets" className="text-muted-foreground hover:text-foreground transition-colors">
               Wallets
+            </Link>
+            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+              About
             </Link>
             <Link to="/community" className="text-muted-foreground hover:text-foreground transition-colors">
               Community
