@@ -1,140 +1,165 @@
-import { ArrowRight, TrendingUp } from "lucide-react";
+import { ArrowRight, TrendingUp, Wallet, Users, FileText, MessageSquare, Vote, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Treasury = () => {
   return (
-    <section className="py-32 relative">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    <section className="py-24 relative overflow-hidden">
+      {/* Background gradient orbs */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/8 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <Wallet className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Sustainable Funding</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
             Self-Funding Treasury
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Decred's treasury automatically receives 10% of every block reward, creating a sustainable funding mechanism 
-            that's controlled entirely by stakeholders—no foundations, no VCs, no external dependencies.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            10% of every block reward flows directly to the treasury—no foundations, no VCs, 
+            just stakeholder-controlled sustainable development.
           </p>
         </div>
 
-        {/* Treasury Flow Diagram */}
-        <div className="max-w-5xl mx-auto mb-16">
-          <div className="relative">
-            {/* Block Reward Source */}
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-primary/10 border-2 border-primary mb-4">
+        {/* Main Distribution Visual */}
+        <div className="max-w-6xl mx-auto mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Animated Distribution Chart */}
+            <div className="relative">
+              <div className="relative w-72 h-72 mx-auto">
+                {/* Outer ring */}
+                <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
+                  {/* Background circle */}
+                  <circle cx="50" cy="50" r="42" fill="none" className="stroke-muted/20" strokeWidth="12" />
+                  {/* PoW - 60% */}
+                  <circle 
+                    cx="50" cy="50" r="42" 
+                    fill="none" 
+                    className="stroke-muted-foreground/40" 
+                    strokeWidth="12"
+                    strokeDasharray="158.4 105.6"
+                    strokeLinecap="round"
+                  />
+                  {/* PoS - 30% */}
+                  <circle 
+                    cx="50" cy="50" r="42" 
+                    fill="none" 
+                    className="stroke-primary/50" 
+                    strokeWidth="12"
+                    strokeDasharray="79.2 184.8"
+                    strokeDashoffset="-158.4"
+                    strokeLinecap="round"
+                  />
+                  {/* Treasury - 10% */}
+                  <circle 
+                    cx="50" cy="50" r="42" 
+                    fill="none" 
+                    className="stroke-primary" 
+                    strokeWidth="12"
+                    strokeDasharray="26.4 237.6"
+                    strokeDashoffset="-237.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                {/* Center content */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-5xl font-bold text-primary">10%</div>
+                    <div className="text-sm text-muted-foreground mt-1">to Treasury</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Legend */}
+              <div className="flex justify-center gap-6 mt-8">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
+                  <span className="text-sm text-muted-foreground">60% Miners</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-primary/50" />
+                  <span className="text-sm text-muted-foreground">30% Voters</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-primary" />
+                  <span className="text-sm text-muted-foreground">10% Treasury</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Stats Cards */}
+            <div className="space-y-4">
+              <div className="group p-6 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-1">Treasury Value</p>
+                    <div className="text-4xl font-bold">$100M<span className="text-primary">+</span></div>
+                  </div>
+                  <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                    <TrendingUp className="w-8 h-8 text-primary" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-5 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 backdrop-blur-sm">
+                  <p className="text-sm text-muted-foreground mb-1">DCR Held</p>
+                  <div className="text-2xl font-bold">800K<span className="text-primary">+</span></div>
+                </div>
+                <div className="p-5 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+                  <p className="text-sm text-muted-foreground mb-1">Control</p>
+                  <div className="text-2xl font-bold text-primary">100%</div>
+                  <p className="text-xs text-muted-foreground">Stakeholder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* How It Works - Modern Timeline */}
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold mb-10 text-center">How Treasury Spending Works</h3>
+          
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              { icon: FileText, title: "Propose", desc: "Submit on Politeia" },
+              { icon: MessageSquare, title: "Discuss", desc: "Community debate" },
+              { icon: Vote, title: "Vote", desc: "60% approval needed" },
+              { icon: CheckCircle, title: "Execute", desc: "Funds released" },
+            ].map((step, index) => (
+              <div key={index} className="relative group">
+                {/* Connector line */}
+                {index < 3 && (
+                  <div className="hidden md:block absolute top-10 left-[60%] w-full h-[2px] bg-gradient-to-r from-primary/30 to-transparent" />
+                )}
+                
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">100%</div>
-                  <div className="text-xs text-muted-foreground">Block Reward</div>
+                  <div className="relative inline-flex mb-4">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center group-hover:scale-105 transition-transform">
+                      <step.icon className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
+                      {index + 1}
+                    </div>
+                  </div>
+                  <h4 className="font-semibold mb-1">{step.title}</h4>
+                  <p className="text-sm text-muted-foreground">{step.desc}</p>
                 </div>
               </div>
-            </div>
-
-            {/* Distribution */}
-            <div className="grid md:grid-cols-3 gap-8 relative">
-              {/* Connecting lines */}
-              <div className="hidden md:block absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-              
-              {/* PoW Miners */}
-              <div className="text-center relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 h-12 w-[1px] bg-primary/30" />
-                <div className="p-8 rounded-xl bg-secondary border border-border">
-                  <div className="text-4xl font-bold text-primary mb-2">60%</div>
-                  <h3 className="text-xl font-semibold mb-3">PoW Miners</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Secure the network by solving computational puzzles and proposing new blocks
-                  </p>
-                </div>
-              </div>
-
-              {/* PoS Voters */}
-              <div className="text-center relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 h-12 w-[1px] bg-primary/30" />
-                <div className="p-8 rounded-xl bg-secondary border border-border">
-                  <div className="text-4xl font-bold text-primary mb-2">30%</div>
-                  <h3 className="text-xl font-semibold mb-3">PoS Voters</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Validate blocks and vote on governance proposals through ticket staking
-                  </p>
-                </div>
-              </div>
-
-              {/* Treasury */}
-              <div className="text-center relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 h-12 w-[1px] bg-primary/30" />
-                <div className="p-8 rounded-xl bg-primary/10 border border-primary">
-                  <div className="text-4xl font-bold text-primary mb-2">10%</div>
-                  <h3 className="text-xl font-semibold mb-3">Treasury</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Funds development, marketing, and operations—controlled by stakeholder votes
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
-        {/* Treasury Stats */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-          <div className="p-6 rounded-xl bg-card border border-border text-center">
-            <div className="flex items-center justify-center mb-2">
-              <TrendingUp className="h-6 w-6 text-primary mr-2" />
-              <div className="text-3xl font-bold text-primary">$100M+</div>
-            </div>
-            <p className="text-sm text-muted-foreground">Treasury Value (USD)</p>
-          </div>
-          
-          <div className="p-6 rounded-xl bg-card border border-border text-center">
-            <div className="text-3xl font-bold text-primary mb-2">800K+</div>
-            <p className="text-sm text-muted-foreground">DCR in Treasury</p>
-          </div>
-          
-          <div className="p-6 rounded-xl bg-card border border-border text-center">
-            <div className="text-3xl font-bold text-primary mb-2">100%</div>
-            <p className="text-sm text-muted-foreground">Stakeholder Controlled</p>
-          </div>
-        </div>
-
-        {/* How It Works */}
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold mb-6 text-center">How Treasury Spending Works</h3>
-          <div className="space-y-4">
-            <div className="flex gap-4 p-4 rounded-lg bg-secondary/50 border border-border">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">1</div>
-              <div>
-                <h4 className="font-semibold mb-1">Proposal Submission</h4>
-                <p className="text-sm text-muted-foreground">Anyone can submit a proposal on Politeia for treasury funding</p>
-              </div>
-            </div>
-            
-            <div className="flex gap-4 p-4 rounded-lg bg-secondary/50 border border-border">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">2</div>
-              <div>
-                <h4 className="font-semibold mb-1">Community Discussion</h4>
-                <p className="text-sm text-muted-foreground">Proposals are debated and refined through public discussion</p>
-              </div>
-            </div>
-            
-            <div className="flex gap-4 p-4 rounded-lg bg-secondary/50 border border-border">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">3</div>
-              <div>
-                <h4 className="font-semibold mb-1">Stakeholder Vote</h4>
-                <p className="text-sm text-muted-foreground">Ticket holders vote on-chain with binding results (60% approval required)</p>
-              </div>
-            </div>
-            
-            <div className="flex gap-4 p-4 rounded-lg bg-secondary/50 border border-border">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">4</div>
-              <div>
-                <h4 className="font-semibold mb-1">Execution & Payment</h4>
-                <p className="text-sm text-muted-foreground">Approved contractors deliver work and receive payment from the treasury</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
+        {/* CTA */}
+        <div className="text-center mt-16">
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground hover-glow group"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground hover-glow group px-8"
           >
             View Treasury Balance
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
