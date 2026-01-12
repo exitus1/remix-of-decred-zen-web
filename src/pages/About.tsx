@@ -5,7 +5,6 @@ import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
-import HybridConsensus from "@/components/HybridConsensus";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import PowerToChoose from "@/components/PowerToChoose";
 
@@ -19,7 +18,6 @@ const About = () => {
       </div>
       <Stats />
       <PowerToChoose />
-      <HybridConsensus />
       <Features />
       <CoinMixing />
       <Treasury />
