@@ -6,6 +6,7 @@ import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import PowerToChoose from "@/components/PowerToChoose";
+import LiveStats from "@/components/LiveStats";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       <div className="pt-20">
         <DecredEvolution />
       </div>
+      <LiveStats />
       <PowerToChoose />
       <Features />
       <CoinMixing />
