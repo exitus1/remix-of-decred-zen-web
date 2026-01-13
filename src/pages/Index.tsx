@@ -52,7 +52,7 @@ const Index = () => {
 
   const mainExchanges = [
     {
-      name: "DCRDEX",
+      name: "Bison Wallet",
       logo: dcrdexLogo,
       description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
       type: "Decentralized Exchange",
@@ -222,7 +222,7 @@ const Index = () => {
                 <CardHeader>
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
-                      <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "DCRDEX" ? "p-0.5" : "p-1.5"}`}>
+                      <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Bison Wallet" ? "p-0.5" : "p-1.5"}`}>
                         <img 
                           src={exchange.logo} 
                           alt={exchange.name}
