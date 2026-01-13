@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import Features from "@/components/Features";
-import Stats from "@/components/Stats";
 import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
@@ -16,7 +15,6 @@ const About = () => {
       <div className="pt-20">
         <DecredEvolution />
       </div>
-      <Stats />
       <PowerToChoose />
       <Features />
       <CoinMixing />
