@@ -25,7 +25,7 @@ const Wallets = () => {
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       logo: bisonWalletLogo,
-      link: "https://dex.decred.org/",
+      link: "https://bisonwallet.org/",
     },
     {
       name: "Command-line Suite",
