@@ -61,7 +61,7 @@ const PowerToChoose = () => {
                 Unlike traditional cryptocurrencies where changes are decided by a small group of developers or miners, 
                 Decred gives the power directly to coinholders. Through time-locked tickets, stakeholders vote on-chain 
                 to approve consensus rule changes, treasury spending, and network policies. Every vote is recorded on the 
-                blockchain and automatically executed—no politics, no compromises, just pure democratic governance.
+                blockchain and automatically executed—no politics, no compromises, just pure stakeholder governance.
               </p>
             </div>
           </CardContent>
