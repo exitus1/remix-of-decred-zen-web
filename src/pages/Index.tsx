@@ -275,6 +275,26 @@ const Index = () => {
             ))}
           </div>
 
+          {/* Request Listing CTA */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <Card className="border-primary/30 bg-primary/5 backdrop-blur-sm">
+              <CardContent className="py-8">
+                <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Megaphone className="w-8 h-8 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2 text-white">Want DCR on Coinbase, Kraken, or other major exchanges?</h3>
+                    <p className="text-muted-foreground">
+                      Community demand matters! Reach out to your favorite exchanges directly and request that they list Decred. 
+                      The more requests they receive, the more likely they are to add DCR support.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Alternative Exchanges */}
           <div className="mb-12 max-w-6xl mx-auto">
             <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Alternative</h2>
@@ -411,25 +431,6 @@ const Index = () => {
             </Card>
           </div>
 
-          {/* Request Listing CTA */}
-          <div className="mt-16 max-w-4xl mx-auto">
-            <Card className="border-primary/30 bg-primary/5 backdrop-blur-sm">
-              <CardContent className="py-8">
-                <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Megaphone className="w-8 h-8 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2 text-white">Want DCR on Coinbase, Kraken, or other major exchanges?</h3>
-                    <p className="text-muted-foreground">
-                      Community demand matters! Reach out to your favorite exchanges directly and request that they list Decred. 
-                      The more requests they receive, the more likely they are to add DCR support.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </main>
     </div>
