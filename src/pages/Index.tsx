@@ -419,43 +419,39 @@ const Index = () => {
           </div>
 
           {/* Why Choose Different Platforms */}
-          <div className="mt-20 max-w-4xl mx-auto">
-            <Card className="border-border/50 bg-card/30 backdrop-blur-sm">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Why Choose Different Platforms?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                  <div>
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                      <Shield className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Privacy</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Use DCRDEX, BasicSwap, or NonKYC for maximum privacy without identity verification
-                    </p>
-                  </div>
-                  <div>
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                      <Zap className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Speed</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Instant swap services provide the fastest way to convert between cryptocurrencies
-                    </p>
-                  </div>
-                  <div>
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                      <CreditCard className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Fiat Access</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Use Alchemy Pay or major exchanges to buy DCR directly with traditional currency
-                    </p>
-                  </div>
+          <div className="mt-24 max-w-5xl mx-auto mb-8">
+            <h2 className="text-sm uppercase tracking-widest text-muted-foreground text-center mb-12">
+              Choose Your Path
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="group text-center">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <Shield className="w-6 h-6 text-primary" />
                 </div>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-medium mb-2 text-white">Privacy</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  DCRDEX · BasicSwap · NonKYC
+                </p>
+              </div>
+              <div className="group text-center">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-medium mb-2 text-white">Speed</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Instant swap services
+                </p>
+              </div>
+              <div className="group text-center">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <CreditCard className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-medium mb-2 text-white">Fiat Access</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Alchemy Pay · Major exchanges
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>
