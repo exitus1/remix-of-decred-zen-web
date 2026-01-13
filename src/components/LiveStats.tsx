@@ -87,7 +87,7 @@ const LiveStats = () => {
       label: "Treasury",
       value: stats.treasury,
       suffix: " DCR",
-      percentage: null,
+      percentage: stats.treasury ? ((stats.treasury / MAX_SUPPLY) * 100).toFixed(2) + "% of max supply" : null,
     },
   ];
 
