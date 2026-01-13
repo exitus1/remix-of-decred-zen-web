@@ -9,6 +9,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-lg" />
+            <span className="text-green-500 text-xl font-bold">get</span>
             <span className="text-xl font-bold">Decred</span>
           </Link>
           
