@@ -419,40 +419,68 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Custodial Service Notice */}
+          <div className="mt-16 max-w-6xl mx-auto">
+            <Card className="border-yellow-500/30 bg-yellow-500/5 backdrop-blur-sm">
+              <CardContent className="py-6">
+                <div className="flex items-start gap-4">
+                  <Shield className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-yellow-500">Custodial Service Notice</h3>
+                    <p className="text-muted-foreground">
+                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using DCRDEX for trustless, non-custodial atomic swaps.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Why Choose Different Platforms */}
-          <div className="mt-24 max-w-5xl mx-auto mb-8">
-            <h2 className="text-sm uppercase tracking-widest text-muted-foreground text-center mb-12">
-              Choose Your Path
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="group text-center">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                  <Shield className="w-6 h-6 text-primary" />
+          <div className="mt-16 max-w-6xl mx-auto mb-8">
+            <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <CardContent className="py-10 px-8">
+                <h2 className="text-3xl font-bold mb-10 text-white">Why Choose Different Platforms?</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <Users className="w-5 h-5 text-primary" />
+                      <h3 className="text-lg font-semibold text-white">Centralized Exchanges</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Best for high liquidity, advanced trading features, and fiat on-ramps. Binance and MEXC offer deep order books and competitive fees.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <Shield className="w-5 h-5 text-primary" />
+                      <h3 className="text-lg font-semibold text-white">DCRDEX</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      For maximum security and privacy, use DCRDEX. Non-custodial atomic swaps mean you maintain full control of your funds with no KYC required.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <CreditCard className="w-5 h-5 text-primary" />
+                      <h3 className="text-lg font-semibold text-white">Alchemy Pay</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      The fastest way for newcomers to purchase DCR directly with a debit card. Simple, quick, and beginner-friendly onboarding.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <Zap className="w-5 h-5 text-primary" />
+                      <h3 className="text-lg font-semibold text-white">Choose What's Best</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Each platform serves different needs. Consider your priorities: convenience, privacy, fees, or trading features.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-white">Privacy</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  DCRDEX · BasicSwap · NonKYC
-                </p>
-              </div>
-              <div className="group text-center">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                  <Zap className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-medium mb-2 text-white">Speed</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Instant swap services
-                </p>
-              </div>
-              <div className="group text-center">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                  <CreditCard className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-medium mb-2 text-white">Fiat Access</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Alchemy Pay · Major exchanges
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
 
         </div>
