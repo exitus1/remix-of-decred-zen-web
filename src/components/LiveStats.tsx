@@ -73,6 +73,7 @@ const LiveStats = () => {
   const statsItems = [
     {
       label: "Supply Mined",
+      sublabel: "(21M Max)",
       value: stats.supplyMined,
       suffix: " DCR",
       percentage: stats.supplyMined ? ((stats.supplyMined / MAX_SUPPLY) * 100).toFixed(1) + "% of max supply" : null,
@@ -119,6 +120,9 @@ const LiveStats = () => {
               )}
               <div className="text-muted-foreground text-sm md:text-base">
                 {stat.label}
+                {stat.sublabel && (
+                  <span className="text-xs text-muted-foreground/70 ml-1">{stat.sublabel}</span>
+                )}
               </div>
             </div>
           ))}
