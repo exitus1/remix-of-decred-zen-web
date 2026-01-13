@@ -10,7 +10,7 @@ import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.webp";
 import godexLogo from "@/assets/godex-logo-new.jpg";
 import stealthexLogo from "@/assets/stealthex-logo-new.png";
-import bisonWalletLogo from "@/assets/bison-wallet-logo.png";
+import bisonWalletLogo from "@/assets/bison-wallet-logo.jpg";
 import kucoinLogo from "@/assets/kucoin-logo-square.png";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import holytransactionLogo from "@/assets/holytransaction-logo.jpg";
