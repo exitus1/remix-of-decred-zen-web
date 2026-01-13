@@ -392,6 +392,23 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Custodial Service Notice */}
+          <div className="mt-8 max-w-6xl mx-auto">
+            <Card className="border-yellow-500/30 bg-yellow-500/5 backdrop-blur-sm">
+              <CardContent className="py-6">
+                <div className="flex items-start gap-4">
+                  <Shield className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-yellow-500">Custodial Service Notice</h3>
+                    <p className="text-muted-foreground">
+                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using DCRDEX for trustless, non-custodial atomic swaps.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Coming Soon Section */}
           <div className="mt-16 max-w-6xl mx-auto">
             <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Soon</h2>
@@ -417,23 +434,6 @@ const Index = () => {
                 </CardContent>
               </Card>
             </div>
-          </div>
-
-          {/* Custodial Service Notice */}
-          <div className="mt-16 max-w-6xl mx-auto">
-            <Card className="border-yellow-500/30 bg-yellow-500/5 backdrop-blur-sm">
-              <CardContent className="py-6">
-                <div className="flex items-start gap-4">
-                  <Shield className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2 text-yellow-500">Custodial Service Notice</h3>
-                    <p className="text-muted-foreground">
-                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using DCRDEX for trustless, non-custodial atomic swaps.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Why Choose Different Platforms */}
