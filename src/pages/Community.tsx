@@ -144,8 +144,8 @@ const Community = () => {
             <h2 className="text-3xl font-bold mb-6">Governance & Communication</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {governancePlatforms.map((platform) => (
-                <Card key={platform.name} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
+                <Card key={platform.name} className="hover:shadow-lg transition-shadow flex flex-col">
+                  <CardHeader className="flex-grow">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center border border-border">
                         <platform.icon className={`w-6 h-6 ${platform.color}`} />
@@ -156,7 +156,7 @@ const Community = () => {
                       {platform.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pt-0">
                     <a
                       href={platform.link}
                       target="_blank"
