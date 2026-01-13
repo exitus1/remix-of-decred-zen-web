@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, MessageCircle, Send, Hash, Users, Vote, FileText, Radio } from "lucide-react";
+import { Github, MessageCircle, Send, Hash, Users, Vote, Radio } from "lucide-react";
 import discordLogo from "@/assets/discord-logo.webp";
 import xLogo from "@/assets/x-logo.png";
 import elementLogo from "@/assets/element-logo.svg";
 import redditLogo from "@/assets/reddit-logo.png";
-
+import politeiaIcon from "@/assets/politeia-icon.svg";
 const Community = () => {
   const socialPlatforms = [
     {
@@ -68,7 +68,8 @@ const Community = () => {
     {
       name: "Proposals",
       description: "Review, discuss, and submit governance proposals",
-      icon: FileText,
+      icon: null,
+      logo: politeiaIcon,
       link: "https://proposals.decred.org/",
       color: "text-accent",
     },
@@ -148,7 +149,15 @@ const Community = () => {
                   <CardHeader className="flex-grow">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center border border-border">
-                        <platform.icon className={`w-6 h-6 ${platform.color}`} />
+                        {platform.logo ? (
+                          <img 
+                            src={platform.logo} 
+                            alt={platform.name}
+                            className="w-8 h-8 object-contain"
+                          />
+                        ) : platform.icon ? (
+                          <platform.icon className={`w-6 h-6 ${platform.color}`} />
+                        ) : null}
                       </div>
                       <CardTitle className="text-xl">{platform.name}</CardTitle>
                     </div>
