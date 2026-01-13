@@ -13,7 +13,7 @@ const ConsensusUpgrade = () => {
               Consensus Upgrade Process
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              No chain splits. No contentious forks. Just smooth, democratic upgrades.
+              No chain splits. No contentious forks. Just smooth, stakeholder-driven upgrades.
             </p>
           </div>
 
