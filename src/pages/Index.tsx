@@ -457,7 +457,7 @@ const Index = () => {
                       <h3 className="text-lg font-semibold text-white">DCRDEX</h3>
                     </div>
                     <p className="text-muted-foreground">
-                      For maximum security and privacy, use DCRDEX. Non-custodial atomic swaps mean you maintain full control of your funds with no KYC required.
+                      For maximum security and privacy, use Bison Wallet. Non-custodial atomic swaps mean you maintain full control of your funds with no KYC required.
                     </p>
                   </div>
                   <div>
