@@ -1,0 +1,121 @@
+import { useEffect, useState } from "react";
+
+interface StatsData {
+  supplyMined: number | null;
+  supplyStaked: number | null;
+  treasury: number | null;
+  loading: boolean;
+  error: string | null;
+}
+
+const formatNumber = (num: number): string => {
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(2) + "M";
+  } else if (num >= 1000) {
+    return (num / 1000).toFixed(1) + "K";
+  }
+  return num.toLocaleString();
+};
+
+const LiveStats = () => {
+  const [stats, setStats] = useState<StatsData>({
+    supplyMined: null,
+    supplyStaked: null,
+    treasury: null,
+    loading: true,
+    error: null,
+  });
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        // Fetch all data in parallel
+        const [supplyRes, stakePoolRes, treasuryRes] = await Promise.all([
+          fetch("https://dcrdata.decred.org/api/supply/circulating?dcr=true"),
+          fetch("https://dcrdata.decred.org/api/stake/pool"),
+          fetch("https://dcrdata.decred.org/api/treasury/balance"),
+        ]);
+
+        if (!supplyRes.ok || !stakePoolRes.ok || !treasuryRes.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const supplyMined = await supplyRes.json();
+        const stakePool = await stakePoolRes.json();
+        const treasury = await treasuryRes.json();
+
+        setStats({
+          supplyMined: supplyMined,
+          supplyStaked: stakePool.value,
+          treasury: treasury.balance / 100000000, // Convert from atoms to DCR
+          loading: false,
+          error: null,
+        });
+      } catch (err) {
+        console.error("Error fetching stats:", err);
+        setStats((prev) => ({
+          ...prev,
+          loading: false,
+          error: "Failed to load live data",
+        }));
+      }
+    };
+
+    fetchStats();
+    
+    // Refresh every 5 minutes
+    const interval = setInterval(fetchStats, 5 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const statsItems = [
+    {
+      label: "Supply Mined",
+      value: stats.supplyMined,
+      suffix: " DCR",
+    },
+    {
+      label: "Supply Staked",
+      value: stats.supplyStaked,
+      suffix: " DCR",
+    },
+    {
+      label: "Treasury",
+      value: stats.treasury,
+      suffix: " DCR",
+    },
+  ];
+
+  if (stats.error) {
+    return null; // Silently fail - don't show broken stats
+  }
+
+  return (
+    <section className="py-12 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {statsItems.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+                {stats.loading ? (
+                  <span className="animate-pulse">Loading...</span>
+                ) : stat.value !== null ? (
+                  formatNumber(stat.value) + stat.suffix
+                ) : (
+                  "—"
+                )}
+              </div>
+              <div className="text-muted-foreground text-sm md:text-base">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default LiveStats;
