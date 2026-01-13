@@ -132,66 +132,16 @@ const ConsensusUpgrade = () => {
             </Card>
           </div>
 
-          {/* Success Examples */}
-          <Card className="p-8 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30">
-            <h3 className="text-2xl font-bold mb-6 text-center">Proven Track Record</h3>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Lightning Network Support</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Activated via stakeholder vote in 2017—seamless upgrade
-                    </p>
-                    <Badge className="mt-2 bg-primary/20 text-primary">Passed: 99.6% Yes</Badge>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Explicit Version Upgrades</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Improved upgrade mechanism approved by stakeholders
-                    </p>
-                    <Badge className="mt-2 bg-primary/20 text-primary">Passed: 99.9% Yes</Badge>
-                  </div>
+          {/* Success Examples - Compact */}
+          <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-bold">Proven Track Record</h3>
+                  <p className="text-sm text-muted-foreground">Lightning Network, Block Header Commitments, Subsidy Split—all passed with 89-99% approval. Zero chain splits.</p>
                 </div>
               </div>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Block Header Commitments</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Enhanced security features voted in democratically
-                    </p>
-                    <Badge className="mt-2 bg-primary/20 text-primary">Passed: 99.7% Yes</Badge>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Subsidy Split Change</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Economic policy adjusted by community consensus
-                    </p>
-                    <Badge className="mt-2 bg-primary/20 text-primary">Passed: 89.2% Yes</Badge>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 p-6 bg-primary/10 rounded-lg border border-primary/20 text-center">
-              <Users className="w-12 h-12 text-primary mx-auto mb-3" />
-              <p className="text-lg font-semibold mb-2">Zero Chain Splits</p>
-              <p className="text-sm text-muted-foreground">
-                Unlike Bitcoin's contentious forks, Decred has never experienced a chain split thanks to binding stakeholder governance
-              </p>
             </div>
           </Card>
         </div>
