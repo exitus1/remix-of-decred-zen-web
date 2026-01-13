@@ -143,14 +143,14 @@ const Index = () => {
       <ArtisticBackground />
       <Navigation />
       
-      <main className="relative z-10 pt-32 pb-20">
+      <main className="relative z-10 pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+          <div className="text-center mb-10">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               Get Decred
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Trade, swap, or purchase <span className="text-primary font-semibold">DCR</span> on these featured exchanges and platforms
             </p>
           </div>
