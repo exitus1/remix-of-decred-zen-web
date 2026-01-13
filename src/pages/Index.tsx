@@ -401,7 +401,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-yellow-500">Custodial Service Notice</h3>
                     <p className="text-muted-foreground">
-                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using DCRDEX for trustless, non-custodial atomic swaps.
+                      These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using Bison Wallet for trustless, non-custodial atomic swaps.
                     </p>
                   </div>
                 </div>
