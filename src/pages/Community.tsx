@@ -60,7 +60,7 @@ const Community = () => {
   const governancePlatforms = [
     {
       name: "Voting Dashboard",
-      description: "Participate in Decred's on-chain governance voting",
+      description: "Review Decred's on-chain governance voting",
       icon: Vote,
       link: "https://voting.decred.org/",
       color: "text-primary",
