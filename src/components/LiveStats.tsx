@@ -68,21 +68,26 @@ const LiveStats = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const MAX_SUPPLY = 21000000;
+
   const statsItems = [
     {
       label: "Supply Mined",
       value: stats.supplyMined,
       suffix: " DCR",
+      percentage: stats.supplyMined ? ((stats.supplyMined / MAX_SUPPLY) * 100).toFixed(1) + "% of max supply" : null,
     },
     {
       label: "Supply Staked",
       value: stats.supplyStaked,
       suffix: " DCR",
+      percentage: stats.supplyStaked && stats.supplyMined ? ((stats.supplyStaked / stats.supplyMined) * 100).toFixed(1) + "% of circulating" : null,
     },
     {
       label: "Treasury",
       value: stats.treasury,
       suffix: " DCR",
+      percentage: null,
     },
   ];
 
@@ -98,7 +103,7 @@ const LiveStats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {statsItems.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+              <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">
                 {stats.loading ? (
                   <span className="animate-pulse">Loading...</span>
                 ) : stat.value !== null ? (
@@ -107,6 +112,11 @@ const LiveStats = () => {
                   "—"
                 )}
               </div>
+              {stat.percentage && !stats.loading && (
+                <div className="text-sm text-primary/70 mb-1">
+                  {stat.percentage}
+                </div>
+              )}
               <div className="text-muted-foreground text-sm md:text-base">
                 {stat.label}
               </div>
