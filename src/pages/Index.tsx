@@ -391,6 +391,33 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Coming Soon Section */}
+          <div className="mt-16 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Soon</h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <Card className="border-dashed border-2 border-primary/30 bg-card/30 backdrop-blur-sm">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <span className="text-lg">🔜</span>
+                    </div>
+                    <div>
+                      <CardTitle className="text-lg">NEAR Intents</CardTitle>
+                      <Badge variant="outline" className="text-xs mt-1 bg-primary/10 text-primary border-primary/30">
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    Cross-chain swap infrastructure powered by NEAR Protocol
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
           {/* Why Choose Different Platforms */}
           <div className="mt-20 max-w-4xl mx-auto">
             <Card className="border-border/50 bg-card/30 backdrop-blur-sm">
