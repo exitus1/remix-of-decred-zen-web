@@ -24,6 +24,7 @@ import changenowLogo from "@/assets/changenow-logo.webp";
 import exolixLogo from "@/assets/exolix-logo.jpg";
 import swapzoneLogo from "@/assets/swapzone-logo.jpg";
 import flypMeLogo from "@/assets/flypme-logo.jpg";
+import nearIntentsLogo from "@/assets/near-intents-logo.png";
 
 const Index = () => {
   const primaryExchanges = [
@@ -398,8 +399,8 @@ const Index = () => {
               <Card className="border-dashed border-2 border-primary/30 bg-card/30 backdrop-blur-sm">
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <span className="text-lg">🔜</span>
+                    <div className="w-10 h-10 rounded-lg overflow-hidden">
+                      <img src={nearIntentsLogo} alt="NEAR Intents" className="w-full h-full object-cover" />
                     </div>
                     <div>
                       <CardTitle className="text-lg">NEAR Intents</CardTitle>
