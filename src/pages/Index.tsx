@@ -277,7 +277,7 @@ const Index = () => {
 
           {/* Request Listing CTA */}
           <div className="mb-12 max-w-4xl mx-auto">
-            <Card className="border-primary/30 bg-primary/5 backdrop-blur-sm">
+            <Card className="border-green-500/30 bg-green-500/5 backdrop-blur-sm">
               <CardContent className="py-8">
                 <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
