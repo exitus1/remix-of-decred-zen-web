@@ -10,7 +10,7 @@ import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.webp";
 import godexLogo from "@/assets/godex-logo-new.jpg";
 import stealthexLogo from "@/assets/stealthex-logo-new.png";
-import dcrdexLogo from "@/assets/dcrdex-logo.png";
+import bisonWalletLogo from "@/assets/bison-wallet-logo.png";
 import kucoinLogo from "@/assets/kucoin-logo-square.png";
 import gateioLogo from "@/assets/gateio-logo-square.jpg";
 import holytransactionLogo from "@/assets/holytransaction-logo.jpg";
@@ -53,7 +53,7 @@ const Index = () => {
   const mainExchanges = [
     {
       name: "Bison Wallet",
-      logo: dcrdexLogo,
+      logo: bisonWalletLogo,
       description: "Decred's native DEX for trustless, peer-to-peer atomic swaps",
       type: "Decentralized Exchange",
       features: ["No KYC", "Non-Custodial", "Bitcoin Trading", "Zero Trading Fees"],
