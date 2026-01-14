@@ -183,16 +183,17 @@ const Treasury = () => {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-10 text-center">How Treasury Spending Works</h3>
           
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             {[
               { icon: FileText, title: "Propose", desc: "Submit on Politeia" },
               { icon: MessageSquare, title: "Discuss", desc: "Community debate" },
               { icon: Vote, title: "Vote", desc: "60% approval needed" },
-              { icon: CheckCircle, title: "Execute", desc: "Funds released" },
+              { icon: CheckCircle, title: "Execute", desc: "The work is done" },
+              { icon: Wallet, title: "Treasury Spend", desc: "Funds released" },
             ].map((step, index) => (
               <div key={index} className="relative group">
                 {/* Connector line */}
-                {index < 3 && (
+                {index < 4 && (
                   <div className="hidden md:block absolute top-10 left-[60%] w-full h-[2px] bg-gradient-to-r from-primary/30 to-transparent" />
                 )}
                 
