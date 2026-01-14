@@ -91,9 +91,9 @@ const Community = () => {
       <ArtisticBackground />
       <Navigation />
       
-      <main className="container mx-auto px-4 py-24 relative z-10">
+      <main className="container mx-auto px-4 pt-24 pb-12 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Join Decred
             </h1>
