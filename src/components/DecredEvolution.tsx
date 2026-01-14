@@ -102,25 +102,37 @@ const DecredEvolution = () => {
 
           {/* Key Innovations */}
           <div className="mt-16 grid md:grid-cols-4 gap-6">
-            <Card className="p-6 bg-card/50 border-primary/20">
+            <Card 
+              className="p-6 bg-card/50 border-primary/20 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => document.getElementById('governance')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <h4 className="font-bold mb-2 text-primary">Governance Built-In</h4>
               <p className="text-sm text-muted-foreground">
                 Stakeholders vote on consensus rules and proposals directly on-chain.
               </p>
             </Card>
-            <Card className="p-6 bg-card/50 border-primary/20">
+            <Card 
+              className="p-6 bg-card/50 border-primary/20 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => document.getElementById('security')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <h4 className="font-bold mb-2 text-primary">Enhanced Security</h4>
               <p className="text-sm text-muted-foreground">
                 Hybrid consensus requires both miners and stakers to secure the network.
               </p>
             </Card>
-            <Card className="p-6 bg-card/50 border-primary/20">
+            <Card 
+              className="p-6 bg-card/50 border-primary/20 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => document.getElementById('privacy')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <h4 className="font-bold mb-2 text-primary">Privacy</h4>
               <p className="text-sm text-muted-foreground">
                 P2P mixnet enables users to anonymize their DCR.
               </p>
             </Card>
-            <Card className="p-6 bg-card/50 border-primary/20">
+            <Card 
+              className="p-6 bg-card/50 border-primary/20 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => document.getElementById('funding')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <h4 className="font-bold mb-2 text-primary">Sustainable Funding</h4>
               <p className="text-sm text-muted-foreground">
                 A Treasury funded from the block reward means no reliance on external parties or capital.
