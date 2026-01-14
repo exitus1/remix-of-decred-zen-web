@@ -1,7 +1,49 @@
-import { ArrowRight, TrendingUp, Wallet, Users, FileText, MessageSquare, Vote, CheckCircle } from "lucide-react";
+import { ArrowRight, TrendingUp, Wallet, Users, FileText, MessageSquare, Vote, CheckCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const Treasury = () => {
+  const [treasuryDCR, setTreasuryDCR] = useState<number | null>(null);
+  const [treasuryUSD, setTreasuryUSD] = useState<number | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTreasuryData = async () => {
+      try {
+        // Fetch treasury balance and DCR price in parallel
+        const [treasuryRes, priceRes] = await Promise.all([
+          fetch('https://dcrdata.decred.org/api/treasury/balance'),
+          fetch('https://api.coingecko.com/api/v3/simple/price?ids=decred&vs_currencies=usd')
+        ]);
+
+        const treasuryData = await treasuryRes.json();
+        const priceData = await priceRes.json();
+
+        // Balance is in atoms (1 DCR = 100,000,000 atoms)
+        const dcrBalance = treasuryData.balance / 100000000;
+        const dcrPrice = priceData.decred?.usd || 0;
+
+        setTreasuryDCR(dcrBalance);
+        setTreasuryUSD(dcrBalance * dcrPrice);
+      } catch (error) {
+        console.error('Error fetching treasury data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTreasuryData();
+  }, []);
+
+  const formatNumber = (num: number, decimals = 0) => {
+    if (num >= 1000000) {
+      return `${(num / 1000000).toFixed(1)}M`;
+    }
+    if (num >= 1000) {
+      return `${(num / 1000).toFixed(decimals)}K`;
+    }
+    return num.toFixed(decimals);
+  };
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background gradient orbs */}
@@ -98,7 +140,15 @@ const Treasury = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Treasury Value</p>
-                    <div className="text-4xl font-bold">$100M<span className="text-primary">+</span></div>
+                    <div className="text-4xl font-bold">
+                      {loading ? (
+                        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                      ) : treasuryUSD ? (
+                        <>${formatNumber(treasuryUSD)}</>
+                      ) : (
+                        '$--'
+                      )}
+                    </div>
                   </div>
                   <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <TrendingUp className="w-8 h-8 text-primary" />
@@ -109,7 +159,15 @@ const Treasury = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 backdrop-blur-sm">
                   <p className="text-sm text-muted-foreground mb-1">DCR Held</p>
-                  <div className="text-2xl font-bold">800K<span className="text-primary">+</span></div>
+                  <div className="text-2xl font-bold">
+                    {loading ? (
+                      <Loader2 className="w-5 h-5 animate-spin text-primary" />
+                    ) : treasuryDCR ? (
+                      <>{formatNumber(treasuryDCR)}</>
+                    ) : (
+                      '--'
+                    )}
+                  </div>
                 </div>
                 <div className="p-5 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
                   <p className="text-sm text-muted-foreground mb-1">Control</p>
