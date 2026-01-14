@@ -35,6 +35,14 @@ const Footer = () => {
           >
             dcrdata
           </a>
+          <a 
+            href="https://proposals.decred.org" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            proposals
+          </a>
         </div>
       </div>
     </footer>
