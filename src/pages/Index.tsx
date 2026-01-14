@@ -301,7 +301,7 @@ const Index = () => {
             <h2 className="text-2xl font-semibold mb-6 text-muted-foreground">Alternative</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {alternativeExchanges.map((exchange) => (
-                <Card key={exchange.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <Card key={exchange.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm flex flex-col">
                   <CardHeader>
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center p-0.5">
@@ -332,12 +332,12 @@ const Index = () => {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
+                  <CardContent className="flex flex-col flex-grow">
+                    <p className="text-sm text-muted-foreground mb-4 flex-grow">
                       {exchange.description}
                     </p>
                     <Button 
-                      className="w-full"
+                      className="w-full mt-auto"
                       variant="outline"
                       onClick={() => window.open(exchange.url, '_blank')}
                     >
