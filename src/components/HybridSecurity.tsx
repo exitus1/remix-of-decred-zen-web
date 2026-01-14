@@ -44,13 +44,13 @@ const HybridSecurity = () => {
 
               {/* Arrow / Connection */}
               <div className="flex flex-col items-center py-4 md:py-0 md:px-6">
-                <div className="hidden md:block w-16 h-px bg-gradient-to-r from-orange-400/50 via-primary to-primary/50" />
-                <div className="md:hidden h-8 w-px bg-gradient-to-b from-orange-400/50 via-primary to-primary/50" />
+                <div className="hidden md:block w-16 h-px bg-gradient-to-r from-orange-400 to-orange-400/50" />
+                <div className="md:hidden h-8 w-px bg-gradient-to-b from-orange-400 to-orange-400/50" />
                 <div className="my-2 p-3 rounded-full bg-primary/20 border border-primary/40">
                   <Shield className="w-6 h-6 text-primary" />
                 </div>
-                <div className="hidden md:block w-16 h-px bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
-                <div className="md:hidden h-8 w-px bg-gradient-to-b from-primary/50 via-primary to-primary/50" />
+                <div className="hidden md:block w-16 h-px bg-gradient-to-r from-primary/50 to-primary" />
+                <div className="md:hidden h-8 w-px bg-gradient-to-b from-primary/50 to-primary" />
               </div>
 
               {/* PoS Layer */}
