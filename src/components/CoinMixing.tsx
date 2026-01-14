@@ -8,9 +8,9 @@ const CoinMixing = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-8 animate-fade-in">
           <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">StakeShuffle</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text flex items-center gap-3 justify-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3 justify-center">
             <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-full" />
-            Privacy Mixing
+            <span><span className="gradient-text">Privacy</span> Mixing</span>
           </h2>
           <p className="text-muted-foreground mb-6">
             Node-coordinated, non-custodial privacy mixing
