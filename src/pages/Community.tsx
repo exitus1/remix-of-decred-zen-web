@@ -98,7 +98,7 @@ const Community = () => {
               Join Decred
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Connect with the Decred community across multiple platforms
+              Connect with the <span className="text-primary font-semibold">DCR</span> community across multiple platforms
             </p>
           </div>
 
