@@ -47,7 +47,7 @@ const Community = () => {
       description: "Chat on Discord",
       icon: Users,
       logo: discordLogo,
-      link: "https://discord.gg/decred",
+      link: "https://discord.gg/JvhGDE4gZH",
       color: "text-indigo-400",
     },
     {
