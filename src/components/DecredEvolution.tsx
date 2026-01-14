@@ -101,7 +101,7 @@ const DecredEvolution = () => {
           </div>
 
           {/* Key Innovations */}
-          <div className="mt-16 grid md:grid-cols-3 gap-6">
+          <div className="mt-16 grid md:grid-cols-4 gap-6">
             <Card className="p-6 bg-card/50 border-primary/20">
               <h4 className="font-bold mb-2 text-primary">Governance Built-In</h4>
               <p className="text-sm text-muted-foreground">
@@ -118,6 +118,12 @@ const DecredEvolution = () => {
               <h4 className="font-bold mb-2 text-primary">Enhanced Security</h4>
               <p className="text-sm text-muted-foreground">
                 Hybrid consensus requires both miners and stakers to secure the network.
+              </p>
+            </Card>
+            <Card className="p-6 bg-card/50 border-primary/20">
+              <h4 className="font-bold mb-2 text-primary">Privacy</h4>
+              <p className="text-sm text-muted-foreground">
+                P2P mixnet enables anonymous transactions without trusted third parties.
               </p>
             </Card>
           </div>
