@@ -5,10 +5,9 @@ import decredIcon from "@/assets/decred-icon.jpg";
 
 const DecredEvolution = () => {
   return (
-    <section className="py-32 relative">
+    <section className="py-16 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Bitcoin's Successor</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             The Next Iteration of Bitcoin
           </h2>
