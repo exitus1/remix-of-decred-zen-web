@@ -109,12 +109,6 @@ const DecredEvolution = () => {
               </p>
             </Card>
             <Card className="p-6 bg-card/50 border-primary/20">
-              <h4 className="font-bold mb-2 text-primary">Sustainable Funding</h4>
-              <p className="text-sm text-muted-foreground">
-                Treasury automatically funds development without relying on external parties.
-              </p>
-            </Card>
-            <Card className="p-6 bg-card/50 border-primary/20">
               <h4 className="font-bold mb-2 text-primary">Enhanced Security</h4>
               <p className="text-sm text-muted-foreground">
                 Hybrid consensus requires both miners and stakers to secure the network.
@@ -124,6 +118,12 @@ const DecredEvolution = () => {
               <h4 className="font-bold mb-2 text-primary">Privacy</h4>
               <p className="text-sm text-muted-foreground">
                 P2P mixnet enables users to anonymize their DCR.
+              </p>
+            </Card>
+            <Card className="p-6 bg-card/50 border-primary/20">
+              <h4 className="font-bold mb-2 text-primary">Sustainable Funding</h4>
+              <p className="text-sm text-muted-foreground">
+                Treasury automatically funds development without relying on external parties.
               </p>
             </Card>
           </div>
