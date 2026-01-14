@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Vote, Shield, Zap, Users } from "lucide-react";
+import { Vote, Shield, Lock, Users } from "lucide-react";
 
 const PowerToChoose = () => {
   const features = [
@@ -14,9 +14,9 @@ const PowerToChoose = () => {
       description: "Vote to approve or reject protocol changes and network upgrades"
     },
     {
-      icon: Zap,
-      title: "Instant Impact",
-      description: "Votes are tallied and executed automatically on the blockchain"
+      icon: Lock,
+      title: "Skin-in-the-Game Governance",
+      description: "Voting power requires locked capital, aligning decisions with long-term network health"
     },
     {
       icon: Users,
