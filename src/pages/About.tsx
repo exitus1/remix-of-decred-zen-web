@@ -5,6 +5,7 @@ import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
 import PowerToChoose from "@/components/PowerToChoose";
 import LiveStats from "@/components/LiveStats";
+import HybridSecurity from "@/components/HybridSecurity";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
       </div>
       <LiveStats />
       <PowerToChoose />
+      <HybridSecurity />
       <CoinMixing />
       <Treasury />
     </div>
