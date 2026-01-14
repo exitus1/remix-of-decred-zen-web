@@ -157,7 +157,7 @@ const Community = () => {
                           <img 
                             src={platform.logo} 
                             alt={platform.name}
-                            className={`object-contain ${platform.name === "Voting Dashboard" ? "w-12 h-12" : "w-8 h-8"}`}
+                            className={`object-contain ${platform.name === "Voting Dashboard" || platform.name === "Bison Relay" ? "w-12 h-12" : "w-8 h-8"}`}
                           />
                         ) : platform.icon ? (
                           <platform.icon className={`w-6 h-6 ${platform.color}`} />
