@@ -36,23 +36,23 @@ const Treasury = () => {
                 <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
                   {/* Background circle */}
                   <circle cx="50" cy="50" r="42" fill="none" className="stroke-muted/20" strokeWidth="12" />
-                  {/* PoW - 60% */}
+                  {/* PoW - 1% */}
                   <circle 
                     cx="50" cy="50" r="42" 
                     fill="none" 
                     className="stroke-muted-foreground/40" 
                     strokeWidth="12"
-                    strokeDasharray="158.4 105.6"
+                    strokeDasharray="2.64 261.36"
                     strokeLinecap="round"
                   />
-                  {/* PoS - 30% */}
+                  {/* PoS - 89% */}
                   <circle 
                     cx="50" cy="50" r="42" 
                     fill="none" 
                     className="stroke-primary/50" 
                     strokeWidth="12"
-                    strokeDasharray="79.2 184.8"
-                    strokeDashoffset="-158.4"
+                    strokeDasharray="234.96 29.04"
+                    strokeDashoffset="-2.64"
                     strokeLinecap="round"
                   />
                   {/* Treasury - 10% */}
@@ -79,11 +79,11 @@ const Treasury = () => {
               <div className="flex justify-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
-                  <span className="text-sm text-muted-foreground">60% Miners</span>
+                  <span className="text-sm text-muted-foreground">1% Miners</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-primary/50" />
-                  <span className="text-sm text-muted-foreground">30% Voters</span>
+                  <span className="text-sm text-muted-foreground">89% Voters</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-primary" />
