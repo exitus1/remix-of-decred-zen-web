@@ -97,7 +97,7 @@ const LiveStats = () => {
   }
 
   return (
-    <section className="py-12 relative">
+    <section className="py-16 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
@@ -126,6 +126,13 @@ const LiveStats = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* Visual separator */}
+        <div className="mt-16 flex items-center justify-center gap-4">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+          <div className="w-2 h-2 rounded-full bg-primary/50" />
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         </div>
       </div>
     </section>

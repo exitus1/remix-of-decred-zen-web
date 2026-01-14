@@ -26,8 +26,8 @@ const PowerToChoose = () => {
   ];
 
   return (
-    <section className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+    <section className="pt-8 pb-20 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-16">
