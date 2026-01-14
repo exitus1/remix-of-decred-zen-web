@@ -107,7 +107,7 @@ const Community = () => {
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center border border-border">
+                        <div className="w-10 h-10 rounded-lg bg-background flex items-center justify-center">
                           {platform.logo ? (
                             <img 
                               src={platform.logo} 
@@ -148,7 +148,7 @@ const Community = () => {
                 <Card key={platform.name} className="hover:shadow-lg transition-shadow flex flex-col">
                   <CardHeader className="flex-grow">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center border border-border">
+                      <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center">
                         {platform.logo ? (
                           <img 
                             src={platform.logo} 
