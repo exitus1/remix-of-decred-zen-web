@@ -27,9 +27,11 @@ const Navigation = () => {
             </Link>
           </div>
           
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Get DCR
-          </Button>
+          <Link to="/">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              Get DCR
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
