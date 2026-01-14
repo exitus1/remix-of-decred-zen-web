@@ -58,7 +58,7 @@ const PowerToChoose = () => {
           <CardContent className="p-8">
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">True Coinholder Sovereignty</h3>
-              <p className="text-muted-foreground text-base max-w-3xl mx-auto">
+              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
                 Unlike traditional cryptocurrencies where changes are decided by a small group of developers or miners, 
                 Decred gives the power directly to coinholders. Through time-locked tickets, stakeholders vote on-chain 
                 to approve consensus rule changes, treasury spending, and network policies. Every vote is recorded on the 
