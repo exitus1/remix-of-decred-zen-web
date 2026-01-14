@@ -123,7 +123,7 @@ const DecredEvolution = () => {
             <Card className="p-6 bg-card/50 border-primary/20">
               <h4 className="font-bold mb-2 text-primary">Sustainable Funding</h4>
               <p className="text-sm text-muted-foreground">
-                Treasury automatically funds development without relying on external parties.
+                A Treasury funded from the block reward means no reliance on external parties or capital.
               </p>
             </Card>
           </div>
