@@ -123,7 +123,7 @@ const DecredEvolution = () => {
             <Card className="p-6 bg-card/50 border-primary/20">
               <h4 className="font-bold mb-2 text-primary">Privacy</h4>
               <p className="text-sm text-muted-foreground">
-                P2P mixnet enables anonymous transactions without trusted third parties.
+                P2P mixnet enables users to anonymize their DCR.
               </p>
             </Card>
           </div>
