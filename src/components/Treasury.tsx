@@ -54,15 +54,12 @@ const Treasury = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <Wallet className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Sustainable Funding</span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-            Self-Funding Treasury
+        <div className="text-center mb-12">
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Sustainable Funding</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-text">Self-Funding</span> Treasury
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             10% of every block reward flows directly to the treasury—no foundations, no VCs, 
             just stakeholder-controlled sustainable development.
           </p>
