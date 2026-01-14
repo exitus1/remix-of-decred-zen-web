@@ -30,12 +30,13 @@ const PowerToChoose = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            THE POWER TO CHOOSE
+        <div className="text-center mb-12">
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Coinholder Governance</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-text">The Power to Choose</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Coinholder Governance: Voting on-chain to upgrade the network
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Voting on-chain to upgrade the network
           </p>
         </div>
 

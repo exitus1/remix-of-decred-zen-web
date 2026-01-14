@@ -101,7 +101,12 @@ const LiveStats = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
-        <p className="text-center text-sm text-muted-foreground mb-8 tracking-wide uppercase">Quick Stats</p>
+        <div className="text-center mb-12">
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Live Data</p>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            <span className="gradient-text">Quick Stats</span>
+          </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {statsItems.map((stat, index) => (
             <div key={index} className="text-center">
