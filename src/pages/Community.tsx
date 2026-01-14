@@ -8,6 +8,7 @@ import elementLogo from "@/assets/element-logo.svg";
 import redditLogo from "@/assets/reddit-logo.png";
 import politeiaIcon from "@/assets/politeia-icon.svg";
 import decreditonLogo from "@/assets/decrediton-logo.svg";
+import bisonRelayLogo from "@/assets/bison-relay-logo.png";
 const Community = () => {
   const socialPlatforms = [
     {
@@ -78,7 +79,8 @@ const Community = () => {
     {
       name: "Bison Relay",
       description: "Private, decentralized communication and commerce platform",
-      icon: Radio,
+      icon: null,
+      logo: bisonRelayLogo,
       link: "https://bisonrelay.org/",
       color: "text-primary",
     },
