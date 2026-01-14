@@ -366,7 +366,7 @@ const Index = () => {
                 <Card key={swap.name} className="hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardHeader className="pb-3">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className={`rounded-lg bg-background flex items-center justify-center ${swap.name === "Exolix" ? "w-[3.25rem] h-[3.25rem] p-0.5" : swap.name === "Godex" || swap.name === "Swapzone" || swap.name === "SimpleSwap" || swap.name === "ChangeNOW" || swap.name === "Trocador" ? "w-12 h-12 p-0.5" : "w-10 h-10 p-1"}`}>
+                      <div className={`rounded-lg bg-background flex items-center justify-center ${swap.name === "Exolix" || swap.name === "Flyp.me" ? "w-[3.25rem] h-[3.25rem] p-0.5" : swap.name === "Godex" || swap.name === "Swapzone" || swap.name === "SimpleSwap" || swap.name === "ChangeNOW" || swap.name === "Trocador" ? "w-12 h-12 p-0.5" : "w-10 h-10 p-1"}`}>
                         <img 
                           src={swap.logo} 
                           alt={swap.name}
