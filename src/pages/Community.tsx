@@ -7,6 +7,7 @@ import xLogo from "@/assets/x-logo.png";
 import elementLogo from "@/assets/element-logo.svg";
 import redditLogo from "@/assets/reddit-logo.png";
 import politeiaIcon from "@/assets/politeia-icon.svg";
+import decreditonLogo from "@/assets/decrediton-logo.svg";
 const Community = () => {
   const socialPlatforms = [
     {
@@ -61,7 +62,8 @@ const Community = () => {
     {
       name: "Voting Dashboard",
       description: "Review Decred's on-chain governance voting",
-      icon: Vote,
+      icon: null,
+      logo: decreditonLogo,
       link: "https://voting.decred.org/",
       color: "text-primary",
     },
