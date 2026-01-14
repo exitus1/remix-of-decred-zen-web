@@ -110,6 +110,7 @@ const Treasury = () => {
                   <div className="text-center">
                     <div className="text-5xl font-bold text-primary">10%</div>
                     <div className="text-sm text-muted-foreground mt-1">to Treasury</div>
+                    <div className="text-xs text-muted-foreground/60 mt-1">Block Reward Distribution</div>
                   </div>
                 </div>
               </div>
