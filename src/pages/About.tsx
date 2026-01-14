@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
@@ -28,6 +29,7 @@ const About = () => {
       <div id="funding" className="scroll-mt-24">
         <Treasury />
       </div>
+      <Footer />
     </div>
   );
 };

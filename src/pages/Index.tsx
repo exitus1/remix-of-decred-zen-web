@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo-square.jpg";
 import mexcLogo from "@/assets/mexc-logo.svg";
@@ -485,6 +486,7 @@ const Index = () => {
 
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
