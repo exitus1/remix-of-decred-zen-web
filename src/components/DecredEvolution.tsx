@@ -9,7 +9,7 @@ const DecredEvolution = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            The Next Iteration of Bitcoin
+            The <span className="gradient-text">Next Iteration</span> of Bitcoin
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Decred inherits Bitcoin's security and scarcity while evolving its governance and sustainability model.
