@@ -17,7 +17,15 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            Github
+            github
+          </a>
+          <a 
+            href="https://docs.decred.org" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            dcrdocs
           </a>
           <a 
             href="https://dcrdata.decred.org" 
