@@ -216,9 +216,12 @@ const Treasury = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground hover-glow group px-8"
+            asChild
           >
-            View Treasury Balance
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <a href="https://explorer.decred.org/treasury?chart=balance&zoom=knj8yxs0-mkgetcw0&bin=month&txntype=tspend" target="_blank" rel="noopener noreferrer">
+              View Treasury Balance
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
       </div>
