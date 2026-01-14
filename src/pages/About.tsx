@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Features from "@/components/Features";
 import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
@@ -18,7 +17,6 @@ const About = () => {
       </div>
       <LiveStats />
       <PowerToChoose />
-      <Features />
       <CoinMixing />
       <Treasury />
       <ConsensusUpgrade />
