@@ -15,7 +15,7 @@ const PowerToChoose = () => {
     },
     {
       icon: Lock,
-      title: "Skin-in-the-Game Governance",
+      title: "Skin-in-the-Game",
       description: "Voting power requires locked capital, aligning decisions with long-term network health"
     },
     {
