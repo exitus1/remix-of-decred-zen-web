@@ -44,7 +44,7 @@ const Index = () => {
       logo: mexcLogo,
       description: "Popular altcoin exchange. US users must use a VPN to access.",
       type: "Centralized Exchange",
-      features: ["Set VPN to non-USA", "Competitive Fees", "No KYC", "Mobile App"],
+      features: ["May require VPN", "Competitive Fees", "No KYC", "Mobile App"],
       url: "https://www.mexc.com/exchange/DCR_USDT",
       badge: "High Volume",
       icon: <Zap className="w-5 h-5" />
@@ -197,7 +197,7 @@ const Index = () => {
                             key={feature}
                             className="flex items-center gap-2 text-sm text-muted-foreground"
                           >
-                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-red-500" : feature === "Set VPN to non-USA" ? "bg-yellow-500" : "bg-primary"}`} />
+                            <div className={`w-1.5 h-1.5 rounded-full ${feature === "Non-USA" ? "bg-red-500" : feature === "May require VPN" ? "bg-yellow-500" : "bg-primary"}`} />
                             {feature}
                           </div>
                         ))}
