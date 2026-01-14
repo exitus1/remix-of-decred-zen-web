@@ -95,17 +95,17 @@ const Community = () => {
       <main className="container mx-auto px-4 pt-24 pb-12 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
               Join Decred
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
               Connect with the <span className="text-primary font-semibold">DCR</span> community across multiple platforms
             </p>
           </div>
 
           {/* Social Media Platforms */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">Social Media</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Social Media</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {socialPlatforms.map((platform) => (
                 <Card key={platform.name} className="hover:shadow-lg transition-shadow">
@@ -147,7 +147,7 @@ const Community = () => {
 
           {/* Governance & Communication */}
           <section>
-            <h2 className="text-3xl font-bold mb-6">Governance & Communication</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Governance & Communication</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {governancePlatforms.map((platform) => (
                 <Card key={platform.name} className="hover:shadow-lg transition-shadow flex flex-col">
