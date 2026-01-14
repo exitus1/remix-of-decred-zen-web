@@ -16,10 +16,18 @@ const About = () => {
         <DecredEvolution />
       </div>
       <LiveStats />
-      <PowerToChoose />
-      <HybridSecurity />
-      <CoinMixing />
-      <Treasury />
+      <div id="governance">
+        <PowerToChoose />
+      </div>
+      <div id="security">
+        <HybridSecurity />
+      </div>
+      <div id="privacy">
+        <CoinMixing />
+      </div>
+      <div id="funding">
+        <Treasury />
+      </div>
     </div>
   );
 };
