@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -236,6 +237,7 @@ const Wallets = () => {
 
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

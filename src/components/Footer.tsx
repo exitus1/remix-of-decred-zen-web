@@ -1,0 +1,36 @@
+const Footer = () => {
+  return (
+    <footer className="border-t border-border bg-background/80 backdrop-blur-lg py-6 relative z-10">
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-center gap-8">
+          <a 
+            href="https://decred.org" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            decred.org
+          </a>
+          <a 
+            href="https://github.com/decred" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            Github
+          </a>
+          <a 
+            href="https://dcrdata.decred.org" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            dcrdata
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

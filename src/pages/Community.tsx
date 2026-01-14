@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, MessageCircle, Send, Hash, Users, Vote, Radio } from "lucide-react";
@@ -185,6 +186,7 @@ const Community = () => {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
