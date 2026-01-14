@@ -7,7 +7,7 @@ import CoinMixing from "@/components/CoinMixing";
 import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import PowerToChoose from "@/components/PowerToChoose";
 import LiveStats from "@/components/LiveStats";
-import BisonWalletSection from "@/components/BisonWalletSection";
+
 const About = () => {
   return (
     <div className="min-h-screen bg-background relative">
@@ -17,7 +17,6 @@ const About = () => {
         <DecredEvolution />
       </div>
       <LiveStats />
-      <BisonWalletSection />
       <PowerToChoose />
       <Features />
       <CoinMixing />
