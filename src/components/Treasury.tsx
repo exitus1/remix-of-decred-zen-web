@@ -98,7 +98,7 @@ const Treasury = () => {
                   <circle 
                     cx="50" cy="50" r="42" 
                     fill="none" 
-                    className="stroke-primary" 
+                    stroke="#00ff00" 
                     strokeWidth="12"
                     strokeDasharray="26.4 237.6"
                     strokeDashoffset="-237.6"
@@ -125,7 +125,7 @@ const Treasury = () => {
                   <span className="text-sm text-muted-foreground">89% Voters</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-primary" />
+                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#00ff00' }} />
                   <span className="text-sm text-muted-foreground">10% Treasury</span>
                 </div>
               </div>
