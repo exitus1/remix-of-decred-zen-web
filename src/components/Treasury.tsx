@@ -110,25 +110,27 @@ const Treasury = () => {
                   <div className="text-center">
                     <div className="text-5xl font-bold text-primary">10%</div>
                     <div className="text-sm text-muted-foreground mt-1">to Treasury</div>
-                    <div className="text-xs text-muted-foreground/60 mt-1">Block Reward Distribution</div>
                   </div>
                 </div>
               </div>
 
               {/* Legend */}
-              <div className="flex justify-center gap-6 mt-8">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
-                  <span className="text-sm text-muted-foreground">1% Miners</span>
+              <div className="mt-8 text-center">
+                <div className="flex justify-center gap-6">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
+                    <span className="text-sm text-muted-foreground">1% Miners</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-primary/50" />
+                    <span className="text-sm text-muted-foreground">89% Voters</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#00ff00' }} />
+                    <span className="text-sm text-muted-foreground">10% Treasury</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-primary/50" />
-                  <span className="text-sm text-muted-foreground">89% Voters</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#00ff00' }} />
-                  <span className="text-sm text-muted-foreground">10% Treasury</span>
-                </div>
+                <div className="text-xs text-muted-foreground/60 mt-2">Block Reward Distribution</div>
               </div>
             </div>
 
