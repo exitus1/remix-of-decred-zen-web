@@ -7,11 +7,12 @@ const CoinMixing = () => {
     <section className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text flex items-center gap-3 justify-center">
-            <img src={decredIcon} alt="Decred" className="w-12 h-12 rounded-full" />
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">StakeShuffle</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text flex items-center gap-3 justify-center">
+            <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-full" />
             Privacy Mixing
           </h2>
-          <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-muted-foreground mb-6">
             Node-coordinated, non-custodial privacy mixing
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
