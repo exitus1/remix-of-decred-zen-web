@@ -3,7 +3,6 @@ import Treasury from "@/components/Treasury";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import DecredEvolution from "@/components/DecredEvolution";
 import CoinMixing from "@/components/CoinMixing";
-import ConsensusUpgrade from "@/components/ConsensusUpgrade";
 import PowerToChoose from "@/components/PowerToChoose";
 import LiveStats from "@/components/LiveStats";
 
@@ -19,7 +18,6 @@ const About = () => {
       <PowerToChoose />
       <CoinMixing />
       <Treasury />
-      <ConsensusUpgrade />
     </div>
   );
 };
