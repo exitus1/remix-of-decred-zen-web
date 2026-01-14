@@ -33,7 +33,7 @@ const PowerToChoose = () => {
         <div className="text-center mb-12">
           <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Coinholder Governance</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">The Power to Choose</span>
+            <span className="gradient-text">The Power</span> to Choose
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Voting on-chain to upgrade the network
