@@ -391,6 +391,23 @@ const Index = () => {
                 </Card>
               ))}
             </div>
+
+            {/* Cake Wallet Notice */}
+            <Card className="border-primary/30 bg-primary/5 backdrop-blur-sm">
+              <CardContent className="py-6">
+                <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold mb-1 text-white">Swap directly in Cake Wallet</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Already using Cake Wallet? You can buy and sell DCR using the built-in swap feature—no need to visit an external exchange.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Custodial Service Notice */}
