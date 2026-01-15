@@ -1,4 +1,5 @@
 import { ArrowUpRight, Shield, Zap, Users, CreditCard, Megaphone } from "lucide-react";
+import cakewalletLogo from "@/assets/cakewallet-square.png";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -396,13 +397,13 @@ const Index = () => {
             <Card className="border-primary/30 bg-primary/5 backdrop-blur-sm">
               <CardContent className="py-6">
                 <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Zap className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <img src={cakewalletLogo} alt="Cake Wallet" className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-1 text-white">Swap directly in Cake Wallet</h3>
                     <p className="text-sm text-muted-foreground">
-                      Already using Cake Wallet? You can buy and sell DCR using the built-in swap feature—no need to visit an external exchange.
+                      Already using Cake Wallet? You can buy and sell DCR using the built-in swap feature—no need to visit an external exchange. Just press the Swap button at the bottom.
                     </p>
                   </div>
                 </div>
