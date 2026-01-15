@@ -17,84 +17,84 @@ const DecredEvolution = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-start justify-center gap-4 max-w-3xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
             {/* Bitcoin */}
-            <Card className="p-10 bg-card border-border w-80">
-              <div className="flex items-center justify-center gap-3 mb-8">
+            <Card className="p-6 md:p-10 bg-card border-border w-full md:w-80">
+              <div className="flex items-center justify-center gap-3 mb-6 md:mb-8">
                 <img src={bitcoinIcon} alt="Bitcoin" className="w-10 h-10 rounded-full" />
-                <h3 className="text-2xl font-bold">Bitcoin</h3>
+                <h3 className="text-xl md:text-2xl font-bold">Bitcoin</h3>
               </div>
-              <div className="space-y-5">
+              <div className="space-y-4 md:space-y-5">
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base">Proof-of-Work security</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base">21M supply cap</span>
+                  <span className="text-sm md:text-base">Proof-of-Work security</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base">Decentralized network</span>
+                  <span className="text-sm md:text-base">21M supply cap</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm md:text-base">Decentralized network</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-muted-foreground">No formal governance</span>
+                  <span className="text-sm md:text-base text-muted-foreground">No formal governance</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-muted-foreground">Relies on outside funding</span>
+                  <span className="text-sm md:text-base text-muted-foreground">Relies on outside funding</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-muted-foreground">Miner-only consensus</span>
+                  <span className="text-sm md:text-base text-muted-foreground">Miner-only consensus</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-muted-foreground">No built-in privacy</span>
+                  <span className="text-sm md:text-base text-muted-foreground">No built-in privacy</span>
                 </div>
               </div>
             </Card>
 
             {/* Arrow */}
-            <div className="flex-shrink-0 self-center">
-              <ArrowRight className="w-8 h-8 text-primary" />
+            <div className="flex-shrink-0">
+              <ArrowRight className="w-8 h-8 text-primary rotate-90 md:rotate-0" />
             </div>
 
             {/* Decred */}
-            <Card className="p-10 bg-card border-primary/50 hover-glow w-80">
-              <div className="flex items-center justify-center gap-3 mb-8">
+            <Card className="p-6 md:p-10 bg-card border-primary/50 hover-glow w-full md:w-80">
+              <div className="flex items-center justify-center gap-3 mb-6 md:mb-8">
                 <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-full" />
-                <h3 className="text-2xl font-bold text-primary">Decred</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-primary">Decred</h3>
               </div>
-              <div className="space-y-5">
+              <div className="space-y-4 md:space-y-5">
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">Hybrid PoW/PoS security</span>
+                  <span className="text-sm md:text-base font-medium">Hybrid PoW/PoS security</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">21M supply cap</span>
+                  <span className="text-sm md:text-base font-medium">21M supply cap</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">Decentralized network</span>
+                  <span className="text-sm md:text-base font-medium">Decentralized network</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">On-chain governance</span>
+                  <span className="text-sm md:text-base font-medium">On-chain governance</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">Self-funded treasury</span>
+                  <span className="text-sm md:text-base font-medium">Self-funded treasury</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">Stakeholder consensus</span>
+                  <span className="text-sm md:text-base font-medium">Stakeholder consensus</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-base font-medium">P2P Privacy Mixnet</span>
+                  <span className="text-sm md:text-base font-medium">P2P Privacy Mixnet</span>
                 </div>
               </div>
             </Card>
