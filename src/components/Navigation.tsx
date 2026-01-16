@@ -30,7 +30,7 @@ const Navigation = () => {
               Community
             </Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
+              Quick Explainer
             </Link>
           </div>
 
@@ -61,7 +61,7 @@ const Navigation = () => {
                   </SheetClose>
                   <SheetClose asChild>
                     <Link to="/about" className="text-lg font-medium hover:text-primary transition-colors">
-                      About
+                      Quick Explainer
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
