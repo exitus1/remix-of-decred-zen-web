@@ -20,7 +20,7 @@ import novadaxLogo from "@/assets/novadax-logo-square.jpg";
 import guardaLogo from "@/assets/guarda-logo.png";
 import nonkycLogo from "@/assets/nonkyc-logo-square.jpg";
 import basicswapLogo from "@/assets/basicswap-logo-square.jpg";
-import bitvavoLogo from "@/assets/bitvavo-logo-square.png";
+import bitmartLogo from "@/assets/bitmart-logo-square.png";
 import trocadorLogo from "@/assets/trocador-logo.png";
 import changenowLogo from "@/assets/changenow-logo.webp";
 import exolixLogo from "@/assets/exolix-logo.jpg";
@@ -122,11 +122,10 @@ const Index = () => {
       badge: "DEX"
     },
     {
-      name: "Bitvavo",
-      logo: bitvavoLogo,
-      description: "European cryptocurrency exchange platform",
-      url: "https://bitvavo.com/en",
-      badge: "Europe"
+      name: "Bitmart",
+      logo: bitmartLogo,
+      description: "Global cryptocurrency exchange with spot and futures trading",
+      url: "https://www.bitmart.com/trade/DCR_USDT?type=spot"
     }
   ];
 
@@ -321,13 +320,10 @@ const Index = () => {
                             className={`text-xs mt-1 ${
                               exchange.name === "BasicSwap"
                                 ? "bg-purple-500/10 text-purple-500 border-purple-500/30"
-                                : exchange.name === "Bitvavo"
-                                ? "bg-blue-500/10 text-blue-500 border-blue-500/30"
                                 : "bg-green-500/10 text-green-500 border-green-500/30"
                             }`}
                           >
                             {exchange.name === "Novadax" && "🇧🇷 "}
-                            {exchange.name === "Bitvavo" && "🇪🇺 "}
                             {exchange.badge}
                           </Badge>
                         )}
