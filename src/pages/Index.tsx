@@ -204,6 +204,7 @@ const Index = () => {
                       <div className="grid grid-cols-2 gap-2">
                         {exchange.features.map((featureKey) => {
                           const feature = t(featureKey);
+                          if (!feature) return null;
                           return (
                             <div 
                               key={featureKey}
@@ -264,6 +265,7 @@ const Index = () => {
                     <div className="grid grid-cols-2 gap-2">
                       {exchange.features.map((featureKey) => {
                         const feature = t(featureKey);
+                        if (!feature) return null;
                         return (
                           <div 
                             key={featureKey}
