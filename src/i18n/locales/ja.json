@@ -71,7 +71,47 @@
       "fiatToCrypto": "法定通貨から暗号通貨",
       "usAllowed": "米国対応"
     },
-    "visit": "訪問"
+    "visit": "訪問",
+    "soon": "近日",
+    "comingSoon": "近日公開",
+    "nearIntentsDesc": "NEARプロトコルによるクロスチェーンスワップインフラ",
+    "cakeWalletSwap": {
+      "title": "Cake Walletで直接スワップ",
+      "description": "Cake Walletをお使いですか？外部取引所を使わずに、内蔵のスワップ機能でDCRを売買できます。下部のスワップボタンを押すだけです。"
+    },
+    "custodialNotice": {
+      "title": "カストディアルサービスに関する注意",
+      "description": "これらのインスタントスワップサービスはカストディアルです。取引中は資金をサービスに預けることになります。スピードとシンプルさが魅力ですが、最大のセキュリティとプライバシーを求める場合は、Bison Walletでのトラストレスな非カストディアルアトミックスワップをご検討ください。"
+    },
+    "whyChoose": {
+      "title": "プラットフォームの選び方",
+      "centralizedExchanges": {
+        "title": "中央集権型取引所",
+        "description": "高い流動性、高度な取引機能、法定通貨への対応に最適。BinanceとMEXCは深い注文板と競争力のある手数料を提供。"
+      },
+      "dcrdex": {
+        "title": "DCRDEX",
+        "description": "最大のセキュリティとプライバシーにはBison Walletを。非カストディアルアトミックスワップでKYCなしで資金を完全管理。"
+      },
+      "alchemyPay": {
+        "title": "Alchemy Pay",
+        "description": "デビットカードでDCRを直接購入する最速の方法。シンプルで迅速、初心者に優しい。"
+      },
+      "chooseWhats": {
+        "title": "最適な選択を",
+        "description": "各プラットフォームは異なるニーズに対応。利便性、プライバシー、手数料、取引機能を考慮して選択。"
+      }
+    },
+    "altExchanges": {
+      "kucoin": "現物・先物取引を提供するグローバル暗号通貨取引所",
+      "gateio": "幅広いコイン選択を持つ総合取引プラットフォーム",
+      "holytransaction": "マルチ通貨ウォレット＆取引所プラットフォーム",
+      "novadax": "ブラジルの暗号通貨取引所（ローカルサポート付き）",
+      "guarda": "取引所機能内蔵のマルチ通貨ウォレット",
+      "nonkyc": "KYC不要のプライバシー重視取引所",
+      "basicswap": "P2Pアトミックスワップ用クロスチェーンDEX",
+      "bitmart": "現物・先物取引を提供するグローバル暗号通貨取引所"
+    }
   },
   "wallets": {
     "subtitle": "デスクトップ、モバイル、上級ユーザー向けに設計された公式ウォレットで<dcr>DCR</dcr>を安全に保管",
