@@ -160,7 +160,7 @@
         "noPrivacy": "組み込みプライバシーなし"
       },
       "decred": {
-        "hybridSecurity": "ハイブリッドPoW/PoSセキュリティ",
+        "hybridSecurity": "PoW/PoSセキュリティ",
         "supplyCap": "2100万枚の供給上限",
         "decentralized": "分散型ネットワーク",
         "onChainGovernance": "オンチェーンガバナンス",
