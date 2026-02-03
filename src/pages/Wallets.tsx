@@ -4,6 +4,7 @@ import ArtisticBackground from "@/components/ArtisticBackground";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Monitor, Smartphone, Terminal } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 import cakewalletLogo from "@/assets/cakewallet-logo-new.png";
 import decreditonLogo from "@/assets/decrediton-logo.svg";
 import bisonWalletLogo from "@/assets/bison-wallet-logo.jpg";
@@ -11,10 +12,12 @@ import trustwalletLogo from "@/assets/trustwallet-logo.png";
 import exodusLogo from "@/assets/exodus-logo.webp";
 
 const Wallets = () => {
+  const { t } = useTranslation();
+
   const desktopWallets = [
     {
       name: "Decrediton",
-      description: "Official full-featured Decred wallet with governance, staking, and mixing capabilities",
+      descriptionKey: "wallets.decrediton.description",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["Recommended", "Trezor", "Ledger"],
       logo: decreditonLogo,
@@ -22,7 +25,7 @@ const Wallets = () => {
     },
     {
       name: "Bison Wallet",
-      description: "Multicurrency wallet with atomic-swap trading, staking, stablecoins, and mixing",
+      descriptionKey: "wallets.bisonWallet.description",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["DEX"],
       logo: bisonWalletLogo,
@@ -30,7 +33,7 @@ const Wallets = () => {
     },
     {
       name: "Command-line Suite",
-      description: "Non-graphical command-line tools for advanced users and automation",
+      descriptionKey: "wallets.commandLine.description",
       platforms: ["Windows", "Mac", "Linux"],
       labels: ["CLI"],
       link: "https://docs.decred.org/wallets/cli/cli-installation/",
@@ -41,7 +44,7 @@ const Wallets = () => {
   const mobileWallets = [
     {
       name: "Cake Wallet",
-      description: "Privacy-focused multi-currency mobile wallet with Decred support for iOS and Android",
+      descriptionKey: "wallets.cakeWallet.description",
       platforms: ["iOS", "Android"],
       labels: ["Recommended"],
       logo: cakewalletLogo,
@@ -49,7 +52,7 @@ const Wallets = () => {
     },
     {
       name: "Exodus",
-      description: "Multi-currency desktop and mobile wallet with hardware wallet integration",
+      descriptionKey: "wallets.exodus.description",
       platforms: ["Desktop", "Mobile"],
       labels: ["Trezor"],
       logo: exodusLogo,
@@ -57,7 +60,7 @@ const Wallets = () => {
     },
     {
       name: "Trust Wallet",
-      description: "Multi-currency desktop, browser and mobile wallet",
+      descriptionKey: "wallets.trustWallet.description",
       platforms: ["Desktop", "Mobile"],
       logo: trustwalletLogo,
       link: "https://trustwallet.com/",
@@ -73,7 +76,7 @@ const Wallets = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Secure your <span className="text-primary font-semibold">DCR</span> with official wallets designed for desktop, mobile, and advanced users
+              <Trans i18nKey="wallets.subtitle" components={{ dcr: <span className="text-primary font-semibold" /> }} />
             </p>
           </div>
 
@@ -81,7 +84,7 @@ const Wallets = () => {
           <section className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <Monitor className="w-6 h-6 text-primary" />
-              <h2 className="text-3xl font-bold">Core Wallets</h2>
+              <h2 className="text-3xl font-bold">{t('wallets.coreWallets')}</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {desktopWallets.map((wallet) => (
@@ -126,7 +129,7 @@ const Wallets = () => {
                                     "border-muted-foreground text-muted-foreground"
                                   }
                                 >
-                                  {label}
+                                  {label === "Recommended" ? t('wallets.recommended') : label}
                                 </Badge>
                               ))}
                             </div>
@@ -135,13 +138,13 @@ const Wallets = () => {
                       </div>
                     </div>
                     <CardDescription className="text-sm leading-relaxed">
-                      {wallet.description}
+                      {t(wallet.descriptionKey)}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-medium mb-2 text-muted-foreground">Platforms:</p>
+                        <p className="text-sm font-medium mb-2 text-muted-foreground">{t('wallets.platforms')}</p>
                         <div className="flex flex-wrap gap-2">
                           {wallet.platforms.map((platform) => (
                             <Badge key={platform} variant="secondary">
@@ -156,7 +159,7 @@ const Wallets = () => {
                         rel="noopener noreferrer"
                         className="inline-block w-full text-center py-2 px-4 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                       >
-                        Download
+                        {t('wallets.download')}
                       </a>
                     </div>
                   </CardContent>
@@ -169,7 +172,7 @@ const Wallets = () => {
           <section className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <Smartphone className="w-6 h-6 text-primary" />
-              <h2 className="text-3xl font-bold">Other Wallets</h2>
+              <h2 className="text-3xl font-bold">{t('wallets.otherWallets')}</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {mobileWallets.map((wallet) => (
@@ -196,7 +199,7 @@ const Wallets = () => {
                                   variant="outline" 
                                   className="border-green-500 text-green-500"
                                 >
-                                  {label}
+                                  {label === "Recommended" ? t('wallets.recommended') : label}
                                 </Badge>
                               ))}
                             </div>
@@ -205,13 +208,13 @@ const Wallets = () => {
                       </div>
                     </div>
                     <CardDescription className="text-sm leading-relaxed">
-                      {wallet.description}
+                      {t(wallet.descriptionKey)}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-medium mb-2 text-muted-foreground">Platforms:</p>
+                        <p className="text-sm font-medium mb-2 text-muted-foreground">{t('wallets.platforms')}</p>
                         <div className="flex flex-wrap gap-2">
                           {wallet.platforms.map((platform) => (
                             <Badge key={platform} variant="secondary">
@@ -226,7 +229,7 @@ const Wallets = () => {
                         rel="noopener noreferrer"
                         className="inline-block w-full text-center py-2 px-4 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                       >
-                        Download
+                        {t('wallets.download')}
                       </a>
                     </div>
                   </CardContent>
