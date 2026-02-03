@@ -69,7 +69,8 @@
       "debitCard": "デビットカード",
       "instantPurchase": "即時購入",
       "fiatToCrypto": "法定通貨→暗号通貨",
-      "usAllowed": ""
+      "usAllowed": "",
+      "notAvailableJapan": "日本では利用不可"
     },
     "visit": "訪問",
     "soon": "近日",
