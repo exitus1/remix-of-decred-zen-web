@@ -151,22 +151,22 @@
       "title": "ビットコインの<gradient>次の進化形</gradient>",
       "subtitle": "Decredはビットコインのセキュリティと希少性を継承しながら、ガバナンスと持続可能性モデルを進化させています。",
       "bitcoin": {
-        "powSecurity": "Proof-of-Workセキュリティ",
-        "supplyCap": "2100万枚の供給上限",
+        "powSecurity": "PoWセキュリティ",
+        "supplyCap": "2100万枚上限",
         "decentralized": "分散型ネットワーク",
-        "noGovernance": "正式なガバナンスなし",
+        "noGovernance": "正式ガバナンスなし",
         "outsideFunding": "外部資金に依存",
-        "minerOnly": "マイナーのみのコンセンサス",
-        "noPrivacy": "組み込みプライバシーなし"
+        "minerOnly": "マイナー合意のみ",
+        "noPrivacy": "プライバシー機能なし"
       },
       "decred": {
         "hybridSecurity": "PoW/PoSセキュリティ",
-        "supplyCap": "2100万枚の供給上限",
+        "supplyCap": "2100万枚上限",
         "decentralized": "分散型ネットワーク",
-        "onChainGovernance": "オンチェーンガバナンス",
+        "onChainGovernance": "オンチェーン投票",
         "selfFunded": "自己資金トレジャリー",
-        "stakeholderConsensus": "ステークホルダーコンセンサス",
-        "privacyMixnet": "P2Pプライバシーミックスネット"
+        "stakeholderConsensus": "ステーカー合意",
+        "privacyMixnet": "プライバシーミキシング"
       },
       "innovations": {
         "governance": {
