@@ -51,7 +51,7 @@
       "alchemyPay": {
         "description": "デビットカードでDCRを即座に購入",
         "type": "フィアットゲートウェイ",
-        "badge": "$ USD対応"
+        "badge": "¥ JPY対応"
       }
     },
     "features": {
