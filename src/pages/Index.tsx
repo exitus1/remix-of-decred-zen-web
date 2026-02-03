@@ -38,7 +38,7 @@ const Index = () => {
       logo: binanceLogo,
       descriptionKey: "index.exchanges.binance.description",
       typeKey: "index.exchanges.binance.type",
-      features: ["index.features.highLiquidity", "index.features.lowFees", "index.features.advancedTrading", "index.features.nonUSA"],
+      features: ["index.features.highLiquidity", "index.features.lowFees", "index.features.advancedTrading", "index.features.nonUSA", "index.features.notAvailableJapan"],
       url: "https://www.binance.com/en/trade/DCR_USDT",
       badgeKey: "index.exchanges.binance.badge",
       icon: <Users className="w-5 h-5" />
@@ -210,7 +210,7 @@ const Index = () => {
                               key={featureKey}
                               className="flex items-center gap-2 text-sm text-muted-foreground"
                             >
-                              <div className={`w-1.5 h-1.5 rounded-full ${featureKey.includes("nonUSA") ? "bg-red-500" : featureKey.includes("mayRequireVPN") ? "bg-yellow-500" : "bg-primary"}`} />
+                              <div className={`w-1.5 h-1.5 rounded-full ${featureKey.includes("nonUSA") || featureKey.includes("notAvailableJapan") ? "bg-red-500" : featureKey.includes("mayRequireVPN") ? "bg-yellow-500" : "bg-primary"}`} />
                               {feature}
                             </div>
                           );

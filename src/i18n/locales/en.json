@@ -69,7 +69,8 @@
       "debitCard": "Debit Card",
       "instantPurchase": "Instant Purchase",
       "fiatToCrypto": "Fiat to Crypto",
-      "usAllowed": "US Allowed"
+      "usAllowed": "US Allowed",
+      "notAvailableJapan": ""
     },
     "visit": "Visit",
     "soon": "Soon",
