@@ -71,7 +71,47 @@
       "fiatToCrypto": "Fiat to Crypto",
       "usAllowed": "US Allowed"
     },
-    "visit": "Visit"
+    "visit": "Visit",
+    "soon": "Soon",
+    "comingSoon": "Coming Soon",
+    "nearIntentsDesc": "Cross-chain swap infrastructure powered by NEAR Protocol",
+    "cakeWalletSwap": {
+      "title": "Swap directly in Cake Wallet",
+      "description": "Already using Cake Wallet? You can buy and sell DCR using the built-in swap feature—no need to visit an external exchange. Just press the Swap button at the bottom."
+    },
+    "custodialNotice": {
+      "title": "Custodial Service Notice",
+      "description": "These instant swap services are custodial, meaning you must trust them with your funds during the exchange process. While they offer speed and simplicity, for maximum security and privacy, consider using Bison Wallet for trustless, non-custodial atomic swaps."
+    },
+    "whyChoose": {
+      "title": "Why Choose Different Platforms?",
+      "centralizedExchanges": {
+        "title": "Centralized Exchanges",
+        "description": "Best for high liquidity, advanced trading features, and fiat on-ramps. Binance and MEXC offer deep order books and competitive fees."
+      },
+      "dcrdex": {
+        "title": "DCRDEX",
+        "description": "For maximum security and privacy, use Bison Wallet. Non-custodial atomic swaps mean you maintain full control of your funds with no KYC required."
+      },
+      "alchemyPay": {
+        "title": "Alchemy Pay",
+        "description": "The fastest way for newcomers to purchase DCR directly with a debit card. Simple, quick, and beginner-friendly onboarding."
+      },
+      "chooseWhats": {
+        "title": "Choose What's Best",
+        "description": "Each platform serves different needs. Consider your priorities: convenience, privacy, fees, or trading features."
+      }
+    },
+    "altExchanges": {
+      "kucoin": "Global cryptocurrency exchange with spot and futures trading",
+      "gateio": "Comprehensive trading platform with wide coin selection",
+      "holytransaction": "Multi-currency wallet and exchange platform",
+      "novadax": "Brazilian cryptocurrency exchange with local support",
+      "guarda": "Multi-currency wallet with built-in exchange functionality",
+      "nonkyc": "Privacy-focused exchange with no KYC requirements",
+      "basicswap": "Cross-chain DEX for peer-to-peer atomic swaps",
+      "bitmart": "Global cryptocurrency exchange with spot and futures trading"
+    }
   },
   "wallets": {
     "subtitle": "Secure your <dcr>DCR</dcr> with official wallets designed for desktop, mobile, and advanced users",
