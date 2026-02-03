@@ -1,20 +1,44 @@
 import { Shield, Pickaxe, Vote, Lock, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const HybridSecurity = () => {
+  const { t } = useTranslation();
+
+  const renderTitle = () => {
+    const title = t('about.security.title');
+    const parts = title.split(/<gradient>|<\/gradient>/);
+    if (parts.length === 3) {
+      return (
+        <>
+          <span className="gradient-text">{parts[1]}</span>{parts[2]}
+        </>
+      );
+    }
+    return title;
+  };
+
+  const renderResult = () => {
+    const result = t('about.security.result');
+    return result
+      .replace(/<emphasis>/g, '')
+      .replace(/<\/emphasis>/g, '')
+      .replace(/<italic>/g, '')
+      .replace(/<\/italic>/g, '');
+  };
+
   return (
     <section className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Security Architecture</p>
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">{t('about.security.sectionLabel')}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">Dual-Layer</span> Security
+            {renderTitle()}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Decred's hybrid consensus combines Proof-of-Work and Proof-of-Stake to create a security model 
-            that's significantly more resilient than pure PoW chains.
+            {t('about.security.subtitle')}
           </p>
         </div>
 
@@ -30,14 +54,14 @@ const HybridSecurity = () => {
                     <div className="p-2 rounded-lg bg-orange-500/20">
                       <Pickaxe className="w-6 h-6 text-orange-400" />
                     </div>
-                    <h3 className="font-bold text-lg">Proof-of-Work</h3>
+                    <h3 className="font-bold text-lg">{t('about.security.pow.title')}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Miners compete to propose new blocks using computational power.
+                    {t('about.security.pow.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span className="w-2 h-2 rounded-full bg-orange-400" />
-                    Block Creation
+                    {t('about.security.pow.label')}
                   </div>
                 </Card>
               </div>
@@ -60,14 +84,14 @@ const HybridSecurity = () => {
                     <div className="p-2 rounded-lg bg-primary/20">
                       <Vote className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-bold text-lg">Proof-of-Stake</h3>
+                    <h3 className="font-bold text-lg">{t('about.security.pos.title')}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Stakeholders vote to validate blocks before finalization.
+                    {t('about.security.pos.description')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span className="w-2 h-2 rounded-full bg-primary" />
-                    Block Validation
+                    {t('about.security.pos.label')}
                   </div>
                 </Card>
               </div>
@@ -88,10 +112,10 @@ const HybridSecurity = () => {
                   <div className="p-2 rounded-lg bg-green-500/20">
                     <Lock className="w-6 h-6 text-green-400" />
                   </div>
-                  <h3 className="font-bold text-lg">Finalized Block</h3>
+                  <h3 className="font-bold text-lg">{t('about.security.finalizedBlock.title')}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Only blocks approved by both miners AND stakeholders become part of the chain.
+                  {t('about.security.finalizedBlock.description')}
                 </p>
               </Card>
             </div>
@@ -106,24 +130,24 @@ const HybridSecurity = () => {
               <div className="p-2 rounded-lg bg-red-500/20">
                 <AlertTriangle className="w-5 h-5 text-red-400" />
               </div>
-              <h3 className="font-semibold">Pure Proof-of-Work</h3>
+              <h3 className="font-semibold">{t('about.security.purePoW.title')}</h3>
             </div>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-red-400 mt-0.5">✗</span>
-                <span className="text-muted-foreground">51% attack requires only hashpower</span>
+                <span className="text-muted-foreground">{t('about.security.purePoW.items.51attack')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-400 mt-0.5">✗</span>
-                <span className="text-muted-foreground">Miners have unchecked control over blocks</span>
+                <span className="text-muted-foreground">{t('about.security.purePoW.items.minerControl')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-400 mt-0.5">✗</span>
-                <span className="text-muted-foreground">No stakeholder oversight on consensus</span>
+                <span className="text-muted-foreground">{t('about.security.purePoW.items.noOversight')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-400 mt-0.5">✗</span>
-                <span className="text-muted-foreground">Single point of failure</span>
+                <span className="text-muted-foreground">{t('about.security.purePoW.items.singleFailure')}</span>
               </li>
             </ul>
           </Card>
@@ -134,24 +158,24 @@ const HybridSecurity = () => {
               <div className="p-2 rounded-lg bg-green-500/20">
                 <CheckCircle2 className="w-5 h-5 text-green-400" />
               </div>
-              <h3 className="font-semibold">Decred Hybrid PoW/PoS</h3>
+              <h3 className="font-semibold">{t('about.security.hybrid.title')}</h3>
             </div>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-0.5">✓</span>
-                <span className="text-muted-foreground">Attack requires hashpower AND stake</span>
+                <span className="text-muted-foreground">{t('about.security.hybrid.items.attackCost')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-0.5">✓</span>
-                <span className="text-muted-foreground">Stakeholders validate every block</span>
+                <span className="text-muted-foreground">{t('about.security.hybrid.items.validation')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-0.5">✓</span>
-                <span className="text-muted-foreground">Checks and balances between parties</span>
+                <span className="text-muted-foreground">{t('about.security.hybrid.items.checksBalances')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-0.5">✓</span>
-                <span className="text-muted-foreground">Exponentially higher attack cost</span>
+                <span className="text-muted-foreground">{t('about.security.hybrid.items.exponentialCost')}</span>
               </li>
             </ul>
           </Card>
@@ -160,9 +184,7 @@ const HybridSecurity = () => {
         {/* Attack Cost Note */}
         <div className="mt-10 text-center">
           <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            <span className="text-primary font-medium">Result:</span> To attack Decred, an adversary would need to acquire 
-            majority hashpower <span className="italic">and</span> majority stake simultaneously—making attacks 
-            economically impractical.
+            <span className="text-primary font-medium">{t('about.security.result').split('<emphasis>')[1]?.split('</emphasis>')[0] || 'Result:'}</span> {renderResult().replace(/Result:|結果:/, '').trim()}
           </p>
         </div>
       </div>

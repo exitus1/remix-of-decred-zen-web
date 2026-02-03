@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "exchanges": "取引所",
+    "wallets": "ウォレット",
+    "community": "コミュニティ",
+    "quickExplainer": "クイック解説",
+    "getDCR": "DCRを取得"
+  },
+  "footer": {
+    "resources": "リソース"
+  },
+  "index": {
+    "title": "Decredを取得",
+    "subtitle": "これらの取引所やプラットフォームで<dcr>DCR</dcr>を取引、スワップ、購入できます",
+    "primary": "主要",
+    "alternative": "その他",
+    "instantSwaps": {
+      "title": "インスタント暗号スワップ",
+      "subtitle": "迅速でシンプルな暗号通貨間取引。<note>注意:</note> これらはカストディアルサービスです。"
+    },
+    "cakeWallet": {
+      "title": "Cake WalletでDCRを購入",
+      "description": "Cake Walletの統合取引パートナーを通じてDCRを直接購入",
+      "cta": "Cake Walletを取得"
+    },
+    "nearIntents": {
+      "title": "NEAR Intents",
+      "description": "NEARのインテントベースアーキテクチャを介してブリッジなしで20以上のチェーン間でDCRを取引",
+      "cta": "NEAR Intentsについて詳しく"
+    },
+    "requestListing": {
+      "title": "Coinbase、Kraken、その他の主要取引所でDCRを取り扱ってほしいですか？",
+      "description": "コミュニティの需要が重要です！お気に入りの取引所に直接連絡してDecredの上場をリクエストしてください。リクエストが多いほど、DCRサポートが追加される可能性が高くなります。"
+    },
+    "exchanges": {
+      "binance": {
+        "description": "取引高で世界最大の暗号通貨取引所",
+        "type": "中央集権型取引所",
+        "badge": "最も人気"
+      },
+      "mexc": {
+        "description": "人気のアルトコイン取引所。米国ユーザーはVPNが必要な場合があります。",
+        "type": "中央集権型取引所",
+        "badge": "高取引量"
+      },
+      "bisonWallet": {
+        "description": "トラストレスなピアツーピアアトミックスワップのためのDecredネイティブDEX",
+        "type": "分散型取引所",
+        "badge": "最高のセキュリティ"
+      },
+      "alchemyPay": {
+        "description": "デビットカードでDCRを即座に購入 - 高速で簡単なオンボーディング",
+        "type": "フィアットゲートウェイ",
+        "badge": "$ USD対応"
+      }
+    },
+    "features": {
+      "highLiquidity": "高流動性",
+      "lowFees": "低手数料",
+      "advancedTrading": "高度な取引",
+      "nonUSA": "非米国",
+      "mayRequireVPN": "VPN必要の場合あり",
+      "competitiveFees": "競争力のある手数料",
+      "noKYC": "KYC不要",
+      "mobileApp": "モバイルアプリ",
+      "nonCustodial": "非カストディアル",
+      "bitcoinTrading": "ビットコイン取引",
+      "zeroTradingFees": "取引手数料ゼロ",
+      "debitCard": "デビットカード",
+      "instantPurchase": "即時購入",
+      "fiatToCrypto": "法定通貨から暗号通貨",
+      "usAllowed": "米国対応"
+    },
+    "visit": "訪問"
+  },
+  "wallets": {
+    "subtitle": "デスクトップ、モバイル、上級ユーザー向けに設計された公式ウォレットで<dcr>DCR</dcr>を安全に保管",
+    "coreWallets": "コアウォレット",
+    "otherWallets": "その他のウォレット",
+    "platforms": "プラットフォーム:",
+    "download": "ダウンロード",
+    "recommended": "推奨",
+    "decrediton": {
+      "description": "ガバナンス、ステーキング、ミキシング機能を備えた公式フル機能Decredウォレット"
+    },
+    "bisonWallet": {
+      "description": "アトミックスワップ取引、ステーキング、ステーブルコイン、ミキシングを備えたマルチ通貨ウォレット"
+    },
+    "commandLine": {
+      "description": "上級ユーザーと自動化のための非グラフィカルコマンドラインツール"
+    },
+    "cakeWallet": {
+      "description": "iOSとAndroid向けのDecredサポート付きプライバシー重視マルチ通貨モバイルウォレット"
+    },
+    "exodus": {
+      "description": "ハードウェアウォレット統合を備えたマルチ通貨デスクトップおよびモバイルウォレット"
+    },
+    "trustWallet": {
+      "description": "マルチ通貨デスクトップ、ブラウザ、モバイルウォレット"
+    }
+  },
+  "community": {
+    "title": "Decredに参加",
+    "subtitle": "複数のプラットフォームで<dcr>DCR</dcr>コミュニティとつながる",
+    "socialMedia": "ソーシャルメディア",
+    "governance": "ガバナンス＆コミュニケーション",
+    "visit": "訪問",
+    "platforms": {
+      "xTwitter": {
+        "name": "X (Twitter)",
+        "description": "XでDecredをフォロー"
+      },
+      "matrix": {
+        "name": "Decredチャット (Matrix)",
+        "description": "公式Decredチャット"
+      },
+      "github": {
+        "name": "GitHub",
+        "description": "Decredのオープンソースコードベースを探索"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "description": "Telegramで接続"
+      },
+      "discord": {
+        "name": "Discord",
+        "description": "Discordでチャット"
+      },
+      "reddit": {
+        "name": "Reddit",
+        "description": "Decredサブレディットのディスカッションに参加"
+      }
+    },
+    "governancePlatforms": {
+      "votingDashboard": {
+        "name": "投票ダッシュボード",
+        "description": "Decredのオンチェーンガバナンス投票を確認"
+      },
+      "proposals": {
+        "name": "提案",
+        "description": "ガバナンス提案の確認、議論、提出"
+      },
+      "bisonRelay": {
+        "name": "Bison Relay",
+        "description": "プライベートで分散型のコミュニケーション＆コマースプラットフォーム"
+      }
+    }
+  },
+  "about": {
+    "evolution": {
+      "title": "ビットコインの<gradient>次の進化形</gradient>",
+      "subtitle": "Decredはビットコインのセキュリティと希少性を継承しながら、ガバナンスと持続可能性モデルを進化させています。",
+      "bitcoin": {
+        "powSecurity": "Proof-of-Workセキュリティ",
+        "supplyCap": "2100万枚の供給上限",
+        "decentralized": "分散型ネットワーク",
+        "noGovernance": "正式なガバナンスなし",
+        "outsideFunding": "外部資金に依存",
+        "minerOnly": "マイナーのみのコンセンサス",
+        "noPrivacy": "組み込みプライバシーなし"
+      },
+      "decred": {
+        "hybridSecurity": "ハイブリッドPoW/PoSセキュリティ",
+        "supplyCap": "2100万枚の供給上限",
+        "decentralized": "分散型ネットワーク",
+        "onChainGovernance": "オンチェーンガバナンス",
+        "selfFunded": "自己資金トレジャリー",
+        "stakeholderConsensus": "ステークホルダーコンセンサス",
+        "privacyMixnet": "P2Pプライバシーミックスネット"
+      },
+      "innovations": {
+        "governance": {
+          "title": "組み込みガバナンス",
+          "description": "ステークホルダーがオンチェーンでコンセンサスルールや提案に直接投票します。"
+        },
+        "security": {
+          "title": "強化されたセキュリティ",
+          "description": "ハイブリッドコンセンサスは、ネットワークを保護するためにマイナーとステーカーの両方を必要とします。"
+        },
+        "privacy": {
+          "title": "プライバシー",
+          "description": "P2Pミックスネットにより、ユーザーはDCRを匿名化できます。"
+        },
+        "funding": {
+          "title": "持続可能な資金",
+          "description": "ブロック報酬から資金調達されるトレジャリーにより、外部の当事者や資本に依存しません。"
+        }
+      }
+    },
+    "liveStats": {
+      "quickStats": "クイック統計",
+      "supplyMined": "採掘済み供給量",
+      "maxSupply": "(最大2100万)",
+      "supplyStaked": "ステーク済み供給量",
+      "treasury": "トレジャリー",
+      "ofMaxSupply": "最大供給量の",
+      "ofCirculating": "流通量の",
+      "loading": "読み込み中..."
+    },
+    "governance": {
+      "sectionLabel": "コインホルダーガバナンス",
+      "title": "選択する<gradient>力</gradient>",
+      "subtitle": "ネットワークをアップグレードするためのオンチェーン投票",
+      "features": {
+        "onChainVoting": {
+          "title": "オンチェーン投票",
+          "description": "拘束力のあるオンチェーン結果を持つ直接ステークホルダー投票"
+        },
+        "consensusUpgrades": {
+          "title": "コンセンサスアップグレード",
+          "description": "プロトコル変更とネットワークアップグレードを承認または拒否するための投票"
+        },
+        "skinInTheGame": {
+          "title": "利害関係",
+          "description": "投票権にはロックされた資本が必要で、長期的なネットワークの健全性と決定を一致させます"
+        },
+        "stakeholderControl": {
+          "title": "ステークホルダーコントロール",
+          "description": "すべてのチケットホルダーがネットワークの将来に発言権を持ちます"
+        }
+      },
+      "sovereignty": {
+        "title": "真のコインホルダー主権",
+        "description": "少数の開発者やマイナーによって変更が決定される従来の暗号通貨とは異なり、Decredは権力をコインホルダーに直接与えます。タイムロックされたチケットを通じて、ステークホルダーはオンチェーンでコンセンサスルールの変更、トレジャリー支出、ネットワークポリシーを承認するために投票します。すべての投票はブロックチェーンに記録され、自動的に実行されます—政治も妥協もなく、純粋なステークホルダーガバナンスです。"
+      }
+    },
+    "security": {
+      "sectionLabel": "セキュリティアーキテクチャ",
+      "title": "<gradient>二層</gradient>セキュリティ",
+      "subtitle": "Decredのハイブリッドコンセンサスは、Proof-of-WorkとProof-of-Stakeを組み合わせて、純粋なPoWチェーンよりも大幅に耐性のあるセキュリティモデルを作成します。",
+      "pow": {
+        "title": "Proof-of-Work",
+        "description": "マイナーは計算能力を使用して新しいブロックを提案するために競争します。",
+        "label": "ブロック作成"
+      },
+      "pos": {
+        "title": "Proof-of-Stake",
+        "description": "ステークホルダーはファイナライズ前にブロックを検証するために投票します。",
+        "label": "ブロック検証"
+      },
+      "finalizedBlock": {
+        "title": "ファイナライズされたブロック",
+        "description": "マイナーとステークホルダーの両方によって承認されたブロックのみがチェーンの一部になります。"
+      },
+      "purePoW": {
+        "title": "純粋なProof-of-Work",
+        "items": {
+          "51attack": "51%攻撃にはハッシュパワーのみが必要",
+          "minerControl": "マイナーがブロックを無制限に制御",
+          "noOversight": "コンセンサスに対するステークホルダーの監視なし",
+          "singleFailure": "単一障害点"
+        }
+      },
+      "hybrid": {
+        "title": "Decredハイブリッド PoW/PoS",
+        "items": {
+          "attackCost": "攻撃にはハッシュパワーとステークが必要",
+          "validation": "ステークホルダーがすべてのブロックを検証",
+          "checksBalances": "当事者間のチェックとバランス",
+          "exponentialCost": "指数関数的に高い攻撃コスト"
+        }
+      },
+      "result": "<emphasis>結果:</emphasis> Decredを攻撃するには、敵対者は過半数のハッシュパワー<italic>と</italic>過半数のステークを同時に取得する必要があり、攻撃は経済的に非現実的になります。"
+    },
+    "privacy": {
+      "sectionLabel": "StakeShuffle",
+      "title": "<gradient>プライバシー</gradient>ミキシング",
+      "subtitle": "ノード調整型、非カストディアルプライバシーミキシング",
+      "badges": {
+        "noTrustedSetup": "信頼されたセットアップなし",
+        "supplyMixed": "DCR供給量の63%がミックス済み",
+        "auditable": "供給量は監査可能"
+      },
+      "steps": {
+        "initiate": {
+          "title": "開始",
+          "description": "ノードがDecredを提出"
+        },
+        "keyExchange": {
+          "title": "鍵交換",
+          "ephemeralKeys": "一時的な鍵",
+          "tempKeys": "一時的な公開鍵",
+          "description": "ノードがPQ暗号を使用してP2Pで調整"
+        },
+        "shuffle": {
+          "title": "シャッフル",
+          "mixing": "ミキシング中...",
+          "description": "アドレスが暗号化＆シャッフル"
+        },
+        "sign": {
+          "title": "署名",
+          "coinJoin": "CoinJoin TX",
+          "allSign": "全ノードが署名",
+          "description": "全参加者によって検証"
+        },
+        "broadcast": {
+          "title": "ブロードキャスト",
+          "mixed": "1700万DCRミックス済み",
+          "description": "リンク不可能な出力"
+        }
+      },
+      "features": {
+        "noTrustedSetup": {
+          "title": "信頼されたセットアップなし",
+          "description": "StakeShuffleは信頼されたセットアップやサードパーティのコーディネーターを必要としません。完全に分散化されたプライバシー。"
+        },
+        "auditable": {
+          "title": "供給量は監査可能",
+          "description": "総供給量はブロックチェーン上で完全に透明で検証可能です。隠れたインフレーションのないプライバシー。"
+        },
+        "prunable": {
+          "title": "ブロックチェーンは剪定可能",
+          "description": "効率的な設計により、ノードはセキュリティと検証機能を維持しながら古いデータを剪定できます。"
+        }
+      }
+    },
+    "treasury": {
+      "sectionLabel": "持続可能な資金",
+      "title": "<gradient>自己資金</gradient>トレジャリー",
+      "subtitle": "すべてのブロック報酬の10%がトレジャリーに直接流れます—財団もVCもなく、ステークホルダーが管理する持続可能な開発のみです。",
+      "treasuryValue": "トレジャリー価値",
+      "dcrHeld": "保有DCR",
+      "control": "コントロール",
+      "stakeholder": "ステークホルダー",
+      "legend": {
+        "miners": "1% マイナー",
+        "voters": "89% 投票者",
+        "treasury": "10% トレジャリー",
+        "distribution": "ブロック報酬分配"
+      },
+      "howItWorks": {
+        "title": "トレジャリー支出の仕組み",
+        "steps": {
+          "propose": { "title": "提案", "description": "Politeiaで提出" },
+          "discuss": { "title": "議論", "description": "コミュニティ討論" },
+          "vote": { "title": "投票", "description": "60%の承認が必要" },
+          "execute": { "title": "実行", "description": "作業が完了" },
+          "spend": { "title": "トレジャリー支出", "description": "資金がリリース" }
+        }
+      },
+      "viewBalance": "トレジャリー残高を表示"
+    }
+  }
+}

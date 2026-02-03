@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface StatsData {
   supplyMined: number | null;
@@ -18,6 +19,7 @@ const formatNumber = (num: number): string => {
 };
 
 const LiveStats = () => {
+  const { t } = useTranslation();
   const [stats, setStats] = useState<StatsData>({
     supplyMined: null,
     supplyStaked: null,
@@ -72,23 +74,23 @@ const LiveStats = () => {
 
   const statsItems = [
     {
-      label: "Supply Mined",
-      sublabel: "(21M Max)",
+      label: t('about.liveStats.supplyMined'),
+      sublabel: t('about.liveStats.maxSupply'),
       value: stats.supplyMined,
       suffix: " DCR",
-      percentage: stats.supplyMined ? ((stats.supplyMined / MAX_SUPPLY) * 100).toFixed(1) + "% of max supply" : null,
+      percentage: stats.supplyMined ? ((stats.supplyMined / MAX_SUPPLY) * 100).toFixed(1) + `% ${t('about.liveStats.ofMaxSupply')}` : null,
     },
     {
-      label: "Supply Staked",
+      label: t('about.liveStats.supplyStaked'),
       value: stats.supplyStaked,
       suffix: " DCR",
-      percentage: stats.supplyStaked && stats.supplyMined ? ((stats.supplyStaked / stats.supplyMined) * 100).toFixed(1) + "% of circulating" : null,
+      percentage: stats.supplyStaked && stats.supplyMined ? ((stats.supplyStaked / stats.supplyMined) * 100).toFixed(1) + `% ${t('about.liveStats.ofCirculating')}` : null,
     },
     {
-      label: "Treasury",
+      label: t('about.liveStats.treasury'),
       value: stats.treasury,
       suffix: " DCR",
-      percentage: stats.treasury && stats.supplyMined ? ((stats.treasury / stats.supplyMined) * 100).toFixed(2) + "% of circulating" : null,
+      percentage: stats.treasury && stats.supplyMined ? ((stats.treasury / stats.supplyMined) * 100).toFixed(2) + `% ${t('about.liveStats.ofCirculating')}` : null,
     },
   ];
 
@@ -101,13 +103,13 @@ const LiveStats = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       
       <div className="relative z-10 container mx-auto px-6">
-        <p className="text-center text-sm text-muted-foreground mb-8 tracking-wide uppercase">Quick Stats</p>
+        <p className="text-center text-sm text-muted-foreground mb-8 tracking-wide uppercase">{t('about.liveStats.quickStats')}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {statsItems.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">
                 {stats.loading ? (
-                  <span className="animate-pulse">Loading...</span>
+                  <span className="animate-pulse">{t('about.liveStats.loading')}</span>
                 ) : stat.value !== null ? (
                   formatNumber(stat.value) + stat.suffix
                 ) : (

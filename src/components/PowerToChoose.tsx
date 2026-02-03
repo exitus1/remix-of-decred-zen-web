@@ -1,29 +1,45 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Vote, Shield, Lock, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PowerToChoose = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: Vote,
-      title: "On-Chain Voting",
-      description: "Direct stakeholder voting with binding on-chain results"
+      titleKey: "about.governance.features.onChainVoting.title",
+      descriptionKey: "about.governance.features.onChainVoting.description"
     },
     {
       icon: Shield,
-      title: "Consensus Upgrades",
-      description: "Vote to approve or reject protocol changes and network upgrades"
+      titleKey: "about.governance.features.consensusUpgrades.title",
+      descriptionKey: "about.governance.features.consensusUpgrades.description"
     },
     {
       icon: Lock,
-      title: "Skin-in-the-Game",
-      description: "Voting power requires locked capital, aligning decisions with long-term network health"
+      titleKey: "about.governance.features.skinInTheGame.title",
+      descriptionKey: "about.governance.features.skinInTheGame.description"
     },
     {
       icon: Users,
-      title: "Stakeholder Control",
-      description: "Every ticket holder has a voice in the network's future"
+      titleKey: "about.governance.features.stakeholderControl.title",
+      descriptionKey: "about.governance.features.stakeholderControl.description"
     }
   ];
+
+  const renderTitle = () => {
+    const title = t('about.governance.title');
+    const parts = title.split(/<gradient>|<\/gradient>/);
+    if (parts.length === 3) {
+      return (
+        <>
+          <span className="gradient-text">{parts[1]}</span>{parts[2]}
+        </>
+      );
+    }
+    return title;
+  };
 
   return (
     <section className="pt-8 pb-20 relative">
@@ -31,12 +47,12 @@ const PowerToChoose = () => {
       
       <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Coinholder Governance</p>
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">{t('about.governance.sectionLabel')}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">The Power</span> to Choose
+            {renderTitle()}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Voting on-chain to upgrade the network
+            {t('about.governance.subtitle')}
           </p>
         </div>
 
@@ -45,10 +61,10 @@ const PowerToChoose = () => {
             <Card key={index} className="border-primary/20 hover:border-primary/40 transition-all">
               <CardHeader>
                 <feature.icon className="w-12 h-12 mb-4 text-primary" />
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
+                <CardTitle className="text-xl">{t(feature.titleKey)}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <p className="text-muted-foreground">{t(feature.descriptionKey)}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,12 +73,9 @@ const PowerToChoose = () => {
         <Card className="border-primary/30 bg-card/50 backdrop-blur">
           <CardContent className="p-8">
             <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">True Coinholder Sovereignty</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('about.governance.sovereignty.title')}</h3>
               <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-                Unlike traditional cryptocurrencies where changes are decided by a small group of developers or miners, 
-                Decred gives the power directly to coinholders. Through time-locked tickets, stakeholders vote on-chain 
-                to approve consensus rule changes, treasury spending, and network policies. Every vote is recorded on the 
-                blockchain and automatically executed—no politics, no compromises, just pure stakeholder governance.
+                {t('about.governance.sovereignty.description')}
               </p>
             </div>
           </CardContent>

@@ -1,34 +1,50 @@
 import { Card } from "@/components/ui/card";
-import { Shield, Lock, FileText, EyeOff, Shuffle, Eye, Cpu } from "lucide-react";
+import { Shield, Lock, FileText, EyeOff, Shuffle, Eye } from "lucide-react";
 import decredIcon from "@/assets/decred-icon.jpg";
+import { useTranslation } from "react-i18next";
 
 const CoinMixing = () => {
+  const { t } = useTranslation();
+
+  const renderTitle = () => {
+    const title = t('about.privacy.title');
+    const parts = title.split(/<gradient>|<\/gradient>/);
+    if (parts.length === 3) {
+      return (
+        <>
+          <span className="gradient-text">{parts[1]}</span>{parts[2]}
+        </>
+      );
+    }
+    return title;
+  };
+
   return (
     <section className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-8 animate-fade-in">
-          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">StakeShuffle</p>
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">{t('about.privacy.sectionLabel')}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3 justify-center">
             <img src={decredIcon} alt="Decred" className="w-10 h-10 rounded-full" />
-            <span><span className="gradient-text">Privacy</span> Mixing</span>
+            <span>{renderTitle()}</span>
           </h2>
           <p className="text-muted-foreground mb-6">
-            Node-coordinated, non-custodial privacy mixing
+            {t('about.privacy.subtitle')}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
               <span className="text-primary font-semibold">
-                No trusted setup
+                {t('about.privacy.badges.noTrustedSetup')}
               </span>
             </div>
             <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
               <span className="text-primary font-semibold">
-                63% of DCR supply is mixed
+                {t('about.privacy.badges.supplyMixed')}
               </span>
             </div>
             <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10">
               <span className="text-primary font-semibold">
-                Supply remains auditable
+                {t('about.privacy.badges.auditable')}
               </span>
             </div>
           </div>
@@ -43,7 +59,7 @@ const CoinMixing = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Initiate</h3>
+                <h3 className="text-lg font-semibold mb-4 text-center">{t('about.privacy.steps.initiate.title')}</h3>
                 
                 <div className="space-y-2 mb-4 flex-grow">
                   <div className="px-3 py-2 rounded bg-primary/10 border border-primary/20">
@@ -58,7 +74,7 @@ const CoinMixing = () => {
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Nodes submit Decred
+                  {t('about.privacy.steps.initiate.description')}
                 </p>
               </div>
             </Card>
@@ -69,18 +85,18 @@ const CoinMixing = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Key Exchange</h3>
+                <h3 className="text-lg font-semibold mb-4 text-center">{t('about.privacy.steps.keyExchange.title')}</h3>
                 
                 <div className="flex-grow flex flex-col items-center justify-center mb-4">
                   <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
                     <Lock className="w-8 h-8 text-primary" />
                   </div>
-                  <p className="text-sm font-semibold text-primary mb-2">Ephemeral Keys</p>
-                  <p className="text-xs text-muted-foreground text-center">Temporary public keys</p>
+                  <p className="text-sm font-semibold text-primary mb-2">{t('about.privacy.steps.keyExchange.ephemeralKeys')}</p>
+                  <p className="text-xs text-muted-foreground text-center">{t('about.privacy.steps.keyExchange.tempKeys')}</p>
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Nodes coordinate P2P using PQ-cryptography
+                  {t('about.privacy.steps.keyExchange.description')}
                 </p>
               </div>
             </Card>
@@ -91,7 +107,7 @@ const CoinMixing = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Shuffle</h3>
+                <h3 className="text-lg font-semibold mb-4 text-center">{t('about.privacy.steps.shuffle.title')}</h3>
                 
                 <div className="flex-grow flex flex-col items-center justify-center mb-4">
                   <div className="relative w-16 h-16 mb-3">
@@ -100,11 +116,11 @@ const CoinMixing = () => {
                       <Shuffle className="w-8 h-8 text-primary" />
                     </div>
                   </div>
-                  <p className="text-sm font-semibold text-primary mb-2">Mixing...</p>
+                  <p className="text-sm font-semibold text-primary mb-2">{t('about.privacy.steps.shuffle.mixing')}</p>
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Addresses encrypted & shuffled
+                  {t('about.privacy.steps.shuffle.description')}
                 </p>
               </div>
             </Card>
@@ -115,18 +131,18 @@ const CoinMixing = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">4</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Sign</h3>
+                <h3 className="text-lg font-semibold mb-4 text-center">{t('about.privacy.steps.sign.title')}</h3>
                 
                 <div className="flex-grow flex flex-col items-center justify-center mb-4">
                   <div className="w-16 h-16 rounded-lg bg-primary/20 flex items-center justify-center mb-3 border border-primary/30">
                     <FileText className="w-8 h-8 text-primary" />
                   </div>
-                  <p className="text-sm font-semibold text-primary mb-2">CoinJoin TX</p>
-                  <p className="text-xs text-muted-foreground text-center mb-1">All nodes sign</p>
+                  <p className="text-sm font-semibold text-primary mb-2">{t('about.privacy.steps.sign.coinJoin')}</p>
+                  <p className="text-xs text-muted-foreground text-center mb-1">{t('about.privacy.steps.sign.allSign')}</p>
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Verified by all participants
+                  {t('about.privacy.steps.sign.description')}
                 </p>
               </div>
             </Card>
@@ -137,11 +153,11 @@ const CoinMixing = () => {
                 <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center mb-4 mx-auto">
                   <EyeOff className="w-6 h-6 text-green-500" />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-center">Broadcast</h3>
+                <h3 className="text-lg font-semibold mb-4 text-center">{t('about.privacy.steps.broadcast.title')}</h3>
                 
                 <div className="text-center mb-3">
                   <p className="text-sm font-semibold text-green-500 flex items-center gap-1.5 justify-center">
-                    17M DCR Mixed
+                    {t('about.privacy.steps.broadcast.mixed')}
                   </p>
                 </div>
                 
@@ -158,7 +174,7 @@ const CoinMixing = () => {
                 </div>
                 
                 <p className="text-xs text-muted-foreground text-center">
-                  Unlinkable outputs
+                  {t('about.privacy.steps.broadcast.description')}
                 </p>
               </div>
             </Card>
@@ -171,9 +187,9 @@ const CoinMixing = () => {
             <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
               <Shield className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">No trusted setup</h3>
+            <h3 className="text-xl font-semibold mb-3">{t('about.privacy.features.noTrustedSetup.title')}</h3>
             <p className="text-muted-foreground">
-              StakeShuffle requires no trusted setup or third-party coordinators. Fully decentralized privacy.
+              {t('about.privacy.features.noTrustedSetup.description')}
             </p>
           </Card>
 
@@ -181,9 +197,9 @@ const CoinMixing = () => {
             <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
               <Eye className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">Supply remains auditable</h3>
+            <h3 className="text-xl font-semibold mb-3">{t('about.privacy.features.auditable.title')}</h3>
             <p className="text-muted-foreground">
-              Total supply stays fully transparent and verifiable on the blockchain. Privacy without hidden inflation.
+              {t('about.privacy.features.auditable.description')}
             </p>
           </Card>
 
@@ -191,9 +207,9 @@ const CoinMixing = () => {
             <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
               <FileText className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">Blockchain can be pruned</h3>
+            <h3 className="text-xl font-semibold mb-3">{t('about.privacy.features.prunable.title')}</h3>
             <p className="text-muted-foreground">
-              Efficient design allows nodes to prune old data while maintaining security and verification capabilities.
+              {t('about.privacy.features.prunable.description')}
             </p>
           </Card>
         </div>
