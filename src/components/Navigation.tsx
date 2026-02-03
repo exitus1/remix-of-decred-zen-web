@@ -8,8 +8,12 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import decredIcon from "@/assets/decred-icon.jpg";
+import LanguageToggle from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto px-6">
@@ -21,20 +25,22 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-              Exchanges
+              {t('nav.exchanges')}
             </Link>
             <Link to="/wallets" className="text-muted-foreground hover:text-foreground transition-colors">
-              Wallets
+              {t('nav.wallets')}
             </Link>
             <Link to="/community" className="text-muted-foreground hover:text-foreground transition-colors">
-              Community
+              {t('nav.community')}
             </Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-              Quick Explainer
+              {t('nav.quickExplainer')}
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <LanguageToggle />
+            
             {/* Mobile hamburger menu */}
             <Sheet>
               <SheetTrigger asChild className="md:hidden">
@@ -46,28 +52,28 @@ const Navigation = () => {
                 <div className="flex flex-col gap-6 mt-8">
                   <SheetClose asChild>
                     <Link to="/" className="text-lg font-medium hover:text-primary transition-colors">
-                      Exchanges
+                      {t('nav.exchanges')}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link to="/wallets" className="text-lg font-medium hover:text-primary transition-colors">
-                      Wallets
+                      {t('nav.wallets')}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link to="/community" className="text-lg font-medium hover:text-primary transition-colors">
-                      Community
+                      {t('nav.community')}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link to="/about" className="text-lg font-medium hover:text-primary transition-colors">
-                      Quick Explainer
+                      {t('nav.quickExplainer')}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link to="/">
                       <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                        Get DCR
+                        {t('nav.getDCR')}
                       </Button>
                     </Link>
                   </SheetClose>
@@ -78,7 +84,7 @@ const Navigation = () => {
             {/* Desktop Get DCR button */}
             <Link to="/" className="hidden md:block">
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Get DCR
+                {t('nav.getDCR')}
               </Button>
             </Link>
           </div>

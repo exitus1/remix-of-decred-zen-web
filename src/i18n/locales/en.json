@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "exchanges": "Exchanges",
+    "wallets": "Wallets",
+    "community": "Community",
+    "quickExplainer": "Quick Explainer",
+    "getDCR": "Get DCR"
+  },
+  "footer": {
+    "resources": "Resources"
+  },
+  "index": {
+    "title": "Get Decred",
+    "subtitle": "Trade, swap, or purchase <dcr>DCR</dcr> on these featured exchanges and platforms",
+    "primary": "Primary",
+    "alternative": "Alternative",
+    "instantSwaps": {
+      "title": "Instant Crypto Swaps",
+      "subtitle": "Quick and simple crypto-to-crypto exchanges. <note>Note:</note> These are custodial services."
+    },
+    "cakeWallet": {
+      "title": "Buy DCR in Cake Wallet",
+      "description": "Buy DCR directly through Cake Wallet's integrated exchange partners",
+      "cta": "Get Cake Wallet"
+    },
+    "nearIntents": {
+      "title": "NEAR Intents",
+      "description": "Trade DCR across 20+ chains without bridges via NEAR's intent-based architecture",
+      "cta": "Learn About NEAR Intents"
+    },
+    "requestListing": {
+      "title": "Want DCR on Coinbase, Kraken, or other major exchanges?",
+      "description": "Community demand matters! Reach out to your favorite exchanges directly and request that they list Decred. The more requests they receive, the more likely they are to add DCR support."
+    },
+    "exchanges": {
+      "binance": {
+        "description": "World's largest cryptocurrency exchange by trading volume",
+        "type": "Centralized Exchange",
+        "badge": "Most Popular"
+      },
+      "mexc": {
+        "description": "Popular altcoin exchange. US users must use a VPN to access.",
+        "type": "Centralized Exchange",
+        "badge": "High Volume"
+      },
+      "bisonWallet": {
+        "description": "Decred's native DEX for trustless, peer-to-peer atomic swaps",
+        "type": "Decentralized Exchange",
+        "badge": "Maximum Security"
+      },
+      "alchemyPay": {
+        "description": "Buy DCR instantly with debit card - fast and easy onboarding",
+        "type": "Fiat Gateway",
+        "badge": "$ USD Supported"
+      }
+    },
+    "features": {
+      "highLiquidity": "High Liquidity",
+      "lowFees": "Low Fees",
+      "advancedTrading": "Advanced Trading",
+      "nonUSA": "Non-USA",
+      "mayRequireVPN": "May require VPN",
+      "competitiveFees": "Competitive Fees",
+      "noKYC": "No KYC",
+      "mobileApp": "Mobile App",
+      "nonCustodial": "Non-Custodial",
+      "bitcoinTrading": "Bitcoin Trading",
+      "zeroTradingFees": "Zero Trading Fees",
+      "debitCard": "Debit Card",
+      "instantPurchase": "Instant Purchase",
+      "fiatToCrypto": "Fiat to Crypto",
+      "usAllowed": "US Allowed"
+    },
+    "visit": "Visit"
+  },
+  "wallets": {
+    "subtitle": "Secure your <dcr>DCR</dcr> with official wallets designed for desktop, mobile, and advanced users",
+    "coreWallets": "Core Wallets",
+    "otherWallets": "Other Wallets",
+    "platforms": "Platforms:",
+    "download": "Download",
+    "recommended": "Recommended",
+    "decrediton": {
+      "description": "Official full-featured Decred wallet with governance, staking, and mixing capabilities"
+    },
+    "bisonWallet": {
+      "description": "Multicurrency wallet with atomic-swap trading, staking, stablecoins, and mixing"
+    },
+    "commandLine": {
+      "description": "Non-graphical command-line tools for advanced users and automation"
+    },
+    "cakeWallet": {
+      "description": "Privacy-focused multi-currency mobile wallet with Decred support for iOS and Android"
+    },
+    "exodus": {
+      "description": "Multi-currency desktop and mobile wallet with hardware wallet integration"
+    },
+    "trustWallet": {
+      "description": "Multi-currency desktop, browser and mobile wallet"
+    }
+  },
+  "community": {
+    "title": "Join Decred",
+    "subtitle": "Connect with the <dcr>DCR</dcr> community across multiple platforms",
+    "socialMedia": "Social Media",
+    "governance": "Governance & Communication",
+    "visit": "Visit",
+    "platforms": {
+      "xTwitter": {
+        "name": "X (Twitter)",
+        "description": "Follow Decred on X"
+      },
+      "matrix": {
+        "name": "Decred Chat (Matrix)",
+        "description": "Official Decred chat"
+      },
+      "github": {
+        "name": "GitHub",
+        "description": "Explore Decred's open-source codebase"
+      },
+      "telegram": {
+        "name": "Telegram",
+        "description": "Connect on Telegram"
+      },
+      "discord": {
+        "name": "Discord",
+        "description": "Chat on Discord"
+      },
+      "reddit": {
+        "name": "Reddit",
+        "description": "Join discussions on the Decred subreddit"
+      }
+    },
+    "governancePlatforms": {
+      "votingDashboard": {
+        "name": "Voting Dashboard",
+        "description": "Review Decred's on-chain governance voting"
+      },
+      "proposals": {
+        "name": "Proposals",
+        "description": "Review, discuss, and submit governance proposals"
+      },
+      "bisonRelay": {
+        "name": "Bison Relay",
+        "description": "Private, decentralized communication and commerce platform"
+      }
+    }
+  },
+  "about": {
+    "evolution": {
+      "title": "The <gradient>Next Iteration</gradient> of Bitcoin",
+      "subtitle": "Decred inherits Bitcoin's security and scarcity while evolving its governance and sustainability model.",
+      "bitcoin": {
+        "powSecurity": "Proof-of-Work security",
+        "supplyCap": "21M supply cap",
+        "decentralized": "Decentralized network",
+        "noGovernance": "No formal governance",
+        "outsideFunding": "Relies on outside funding",
+        "minerOnly": "Miner-only consensus",
+        "noPrivacy": "No built-in privacy"
+      },
+      "decred": {
+        "hybridSecurity": "Hybrid PoW/PoS security",
+        "supplyCap": "21M supply cap",
+        "decentralized": "Decentralized network",
+        "onChainGovernance": "On-chain governance",
+        "selfFunded": "Self-funded treasury",
+        "stakeholderConsensus": "Stakeholder consensus",
+        "privacyMixnet": "P2P Privacy Mixnet"
+      },
+      "innovations": {
+        "governance": {
+          "title": "Governance Built-In",
+          "description": "Stakeholders vote on consensus rules and proposals directly on-chain."
+        },
+        "security": {
+          "title": "Enhanced Security",
+          "description": "Hybrid consensus requires both miners and stakers to secure the network."
+        },
+        "privacy": {
+          "title": "Privacy",
+          "description": "P2P mixnet enables users to anonymize their DCR."
+        },
+        "funding": {
+          "title": "Sustainable Funding",
+          "description": "A Treasury funded from the block reward means no reliance on external parties or capital."
+        }
+      }
+    },
+    "liveStats": {
+      "quickStats": "Quick Stats",
+      "supplyMined": "Supply Mined",
+      "maxSupply": "(21M Max)",
+      "supplyStaked": "Supply Staked",
+      "treasury": "Treasury",
+      "ofMaxSupply": "of max supply",
+      "ofCirculating": "of circulating",
+      "loading": "Loading..."
+    },
+    "governance": {
+      "sectionLabel": "Coinholder Governance",
+      "title": "<gradient>The Power</gradient> to Choose",
+      "subtitle": "Voting on-chain to upgrade the network",
+      "features": {
+        "onChainVoting": {
+          "title": "On-Chain Voting",
+          "description": "Direct stakeholder voting with binding on-chain results"
+        },
+        "consensusUpgrades": {
+          "title": "Consensus Upgrades",
+          "description": "Vote to approve or reject protocol changes and network upgrades"
+        },
+        "skinInTheGame": {
+          "title": "Skin-in-the-Game",
+          "description": "Voting power requires locked capital, aligning decisions with long-term network health"
+        },
+        "stakeholderControl": {
+          "title": "Stakeholder Control",
+          "description": "Every ticket holder has a voice in the network's future"
+        }
+      },
+      "sovereignty": {
+        "title": "True Coinholder Sovereignty",
+        "description": "Unlike traditional cryptocurrencies where changes are decided by a small group of developers or miners, Decred gives the power directly to coinholders. Through time-locked tickets, stakeholders vote on-chain to approve consensus rule changes, treasury spending, and network policies. Every vote is recorded on the blockchain and automatically executed—no politics, no compromises, just pure stakeholder governance."
+      }
+    },
+    "security": {
+      "sectionLabel": "Security Architecture",
+      "title": "<gradient>Dual-Layer</gradient> Security",
+      "subtitle": "Decred's hybrid consensus combines Proof-of-Work and Proof-of-Stake to create a security model that's significantly more resilient than pure PoW chains.",
+      "pow": {
+        "title": "Proof-of-Work",
+        "description": "Miners compete to propose new blocks using computational power.",
+        "label": "Block Creation"
+      },
+      "pos": {
+        "title": "Proof-of-Stake",
+        "description": "Stakeholders vote to validate blocks before finalization.",
+        "label": "Block Validation"
+      },
+      "finalizedBlock": {
+        "title": "Finalized Block",
+        "description": "Only blocks approved by both miners AND stakeholders become part of the chain."
+      },
+      "purePoW": {
+        "title": "Pure Proof-of-Work",
+        "items": {
+          "51attack": "51% attack requires only hashpower",
+          "minerControl": "Miners have unchecked control over blocks",
+          "noOversight": "No stakeholder oversight on consensus",
+          "singleFailure": "Single point of failure"
+        }
+      },
+      "hybrid": {
+        "title": "Decred Hybrid PoW/PoS",
+        "items": {
+          "attackCost": "Attack requires hashpower AND stake",
+          "validation": "Stakeholders validate every block",
+          "checksBalances": "Checks and balances between parties",
+          "exponentialCost": "Exponentially higher attack cost"
+        }
+      },
+      "result": "<emphasis>Result:</emphasis> To attack Decred, an adversary would need to acquire majority hashpower <italic>and</italic> majority stake simultaneously—making attacks economically impractical."
+    },
+    "privacy": {
+      "sectionLabel": "StakeShuffle",
+      "title": "<gradient>Privacy</gradient> Mixing",
+      "subtitle": "Node-coordinated, non-custodial privacy mixing",
+      "badges": {
+        "noTrustedSetup": "No trusted setup",
+        "supplyMixed": "63% of DCR supply is mixed",
+        "auditable": "Supply remains auditable"
+      },
+      "steps": {
+        "initiate": {
+          "title": "Initiate",
+          "description": "Nodes submit Decred"
+        },
+        "keyExchange": {
+          "title": "Key Exchange",
+          "ephemeralKeys": "Ephemeral Keys",
+          "tempKeys": "Temporary public keys",
+          "description": "Nodes coordinate P2P using PQ-cryptography"
+        },
+        "shuffle": {
+          "title": "Shuffle",
+          "mixing": "Mixing...",
+          "description": "Addresses encrypted & shuffled"
+        },
+        "sign": {
+          "title": "Sign",
+          "coinJoin": "CoinJoin TX",
+          "allSign": "All nodes sign",
+          "description": "Verified by all participants"
+        },
+        "broadcast": {
+          "title": "Broadcast",
+          "mixed": "17M DCR Mixed",
+          "description": "Unlinkable outputs"
+        }
+      },
+      "features": {
+        "noTrustedSetup": {
+          "title": "No trusted setup",
+          "description": "StakeShuffle requires no trusted setup or third-party coordinators. Fully decentralized privacy."
+        },
+        "auditable": {
+          "title": "Supply remains auditable",
+          "description": "Total supply stays fully transparent and verifiable on the blockchain. Privacy without hidden inflation."
+        },
+        "prunable": {
+          "title": "Blockchain can be pruned",
+          "description": "Efficient design allows nodes to prune old data while maintaining security and verification capabilities."
+        }
+      }
+    },
+    "treasury": {
+      "sectionLabel": "Sustainable Funding",
+      "title": "<gradient>Self-Funding</gradient> Treasury",
+      "subtitle": "10% of every block reward flows directly to the treasury—no foundations, no VCs, just stakeholder-controlled sustainable development.",
+      "treasuryValue": "Treasury Value",
+      "dcrHeld": "DCR Held",
+      "control": "Control",
+      "stakeholder": "Stakeholder",
+      "legend": {
+        "miners": "1% Miners",
+        "voters": "89% Voters",
+        "treasury": "10% Treasury",
+        "distribution": "Block Reward Distribution"
+      },
+      "howItWorks": {
+        "title": "How Treasury Spending Works",
+        "steps": {
+          "propose": { "title": "Propose", "description": "Submit on Politeia" },
+          "discuss": { "title": "Discuss", "description": "Community debate" },
+          "vote": { "title": "Vote", "description": "60% approval needed" },
+          "execute": { "title": "Execute", "description": "The work is done" },
+          "spend": { "title": "Treasury Spend", "description": "Funds released" }
+        }
+      },
+      "viewBalance": "View Treasury Balance"
+    }
+  }
+}

@@ -1,8 +1,10 @@
-import { ArrowRight, TrendingUp, Wallet, Users, FileText, MessageSquare, Vote, CheckCircle, Loader2 } from "lucide-react";
+import { ArrowRight, TrendingUp, Wallet, FileText, MessageSquare, Vote, CheckCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Treasury = () => {
+  const { t } = useTranslation();
   const [treasuryDCR, setTreasuryDCR] = useState<number | null>(null);
   const [treasuryUSD, setTreasuryUSD] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
@@ -44,6 +46,28 @@ const Treasury = () => {
     }
     return num.toFixed(decimals);
   };
+
+  const renderTitle = () => {
+    const title = t('about.treasury.title');
+    const parts = title.split(/<gradient>|<\/gradient>/);
+    if (parts.length === 3) {
+      return (
+        <>
+          <span className="gradient-text">{parts[1]}</span>{parts[2]}
+        </>
+      );
+    }
+    return title;
+  };
+
+  const steps = [
+    { icon: FileText, titleKey: "about.treasury.howItWorks.steps.propose.title", descKey: "about.treasury.howItWorks.steps.propose.description" },
+    { icon: MessageSquare, titleKey: "about.treasury.howItWorks.steps.discuss.title", descKey: "about.treasury.howItWorks.steps.discuss.description" },
+    { icon: Vote, titleKey: "about.treasury.howItWorks.steps.vote.title", descKey: "about.treasury.howItWorks.steps.vote.description" },
+    { icon: CheckCircle, titleKey: "about.treasury.howItWorks.steps.execute.title", descKey: "about.treasury.howItWorks.steps.execute.description" },
+    { icon: Wallet, titleKey: "about.treasury.howItWorks.steps.spend.title", descKey: "about.treasury.howItWorks.steps.spend.description" },
+  ];
+
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background gradient orbs */}
@@ -55,13 +79,12 @@ const Treasury = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">Sustainable Funding</p>
+          <p className="text-sm text-muted-foreground mb-3 tracking-wide uppercase">{t('about.treasury.sectionLabel')}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">Self-Funding</span> Treasury
+            {renderTitle()}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            10% of every block reward flows directly to the treasury—no foundations, no VCs, 
-            just stakeholder-controlled sustainable development.
+            {t('about.treasury.subtitle')}
           </p>
         </div>
 
@@ -109,7 +132,7 @@ const Treasury = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-5xl font-bold text-primary">10%</div>
-                    <div className="text-sm text-muted-foreground mt-1">to Treasury</div>
+                    <div className="text-sm text-muted-foreground mt-1">{t('about.treasury.legend.treasury').replace('10% ', '')}</div>
                   </div>
                 </div>
               </div>
@@ -119,18 +142,18 @@ const Treasury = () => {
                 <div className="flex justify-center gap-6">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-muted-foreground/40" />
-                    <span className="text-sm text-muted-foreground">1% Miners</span>
+                    <span className="text-sm text-muted-foreground">{t('about.treasury.legend.miners')}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-primary/50" />
-                    <span className="text-sm text-muted-foreground">89% Voters</span>
+                    <span className="text-sm text-muted-foreground">{t('about.treasury.legend.voters')}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#00ff00' }} />
-                    <span className="text-sm text-muted-foreground">10% Treasury</span>
+                    <span className="text-sm text-muted-foreground">{t('about.treasury.legend.treasury')}</span>
                   </div>
                 </div>
-                <div className="text-xs text-muted-foreground/60 mt-2">Block Reward Distribution</div>
+                <div className="text-xs text-muted-foreground/60 mt-2">{t('about.treasury.legend.distribution')}</div>
               </div>
             </div>
 
@@ -139,7 +162,7 @@ const Treasury = () => {
               <div className="group p-6 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-muted-foreground mb-1">Treasury Value</p>
+                    <p className="text-sm text-muted-foreground mb-1">{t('about.treasury.treasuryValue')}</p>
                     <div className="text-4xl font-bold">
                       {loading ? (
                         <Loader2 className="w-8 h-8 animate-spin text-primary" />
@@ -158,7 +181,7 @@ const Treasury = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 backdrop-blur-sm">
-                  <p className="text-sm text-muted-foreground mb-1">DCR Held</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t('about.treasury.dcrHeld')}</p>
                   <div className="text-2xl font-bold">
                     {loading ? (
                       <Loader2 className="w-5 h-5 animate-spin text-primary" />
@@ -170,9 +193,9 @@ const Treasury = () => {
                   </div>
                 </div>
                 <div className="p-5 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
-                  <p className="text-sm text-muted-foreground mb-1">Control</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t('about.treasury.control')}</p>
                   <div className="text-2xl font-bold text-primary">100%</div>
-                  <p className="text-xs text-muted-foreground">Stakeholder</p>
+                  <p className="text-xs text-muted-foreground">{t('about.treasury.stakeholder')}</p>
                 </div>
               </div>
             </div>
@@ -181,16 +204,10 @@ const Treasury = () => {
 
         {/* How It Works - Modern Timeline */}
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold mb-10 text-center">How Treasury Spending Works</h3>
+          <h3 className="text-2xl font-bold mb-10 text-center">{t('about.treasury.howItWorks.title')}</h3>
           
           <div className="grid md:grid-cols-5 gap-6">
-            {[
-              { icon: FileText, title: "Propose", desc: "Submit on Politeia" },
-              { icon: MessageSquare, title: "Discuss", desc: "Community debate" },
-              { icon: Vote, title: "Vote", desc: "60% approval needed" },
-              { icon: CheckCircle, title: "Execute", desc: "The work is done" },
-              { icon: Wallet, title: "Treasury Spend", desc: "Funds released" },
-            ].map((step, index) => (
+            {steps.map((step, index) => (
               <div key={index} className="relative group">
                 {/* Connector line */}
                 {index < 4 && (
@@ -206,8 +223,8 @@ const Treasury = () => {
                       {index + 1}
                     </div>
                   </div>
-                  <h4 className="font-semibold mb-1">{step.title}</h4>
-                  <p className="text-sm text-muted-foreground">{step.desc}</p>
+                  <h4 className="font-semibold mb-1">{t(step.titleKey)}</h4>
+                  <p className="text-sm text-muted-foreground">{t(step.descKey)}</p>
                 </div>
               </div>
             ))}
@@ -222,7 +239,7 @@ const Treasury = () => {
             asChild
           >
             <a href="https://explorer.decred.org/treasury?chart=balance&zoom=knj8yxs0-mkgetcw0&bin=month&txntype=tspend" target="_blank" rel="noopener noreferrer">
-              View Treasury Balance
+              {t('about.treasury.viewBalance')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
