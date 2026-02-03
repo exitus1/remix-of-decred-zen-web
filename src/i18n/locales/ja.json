@@ -39,17 +39,17 @@
         "badge": "最も人気"
       },
       "mexc": {
-        "description": "人気のアルトコイン取引所。米国ユーザーはVPNが必要な場合があります。",
+        "description": "人気のアルトコイン取引所",
         "type": "中央集権型取引所",
         "badge": "高取引量"
       },
       "bisonWallet": {
-        "description": "トラストレスなピアツーピアアトミックスワップのためのDecredネイティブDEX",
+        "description": "トラストレスなP2Pアトミックスワップ対応DEX",
         "type": "分散型取引所",
         "badge": "最高のセキュリティ"
       },
       "alchemyPay": {
-        "description": "デビットカードでDCRを即座に購入 - 高速で簡単なオンボーディング",
+        "description": "デビットカードでDCRを即座に購入",
         "type": "フィアットゲートウェイ",
         "badge": "$ USD対応"
       }
@@ -58,8 +58,8 @@
       "highLiquidity": "高流動性",
       "lowFees": "低手数料",
       "advancedTrading": "高度な取引",
-      "nonUSA": "非米国",
-      "mayRequireVPN": "VPN必要の場合あり",
+      "nonUSA": "",
+      "mayRequireVPN": "",
       "competitiveFees": "競争力のある手数料",
       "noKYC": "KYC不要",
       "mobileApp": "モバイルアプリ",
@@ -68,8 +68,8 @@
       "zeroTradingFees": "取引手数料ゼロ",
       "debitCard": "デビットカード",
       "instantPurchase": "即時購入",
-      "fiatToCrypto": "法定通貨から暗号通貨",
-      "usAllowed": "米国対応"
+      "fiatToCrypto": "法定通貨→暗号通貨",
+      "usAllowed": ""
     },
     "visit": "訪問",
     "soon": "近日",
