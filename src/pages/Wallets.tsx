@@ -99,7 +99,7 @@ const Wallets = () => {
                       </Badge>
                     </div>
                   )}
-                  <CardHeader>
+                  <CardHeader className="flex-grow flex flex-col">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
                         {(wallet.icon || wallet.logo) && (
@@ -137,7 +137,7 @@ const Wallets = () => {
                         </div>
                       </div>
                     </div>
-                    <CardDescription className="text-sm leading-relaxed">
+                    <CardDescription className="text-sm leading-relaxed flex-grow">
                       {t(wallet.descriptionKey)}
                     </CardDescription>
                   </CardHeader>
