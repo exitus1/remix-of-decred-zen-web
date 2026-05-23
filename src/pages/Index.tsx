@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ArtisticBackground from "@/components/ArtisticBackground";
 import binanceLogo from "@/assets/binance-logo-square.jpg";
+import krakenLogo from "@/assets/kraken-logo.png";
 import mexcLogo from "@/assets/mexc-logo.svg";
 import alchemyPayLogo from "@/assets/alchemy-pay-logo-new.png";
 import simpleswapLogo from "@/assets/simpleswap-logo.webp";
@@ -44,14 +45,14 @@ const Index = () => {
       icon: <Users className="w-5 h-5" />
     },
     {
-      name: "MEXC",
-      logo: mexcLogo,
-      descriptionKey: "index.exchanges.mexc.description",
-      typeKey: "index.exchanges.mexc.type",
-      features: ["index.features.mayRequireVPN", "index.features.competitiveFees", "index.features.noKYC", "index.features.mobileApp"],
-      url: "https://www.mexc.com/exchange/DCR_USDT",
-      badgeKey: "index.exchanges.mexc.badge",
-      icon: <Zap className="w-5 h-5" />
+      name: "Kraken",
+      logo: krakenLogo,
+      descriptionKey: "index.exchanges.kraken.description",
+      typeKey: "index.exchanges.kraken.type",
+      features: ["index.features.highLiquidity", "index.features.lowFees", "index.features.advancedTrading", "index.features.usAllowed"],
+      url: "https://www.kraken.com/prices/decred",
+      badgeKey: "index.exchanges.kraken.badge",
+      icon: <Shield className="w-5 h-5" />
     }
   ];
 
@@ -80,6 +81,12 @@ const Index = () => {
   ];
 
   const alternativeExchanges = [
+    {
+      name: "MEXC",
+      logo: mexcLogo,
+      descriptionKey: "index.altExchanges.mexc",
+      url: "https://www.mexc.com/exchange/DCR_USDT"
+    },
     {
       name: "KuCoin",
       logo: kucoinLogo,
@@ -176,7 +183,7 @@ const Index = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
-                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-0" : exchange.name === "MEXC" ? "p-0.5" : "p-1.5"}`}>
+                        <div className={`w-16 h-16 rounded-lg bg-background flex items-center justify-center ${exchange.name === "Binance" ? "p-1" : "p-1.5"}`}>
                           <img 
                             src={exchange.logo} 
                             alt={exchange.name}
