@@ -38,6 +38,11 @@
         "type": "中央集権型取引所",
         "badge": "最も人気"
       },
+      "kraken": {
+        "description": "規制対応の米国取引所。高い流動性と強固なセキュリティ。DCR/USD取引ペア取扱開始！",
+        "type": "中央集権型取引所",
+        "badge": "DCR/USD"
+      },
       "mexc": {
         "description": "人気のアルトコイン取引所",
         "type": "中央集権型取引所",
