@@ -93,7 +93,7 @@
       "title": "Why Choose Different Platforms?",
       "centralizedExchanges": {
         "title": "Centralized Exchanges",
-        "description": "Best for high liquidity, advanced trading features, and fiat on-ramps. Binance and MEXC offer deep order books and competitive fees."
+        "description": "Best for high liquidity, advanced trading features, and fiat on-ramps. Binance and Kraken offer deep order books and competitive fees."
       },
       "dcrdex": {
         "title": "DCRDEX",
@@ -109,6 +109,7 @@
       }
     },
     "altExchanges": {
+      "mexc": "Popular altcoin exchange with competitive fees and mobile app",
       "kucoin": "Global cryptocurrency exchange with spot and futures trading",
       "gateio": "Comprehensive trading platform with wide coin selection",
       "holytransaction": "Multi-currency wallet and exchange platform",
