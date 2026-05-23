@@ -82,6 +82,12 @@ const Index = () => {
 
   const alternativeExchanges = [
     {
+      name: "MEXC",
+      logo: mexcLogo,
+      descriptionKey: "index.altExchanges.mexc",
+      url: "https://www.mexc.com/exchange/DCR_USDT"
+    },
+    {
       name: "KuCoin",
       logo: kucoinLogo,
       descriptionKey: "index.altExchanges.kucoin",
